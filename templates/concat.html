@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT Skoru</title>
+    <link rel="stylesheet" href="/static/cat.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CAT Skoru</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <form id="catForm" onsubmit="calculateCat(event)">
+                <div class="form-group">
+                    <label for="q1">Öksürük:</label>
+                    <input type="number" id="q1" name="q1" min="0" max="5" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="q2">Balgam:</label>
+                    <input type="number" id="q2" name="q2" min="0" max="5" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="q3">Göğüs Tıkanıklığı:</label>
+                    <input type="number" id="q3" name="q3" min="0" max="5" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="q4">Merdiven Çıkarken Nefes Darlığı:</label>
+                    <input type="number" id="q4" name="q4" min="0" max="5" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="q5">Ev İşlerini Yaparken Zorluk:</label>
+                    <input type="number" id="q5" name="q5" min="0" max="5" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="q6">Dışarı Çıkarken Güvensizlik:</label>
+                    <input type="number" id="q6" name="q6" min="0" max="5" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="q7">Uyku Problemleri:</label>
+                    <input type="number" id="q7" name="q7" min="0" max="5" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="q8">Enerji Eksikliği:</label>
+                    <input type="number" id="q8" name="q8" min="0" max="5" required><br>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="btn btn-primary">Hesapla</button>
+                </div>
+        </div>
+        </form>
+        <div class="result mt-4">
+        <div id="result">
+            {% if score is not none %}
+                <p>CAT Skoru: {{ score }}</p>
+            {% endif %}
+        </div>
+        </div>
+    </main>
+    <script src="/static/cat.js"></script>
+</body>
+</html>
