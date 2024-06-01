@@ -11,7 +11,7 @@
         <h1>BODE İndeksi</h1>
     </header>
     <main>
-        <form id="bodeForm" action="/bode/calculate" method="POST">
+        <form id="bodeForm" onsubmit="calculateCat(event)">
             <label for="bmi">VKİ:</label>
             <input type="text" step="0.1" id="bmi" required><br>
             <label for="fev1_percent">FEV1 (%):</label>
@@ -22,7 +22,11 @@
             <input type="text" step="0.1" id="walk_distance" required><br>
             <button type="submit">Hesapla</button>
         </form>
-        <div id="result"></div>
+        <div id="result">
+            {% if score is not none %}
+            <p>BODE İndeksi: {{ score }}</p>
+        {% endif %}
+        </div>
     </main>
     <script src="/static/bode.js"></script>
 </body>

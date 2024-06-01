@@ -52,7 +52,7 @@ def calculate():
     
     score = bode_index(bmi, fev1_percent, mrc_dyspnea, walk_distance)
     
-    return render_template('result.html', score=score)
+    return render_template('bode.html', score=score)
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 8080))
