@@ -11,7 +11,7 @@
         <h1>CAT Skoru</h1>
     </header>
     <main>
-        <form id="catForm" action="/cat/calculate" method="POST">
+        <form id="catForm" onsubmit="calculateCat(event)">
             <label for="q1">Öksürük:</label>
             <input type="number" id="q1" name="q1" min="0" max="5" required><br>
             <label for="q2">Balgam:</label>
