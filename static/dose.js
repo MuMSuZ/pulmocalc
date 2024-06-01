@@ -1,4 +1,4 @@
-document.getElementById('doseForm').addEventListener('submit', function dose(event) {
+document.getElementById('doseForm').addEventListener('submit', function calculateDose(event) {
     event.preventDefault();
     
     const dyspnea = parseInt(document.querySelector('[name="dyspnea"]').value);
