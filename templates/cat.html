@@ -17,77 +17,106 @@
             <form id="catForm" action="/calculate" method="post">
                 <div class="form-group">
                     <label for="q1">Öksürük:</label>
-                    <div class="rating">
-                        {% for i in range(1, 6) %}
-                            <input type="radio" id="q1_{{ i }}" name="q1" value="{{ i }}" required>
-                            <label for="q1_{{ i }}">{{ i }}</label>
-                        {% endfor %}
+                    <div class="rating-container">
+                        <span>Hiç öksürmüyorum</span>
+                        <div class="rating">
+                            {% for i in range(1, 6) %}
+                                <input type="radio" id="q1_{{ i }}" name="q1" value="{{ i }}" required>
+                                <label for="q1_{{ i }}">{{ i }}</label>
+                            {% endfor %}
+                        </div>
+                        <span>Sürekli öksürüyorum</span>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="q2">Hiç Balgam Yok</label>
-                    <div class="rating">
-                        {% for i in range(1, 6) %}
-                            <input type="radio" id="q2_{{ i }}" name="q2" value="{{ i }}" required>
-                            <label for="q2_{{ i }}">{{ i }}</label>
-                        {% endfor %}
+                    <label for="q2">Balgam:</label>
+                    <div class="rating-container">
+                        <span>Hiç balgam yok</span>
+                        <div class="rating">
+                            {% for i in range(1, 6) %}
+                                <input type="radio" id="q2_{{ i }}" name="q2" value="{{ i }}" required>
+                                <label for="q2_{{ i }}">{{ i }}</label>
+                            {% endfor %}
+                        </div>
+                        <span>Tamamen balgam dolu</span>
                     </div>
-                <div class="form-group">
-                    <label for="q2">Sürekli Balgam Var</label>
-                </div>
                 </div>
                 <div class="form-group">
-                    <label for="q3">Göğüs Tıkanıklığı:</label>
-                    <div class="rating">
-                        {% for i in range(1, 6) %}
-                            <input type="radio" id="q3_{{ i }}" name="q3" value="{{ i }}" required>
-                            <label for="q3_{{ i }}">{{ i }}</label>
-                        {% endfor %}
+                    <label for="q3">Göğüsümde Tıkanıklığı:</label>
+                    <div class="rating-container">
+                        <span>Göğsümde daralma yok</span>
+                        <div class="rating">
+                            {% for i in range(1, 6) %}
+                                <input type="radio" id="q3_{{ i }}" name="q3" value="{{ i }}" required>
+                                <label for="q3_{{ i }}">{{ i }}</label>
+                            {% endfor %}
+                        </div>
+                        <span>Göğsümde çok daralma var</span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="q4">Merdiven Çıkarken Nefes Darlığı:</label>
-                    <div class="rating">
-                        {% for i in range(1, 6) %}
-                            <input type="radio" id="q4_{{ i }}" name="q4" value="{{ i }}" required>
-                            <label for="q4_{{ i }}">{{ i }}</label>
-                        {% endfor %}
+                    <div class="rating-container">
+                        <span>Hiç nefes darlığı yok</span>
+                        <div class="rating">
+                            {% for i in range(1, 6) %}
+                                <input type="radio" id="q4_{{ i }}" name="q4" value="{{ i }}" required>
+                                <label for="q4_{{ i }}">{{ i }}</label>
+                            {% endfor %}
+                        </div>
+                        <span>Sürekli nefes darlığı</span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="q5">Ev İşlerini Yaparken Zorluk:</label>
-                    <div class="rating">
-                        {% for i in range(1, 6) %}
-                            <input type="radio" id="q5_{{ i }}" name="q5" value="{{ i }}" required>
-                            <label for="q5_{{ i }}">{{ i }}</label>
-                        {% endfor %}
+                    <div class="rating-container">
+                        <span>Hiç zorluk yok</span>
+                        <div class="rating">
+                            {% for i in range(1, 6) %}
+                                <input type="radio" id="q5_{{ i }}" name="q5" value="{{ i }}" required>
+                                <label for="q5_{{ i }}">{{ i }}</label>
+                            {% endfor %}
+                        </div>
+                        <span>Sürekli zorluk</span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="q6">Dışarı Çıkarken Güvensizlik:</label>
-                    <div class="rating">
-                        {% for i in range(1, 6) %}
-                            <input type="radio" id="q6_{{ i }}" name="q6" value="{{ i }}" required>
-                            <label for="q6_{{ i }}">{{ i }}</label>
-                        {% endfor %}
+                    <div class="rating-container">
+                        <span>Hiç güvensizlik yok</span>
+                        <div class="rating">
+                            {% for i in range(1, 6) %}
+                                <input type="radio" id="q6_{{ i }}" name="q6" value="{{ i }}" required>
+                                <label for="q6_{{ i }}">{{ i }}</label>
+                            {% endfor %}
+                        </div>
+                        <span>Sürekli güvensizlik</span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="q7">Uyku Problemleri:</label>
-                    <div class="rating">
-                        {% for i in range(1, 6) %}
-                            <input type="radio" id="q7_{{ i }}" name="q7" value="{{ i }}" required>
-                            <label for="q7_{{ i }}">{{ i }}</label>
-                        {% endfor %}
+                    <div class="rating-container">
+                        <span>Hiç uyku problemi yok</span>
+                        <div class="rating">
+                            {% for i in range(1, 6) %}
+                                <input type="radio" id="q7_{{ i }}" name="q7" value="{{ i }}" required>
+                                <label for="q7_{{ i }}">{{ i }}</label>
+                            {% endfor %}
+                        </div>
+                        <span>Sürekli uyku problemi</span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="q8">Enerji Eksikliği:</label>
-                    <div class="rating">
-                        {% for i in range(1, 6) %}
-                            <input type="radio" id="q8_{{ i }}" name="q8" value="{{ i }}" required>
-                            <label for="q8_{{ i }}">{{ i }}</label>
-                        {% endfor %}
+                    <div class="rating-container">
+                        <span>Hiç enerji eksikliği yok</span>
+                        <div class="rating">
+                            {% for i in range(1, 6) %}
+                                <input type="radio" id="q8_{{ i }}" name="q8" value="{{ i }}" required>
+                                <label for="q8_{{ i }}">{{ i }}</label>
+                            {% endfor %}
+                        </div>
+                        <span>Sürekli enerji eksikliği</span>
                     </div>
                 </div>
                 <div class="button-container">
@@ -100,7 +129,7 @@
                 </div>
             {% endif %}
             <div class="button-container mt-4">
-                <a href="https://mumsuz.github.io/drfaigteymurlu.github.io/hesaplama.html" class="btn btn-secondary">Geri Dön</a>
+                <a href="https://mumsuz.github.io/pulmocalc/koah.html" class="btn btn-secondary">Geri Dön</a>
             </div>
         </div>
     </main>
