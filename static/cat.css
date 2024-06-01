@@ -93,8 +93,8 @@ footer {
 
 .form-group label {
     flex: 2;
-    margin-right: 10px;
-    padding: 0 0 0 10px;
+    margin: 20px auto;
+    padding: 20px;
     text-align: center;
     background-color: white;
     border-radius: 8px;
@@ -103,7 +103,7 @@ footer {
 
 .form-group input {
     flex: 0.3;
-    padding-right: 20px;
+    padding: 20px;
 }
 
 .rating-container {
