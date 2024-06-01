@@ -11,7 +11,7 @@
         <h1>DOSE İndeksi Hesaplama</h1>
     </header>
     <main>
-        <form id="doseForm" action="/calculate" method="POST">
+        <form id="doseForm" onsubmit="dose(event)">
             <label for="dyspnea">Dyspnea:</label>
             <input type="number" name="dyspnea" min="0" max="3" required><br>
             <label for="obstruction">Obstruction:</label>
