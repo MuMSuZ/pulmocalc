@@ -167,14 +167,14 @@ footer {
 
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #6a0dad;
+    border-color: #6a0dad;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0056b3;
-    border-color: #004085;
+    background-color: #6a0dad;
+    border-color: #6a0dad;
 }
 
 .btn-secondary {
