@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('catForm');
-    form.addEventListener('submit', function calculateCat(event) {
+    form.addEventListener('submit', function(event) {
     event.preventDefault();
 
     const q1 = parseInt(document.getElementById('q1').value);
