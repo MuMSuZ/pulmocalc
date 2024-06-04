@@ -23,8 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const resultContainer = document.querySelector('.result');
         resultContainer.innerHTML = `Sonuç: ${bodeScore} <br><br> Yorum: ${comment}`;
-
-        resultContainer.style.display = 'block';
     });
     document.getElementById('result').innerHTML = '';
 });
