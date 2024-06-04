@@ -91,6 +91,38 @@ header .container {
     padding-right: 40px;
 }
 
+/* Form-group*/
+
+.form-group {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.form-group label {
+    flex: 2;
+    margin: 10px 20px auto;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-group span {
+    margin: center;
+    padding: 0px 20px;    
+}
+
+.form-group input {
+    flex: 0.3;
+    padding: 20px;
+}
+
 /* Butonlar*/
 
 .btn {
