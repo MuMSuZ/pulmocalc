@@ -1,4 +1,6 @@
-function calculateBode(event) {
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('bodeForm');
+    form.addEventListener('submit', function(event) {
     event.preventDefault();
 
     const bmi = parseFloat(document.getElementById('bmi').value);
@@ -25,4 +27,7 @@ function calculateBode(event) {
         }
 
     document.getElementById('result').innerText = `Sonuç: ${bodeScore} <br><br> Yorum: ${comment}`;
-}
+});
+
+document.getElementById('result').innerHTML = '';
+});
