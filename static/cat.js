@@ -1,6 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('catForm');
-    form.addEventListener('submit', function(event) {
+function calculateCat(event) {
     event.preventDefault();
 
     const q1 = parseInt(document.getElementById('q1').value);
@@ -15,7 +13,4 @@ document.addEventListener('DOMContentLoaded', function() {
     const score = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8;
 
     document.getElementById('result').innerHTML = `CAT Skoru: ${score}`;
-});
-
-document.getElementById('result').innerHTML = '';
-});
+}
