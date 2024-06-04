@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let bodeScore = bmiScore + fev1Score + mrcScore + walkScore;
 
     let comment = '';
-        if (score <= 3) {
+        if (bodeScorescore <= 3) {
             comment = 'Durumu iyi, belirtiler hafif.';
-        } else if (score <= 6) {
+        } else if (bodeScorescore <= 6) {
             comment = 'Durumu orta, belirtiler orta derecede.';
-        } else if (score <= 9) {
+        } else if (bodeScorescore <= 9) {
             comment = 'Durumu kötü, belirtiler ciddi.';
         } else {
             comment = 'Durumu çok kötü, belirtiler çok ciddi.';
