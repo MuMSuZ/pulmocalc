@@ -46,10 +46,7 @@ footer {
 .form-group {
     text-align: center;
     font-size: 1em;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 20px;  
     background-color: white;
 }
 
@@ -164,18 +161,6 @@ header .container {
 
 .btn-primary:hover {
     background-color: #4b0082;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #6a0dad;
-    border-color: #6a0dad;
-}
-
-.btn-primary:hover {
-    color: #fff;
-    background-color: #4b0082;
-    border-color: #4b0082;
 }
 
 .btn-secondary {
