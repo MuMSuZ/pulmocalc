@@ -6,15 +6,16 @@
     <title>CAT Skoru</title>
     <link rel="stylesheet" href="/static/cat.css">
     <style>
-        .back-button {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-        }
+    .back-button {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000; /* Üstte kalmasını sağlamak için z-index ayarlanmıştır */
+    }
     </style>
 </head>
 <body>
-    <a href="https://mumsuz.github.io/pulmocalc/koah/koah.html" class="btn btn-secondary">Geri Dön</a>
+    <a href="https://mumsuz.github.io/pulmocalc/koah/koah.html" class="btn btn-secondar back-button">Geri Dön</a>
     <header>
         <div class="container">
             <h1>CAT Skoru</h1>
