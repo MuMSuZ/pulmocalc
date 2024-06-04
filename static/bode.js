@@ -13,5 +13,16 @@ function calculateBode(event) {
 
     let bodeScore = bmiScore + fev1Score + mrcScore + walkScore;
 
+    let comment = '';
+        if (score <= 3) {
+            comment = 'Durumu iyi, belirtiler hafif.';
+        } else if (score <= 6) {
+            comment = 'Durumu orta, belirtiler orta derecede.';
+        } else if (score <= 9) {
+            comment = 'Durumu kötü, belirtiler ciddi.';
+        } else {
+            comment = 'Durumu çok kötü, belirtiler çok ciddi.';
+        }
+
     document.getElementById('result').innerText = `Sonuç: ${bodeScore} <br><br> Yorum: ${comment}`;
 }
