@@ -5,15 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOSE İndeksi Hesaplama</title>
     <link rel="stylesheet" href="/static/dose.css">
+    <style>
+        .back-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
+    <a href="https://mumsuz.github.io/pulmocalc/koah/koah.html" class="btn btn-secondar back-button">Geri</a>
     <header>
         <div class="container">
-            <h1>DOSE İndeksi Hesaplama</h1>
+            <h1>DOSE İndeksi</h1>
         </div>
     </header>
+    <section class="info-section">
+        <div class="container">
+            <p>KOAH hastalarının semptomlarını ve yaşam beklentisini değerlendirmede kullanılan bir testtir.</p>
+        </div>
+    </section>
     <div class="container mt-5">
-        <form id="doseForm" action="/calculate" method="post" onsubmit="calculateDose(event)">
+        <form id="doseForm" onsubmit="calculateDose(event)">
             <div class="form-group">
                 <label for="dyspnea">mMRC:</label>
                 <input type="number" class="form-control" id="dyspnea" name="dyspnea" min="0" max="3" required>
@@ -35,17 +49,11 @@
             </div>
         </form>
         {% if score is not none %}
-        <div class="result mt-4">
-            <h4>Sonuç:</h4>
-            <p>Hesaplanan DOSE İndeksi: {{ score }}</p>
-        </div>
+        <div class="result mt-4" id="result"></div>
         {% endif %}
-        <div class="button-container mt-4">
-            <a href="https://mumsuz.github.io/drfaigteymurlu.github.io/hesaplama.html" class="btn btn-secondary">Geri Dön</a>
         </div>
-    </div>
     <footer class="footer">
-        <p>&copy; 2024 Ayla LTD</p>
+        <p>&copy; 2024 Designed by MuMSuZ</p>
     </footer>
     <script src="/static/dose.js"></script>
 </body>
