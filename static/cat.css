@@ -93,8 +93,8 @@ footer {
 
 .form-group label {
     flex: 2;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 10px 20px auto;
+    padding: 10px 20px;
     text-align: center;
     background-color: white;
     border-radius: 8px;
@@ -130,6 +130,7 @@ footer {
     border-radius: 4px;
     margin: 0 5px;
     transition: background-color 0.3s;
+    justify-content: center;
 }
 
 .rating input[type="radio"]:checked + label {
