@@ -9,11 +9,26 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: white; /* Beyaz arka plan */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    background-color: #6a0dad; /* Mor arka plan */
     color: white;
     padding: 20px;
-    width: 100%;
-    text-align: center;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
 }
 
 main {
