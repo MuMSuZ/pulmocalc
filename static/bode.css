@@ -14,13 +14,6 @@ header {
     text-align: center;
 }
 
-header .container {
-    background-color: #6a0dad; /* Mor arka plan */
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-}
-
 header h1 {
     margin: 0;
     font-size: 2em;
@@ -58,6 +51,53 @@ input {
     border-radius: 5px;
 }
 
+.result {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1em
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    padding-top: 20px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+}
+
+
+/*Container*/
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+header .container {
+    background-color: #6a0dad; /* Mor arka plan */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: right; /* Ortalar */
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-right: 40px;
+}
+
+/* Butonlar*/
+
 .btn {
     display: inline-block;
     font-weight: 400;
@@ -88,27 +128,9 @@ input {
     background-color: #4b0082;
 }
 
-.result {
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    padding: 15px;
-    margin-top: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 1em
-}
-
 .back-button {
     position: fixed;
     top: 10px;
     left: 10px;
     z-index: 1000; /* Üstte kalmasını sağlamak için z-index ayarlanmıştır */
-}
-
-footer {
-    text-align: center;
-    font-size: 0.9em;
-    color: #777;
-    padding-top: 20px;
-    background-color: #f4f4f4;
-    border-top: 1px solid #ddd;
 }

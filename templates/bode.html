@@ -32,14 +32,13 @@
             <input type="text" step="1" id="mrc_dyspnea" required><br>
             <label for="walk_distance">Yürüyüş Mesafesi (m):</label>
             <input type="text" step="0.1" id="walk_distance" required><br>
-            <button type="submit">Hesapla</button>
+            <div class="button-container">
+                <button type="submit" class="btn btn-primary">Hesapla</button>
+            </div>
+            
         </form>
         </div>
-        <div id="result">
-            {% if score is not none %}
-            <p>Sonuç: {{ score }}</p>
-        {% endif %}
-        </div>
+        <div class="result mt-4" id="result"></div>
     </main>
     <footer class="footer">
         <p>&copy; 2024 Designed by MuMSuZ</p>
