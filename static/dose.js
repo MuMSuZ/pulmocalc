@@ -22,11 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const resultContainer = document.querySelector('.result');
-        resultContainer.innerHTML = `
-            <h4>Sonuç:</h4>
-            <p>Hesaplanan DOSE İndeksi: ${doseScore}</p>
-            <p>${comment}</p>
-        `;
+        resultContainer.innerHTML = `Sonuç: ${bodeScore} <br><br> Yorum: ${comment}`;
+
         resultContainer.style.display = 'block';
     });
+    document.getElementById('result').innerHTML = '';
 });
