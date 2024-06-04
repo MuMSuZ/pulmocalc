@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (bodeScore <= 6) {
             comment = 'Orta dereceli KOAH.';
         } else if (bodeScore <= 9) {
-            comment = 'Şİddetli KOAH.';
+            comment = 'Şiddetli KOAH.';
         } else {
             comment = 'Çok şiddetli KOAH.';
         }
