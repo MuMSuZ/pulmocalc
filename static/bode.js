@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             comment = 'Durumu çok kötü, belirtiler çok ciddi.';
         }
 
-    document.getElementById('result').innerText = `Sonuç: ${bodeScore} <br><br> Yorum: ${comment}`;
+    document.getElementById('result').innerHTML = `Sonuç: ${bodeScore} <br><br> Yorum: ${comment}`;
 });
 
 document.getElementById('result').innerHTML = '';
