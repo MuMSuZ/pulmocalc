@@ -13,5 +13,5 @@ function calculateBode(event) {
 
     let bodeScore = bmiScore + fev1Score + mrcScore + walkScore;
 
-    document.getElementById('result').innerText = `BODE İndeksi: ${bodeScore}`;
+    document.getElementById('result').innerText = `Sonuç: ${bodeScore} <br><br> Yorum: ${comment}`;
 }
