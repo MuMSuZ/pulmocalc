@@ -16,16 +16,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let comment = '';
         if (score <= 10) {
-            comment = 'Durumunuz iyi, belirtiler hafif.';
+            comment = 'Durumu iyi, belirtiler hafif.';
         } else if (score <= 20) {
-            comment = 'Durumunuz orta, belirtiler orta derecede.';
+            comment = 'Durumu orta, belirtiler orta derecede.';
         } else if (score <= 30) {
-            comment = 'Durumunuz kötü, belirtiler ciddi.';
+            comment = 'Durumu kötü, belirtiler ciddi.';
         } else {
-            comment = 'Durumunuz çok kötü, belirtiler çok ciddi.';
+            comment = 'Durumu çok kötü, belirtiler çok ciddi.';
         }
 
-        document.getElementById('result').innerHTML = `CAT Skoru: ${score} <br> ${comment}`;
+        document.getElementById('result').innerHTML = `Sonuç: ${score} <br><br> Yorum: ${comment}`;
     });
 
     document.getElementById('result').innerHTML = '';
