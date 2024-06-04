@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BODE İndeksi</title>
     <link rel="stylesheet" href="/static/bode.css">
+    <style>
+        .back-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+        }
+        </style>
 </head>
 <body>
+    <a href="https://mumsuz.github.io/pulmocalc/koah/koah.html" class="btn btn-secondar back-button">Geri</a>
     <header>
         <h1>BODE İndeksi</h1>
     </header>
@@ -24,10 +33,13 @@
         </form>
         <div id="result">
             {% if score is not none %}
-            <p>BODE İndeksi: {{ score }}</p>
+            <p>Sonuç: {{ score }}</p>
         {% endif %}
         </div>
     </main>
+    <footer class="footer">
+        <p>&copy; 2024 Designed by MuMSuZ</p>
+    </footer>
     <script src="/static/bode.js"></script>
 </body>
 </html>
