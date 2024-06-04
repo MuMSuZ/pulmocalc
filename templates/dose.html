@@ -15,7 +15,7 @@
     </style>
 </head>
 <body>
-    <a href="https://mumsuz.github.io/pulmocalc/koah/koah.html" class="btn btn-secondar back-button">Geri</a>
+    <a href="https://mumsuz.github.io/pulmocalc/koah/koah.html" class="btn btn-secondary back-button">Geri</a>
     <header>
         <div class="container">
             <h1>DOSE İndeksi</h1>
@@ -26,32 +26,49 @@
             <p>KOAH hastalarının semptomlarını ve yaşam beklentisini değerlendirmede kullanılan bir testtir.</p>
         </div>
     </section>
-    <main>
-        <div class="container mt-5">
-            <form id="doseForm">
-                <div class="form-group">
-                    <label for="dyspnea">mMRC:</label>
-                    <input type="number" class="form-control" id="dyspnea" name="dyspnea" min="0" max="3" required>
-                </div>
-                <div class="form-group">
-                    <label for="obstruction">FEV1 (% pred):</label>
-                    <input type="number" class="form-control" id="obstruction" name="obstruction" min="0" max="3" required>
-                </div>
-                <div class="form-group">
-                    <label for="smoking_status">Sigara:</label>
-                    <input type="number" class="form-control" id="smoking_status" name="smoking_status" min="0" max="1" required>
-                </div>
-                <div class="form-group">
-                    <label for="exacerbations">Alevlenme:</label>
-                    <input type="number" class="form-control" id="exacerbations" name="exacerbations" min="0" max="2" required>
-                </div>
-                <div class="button-container">
-                    <button type="submit" class="btn btn-primary">Hesapla</button>
-                </div>
-            </form>
-            <div class="result mt-4" id="result"></div>
+    <div class="container mt-5">
+        <form id="doseForm" action="/calculate" method="post">
+            <div class="form-group">
+                <label for="dyspnea">mMRC:</label>
+                <input type="number" class="form-control" id="dyspnea" name="dyspnea" min="0" max="3" required>
+            </div>
+            <div class="form-group">
+                <label for="obstruction">FEV1 (% pred):</label>
+                <select class="form-control" id="obstruction" name="obstruction" required>
+                    <option value="0">≥ %50</option>
+                    <option value="1">%35-49</option>
+                    <option value="2">%20-34</option>
+                    <option value="3">< %20</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="smoking_status">Sigara:</label>
+                <select class="form-control" id="smoking_status" name="smoking_status" required>
+                    <option value="0">Sigara içmiyor</option>
+                    <option value="1">Sigara içiyor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exacerbations">Alevlenme:</label>
+                <select class="form-control" id="exacerbations" name="exacerbations" required>
+                    <option value="0">Alevlenme yok</option>
+                    <option value="1">1-2 alevlenme</option>
+                    <option value="2">3 veya daha fazla alevlenme</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="btn btn-primary">Hesapla</button>
+            </div>
+        </form>
+        <div class="result mt-4">
+            <h4>Sonuç:</h4>
+            <p>Hesaplanan DOSE İndeksi: </p>
+            <p></p>
         </div>
-    </main>
+        <div class="button-container mt-4">
+            <a href="https://mumsuz.github.io/drfaigteymurlu.github.io/hesaplama.html" class="btn btn-secondary">Geri Dön</a>
+        </div>
+    </div>
     <footer class="footer">
         <p>&copy; 2024 Designed by MuMSuZ</p>
     </footer>

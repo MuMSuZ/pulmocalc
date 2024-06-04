@@ -10,23 +10,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const doseScore = dyspnea + obstruction + smokingStatus + exacerbations;
 
+        const resultContainer = document.querySelector('.result');
+
         let comment = '';
-        if (doseScore <= 3) {
-            comment = 'Durum iyi, belirtiler hafif.';
-        } else if (doseScore <= 6) {
-            comment = 'Durum orta, belirtiler orta derecede.';
-        } else if (doseScore <= 8) {
-            comment = 'Durum kötü, belirtiler ciddi.';
+        if (bodeScore <= 3) {
+            comment = 'Hafif KOAH.';
+        } else if (bodeScore <= 6) {
+            comment = 'Orta dereceli KOAH.';
+        } else if (bodeScore <= 9) {
+            comment = 'Şiddetli KOAH.';
         } else {
-            comment = 'Durum çok kötü, belirtiler çok ciddi.';
+            comment = 'Çok şiddetli KOAH.';
         }
 
-        const resultContainer = document.querySelector('.result');
-        resultContainer.innerHTML = `
-            <h4>Sonuç:</h4>
-            <p>Hesaplanan DOSE İndeksi: ${doseScore}</p>
-            <p>${comment}</p>
-        `;
-        resultContainer.style.display = 'block';
+        document.getElementById('result').innerHTML = `Sonuç: ${bodeScore} <br><br> Yorum: ${comment}`;
     });
+
+    document.getElementById('result').innerHTML = '';
 });
