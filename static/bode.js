@@ -17,13 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let comment = '';
         if (bodeScore <= 3) {
-            comment = 'Durumu iyi, belirtiler hafif.';
+            comment = 'Hafif KOAH.';
         } else if (bodeScore <= 6) {
-            comment = 'Durumu orta, belirtiler orta derecede.';
+            comment = 'Orta dereceli KOAH.';
         } else if (bodeScore <= 9) {
-            comment = 'Durumu kötü, belirtiler ciddi.';
+            comment = 'Şİddetli KOAH.';
         } else {
-            comment = 'Durumu çok kötü, belirtiler çok ciddi.';
+            comment = 'Çok şiddetli KOAH.';
         }
 
         document.getElementById('result').innerHTML = `Sonuç: ${bodeScore} <br><br> Yorum: ${comment}`;
