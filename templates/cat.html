@@ -123,9 +123,10 @@
                     <button type="submit" class="btn btn-primary">Hesapla</button>
                 </div>
             </form>
-            {% if score is not none %}
+            {% if result %}
                 <div class="result mt-4">
-                    <p>Sonuç: {{ score }}</p>
+                    <h4>Sonuç:</h4>
+                    <p>{{ score|safe }}</p>
                 </div>
             {% endif %}
             <div class="button-container mt-4">
