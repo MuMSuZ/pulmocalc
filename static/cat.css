@@ -101,6 +101,11 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.form-group span {
+    margin: center;
+    padding: 0px 20px;    
+}
+
 .form-group input {
     flex: 0.3;
     padding: 20px;
@@ -111,7 +116,6 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 10px 0;
-    padding: 0 20px;
 }
 
 .rating {
