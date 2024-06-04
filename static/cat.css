@@ -83,7 +83,7 @@ footer {
 
 .form-group {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -163,7 +163,7 @@ footer {
     padding: 15px;
     margin-top: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 1.2em
+    font-size: 1em
 }
 
 /* Butonların stilini ayarlar */
