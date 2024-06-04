@@ -1,16 +1,32 @@
-function calculateCat(event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('catForm');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
 
-    const q1 = parseInt(document.getElementById('q1').value);
-    const q2 = parseInt(document.getElementById('q2').value);
-    const q3 = parseInt(document.getElementById('q3').value);
-    const q4 = parseInt(document.getElementById('q4').value);
-    const q5 = parseInt(document.getElementById('q5').value);
-    const q6 = parseInt(document.getElementById('q6').value);
-    const q7 = parseInt(document.getElementById('q7').value);
-    const q8 = parseInt(document.getElementById('q8').value);
+        const q1 = parseInt(document.querySelector('input[name="q1"]:checked')?.value || 0);
+        const q2 = parseInt(document.querySelector('input[name="q2"]:checked')?.value || 0);
+        const q3 = parseInt(document.querySelector('input[name="q3"]:checked')?.value || 0);
+        const q4 = parseInt(document.querySelector('input[name="q4"]:checked')?.value || 0);
+        const q5 = parseInt(document.querySelector('input[name="q5"]:checked')?.value || 0);
+        const q6 = parseInt(document.querySelector('input[name="q6"]:checked')?.value || 0);
+        const q7 = parseInt(document.querySelector('input[name="q7"]:checked')?.value || 0);
+        const q8 = parseInt(document.querySelector('input[name="q8"]:checked')?.value || 0);
 
-    const score = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8;
+        const score = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8;
 
-    document.getElementById('result').innerHTML = `CAT Skoru: ${score}`;
-}
+        let comment = '';
+        if (score <= 10) {
+            comment = 'Durumunuz iyi, belirtiler hafif.';
+        } else if (score <= 20) {
+            comment = 'Durumunuz orta, belirtiler orta derecede.';
+        } else if (score <= 30) {
+            comment = 'Durumunuz kötü, belirtiler ciddi.';
+        } else {
+            comment = 'Durumunuz çok kötü, belirtiler çok ciddi.';
+        }
+
+        document.getElementById('result').innerHTML = `CAT Skoru: ${score} <br> ${comment}`;
+    });
+
+    document.getElementById('result').innerHTML = '';
+});
