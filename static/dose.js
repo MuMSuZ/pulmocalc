@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const resultContainer = document.querySelector('.result');
-        resultContainer.innerHTML = `Sonuç: ${bodeScore} <br><br> Yorum: ${comment}`;
+        resultContainer.innerHTML = `Sonuç: ${doseScore} <br><br> Yorum: ${comment}`;
     });
     document.getElementById('result').innerHTML = '';
 });
