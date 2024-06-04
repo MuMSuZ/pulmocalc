@@ -1,8 +1,10 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: white;
+    color: #333;
 }
 
 header {
@@ -21,29 +23,13 @@ header p {
     font-size: 1.2em;
 }
 
-main {
-    background-color: white;
-    width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-label {
-    margin: 10px 0 5px;
-}
-
-input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    padding-top: 20px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
 }
 
 .result {
@@ -55,43 +41,7 @@ input {
     font-size: 1em
 }
 
-footer {
-    text-align: center;
-    font-size: 0.9em;
-    color: #777;
-    padding-top: 20px;
-    background-color: #f4f4f4;
-    border-top: 1px solid #ddd;
-}
-
-
-/*Container*/
-
-.container {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-header .container {
-    background-color: #6a0dad; /* Mor arka plan */
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.button-container {
-    display: flex;
-    justify-content: right; /* Ortalar */
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
-    padding-right: 40px;
-}
-
-/* Form-group*/
+/*Form-group*/
 
 .form-group {
     text-align: center;
@@ -123,8 +73,69 @@ header .container {
     padding: 20px;
 }
 
-/* Butonlar*/
+/*Rating*/
 
+.rating-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+    justify-content: center;
+}
+
+.rating input[type="radio"]:checked + label {
+    background-color: #6a0dad; /* Seçili durumda mor arka plan */
+    color: white;
+}
+
+/*Contairner*/
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+header .container {
+    background-color: #6a0dad; /* Mor arka plan */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: right; /* Ortalar */
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-right: 40px;
+}
+
+
+
+/* Butonların stilini ayarlar */
 .btn {
     display: inline-block;
     font-weight: 400;
@@ -153,6 +164,30 @@ header .container {
 
 .btn-primary:hover {
     background-color: #4b0082;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #6a0dad;
+    border-color: #6a0dad;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #4b0082;
+    border-color: #4b0082;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
 }
 
 .back-button {
