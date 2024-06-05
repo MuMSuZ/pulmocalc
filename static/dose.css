@@ -196,3 +196,9 @@ header .container {
     left: 10px;
     z-index: 1000; /* Üstte kalmasını sağlamak için z-index ayarlanmıştır */
 }
+
+/*Yazı tipi*/
+
+.indented-text {
+    margin-left: 10px; /* Sayfanın solundan 20px boşluk bırakır */
+}
