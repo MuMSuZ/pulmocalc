@@ -23,43 +23,41 @@
     </header>
     <section class="info-section">
         <div class="container">
-            <p>KOAH hastalarının semptomlarını ve yaşam beklentisini değerlendirmede kullanılan bir testtir.</p>
+            <p>KOAH hastalarında hastalığın şiddetini ve prognozu değerlendirmek için kullanılan bir klinik değerlendirme aracıdır</p>
         </div>
     </section>
     <div class="container mt-5">
         <form id="doseForm">
             <div class="form-group">
-                <label for="dyspnea">mMRC:</label>
+                <label for="dyspnea">mMRC Dispne ölçeğü</label>
                 <select class="form-control" id="dyspnea" name="dyspnea" required>
-                    <option value="0">Derece 0</option>
-                    <option value="1">Derece 1</option>
-                    <option value="2">Derece 2</option>
-                    <option value="3">Derece 3</option>
-                    <option value="4">Derece 4</option>
+                    <option value="0">Derece 0-1</option>
+                    <option value="1">Derece 2</option>
+                    <option value="2">Derece 3</option>
+                    <option value="3">Derece 4</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="obstruction">FEV1 (% pred):</label>
+                <label for="obstruction">FEV1 (%)</label>
                 <select class="form-control" id="obstruction" name="obstruction" required>
                     <option value="0">≥ %50</option>
-                    <option value="1">%35-49</option>
-                    <option value="2">%20-34</option>
-                    <option value="3">< %20</option>
+                    <option value="1">%30-49</option>
+                    <option value="2">< %30</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="smoking_status">Sigara:</label>
+                <label for="smoking_status">Sigara öyküsü</label>
                 <select class="form-control" id="smoking_status" name="smoking_status" required>
                     <option value="0">Sigara içmiyor</option>
                     <option value="1">Sigara içiyor</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="exacerbations">Alevlenme:</label>
+                <label for="exacerbations">Son 1 yıldaki alevlenme sayısı</label>
                 <select class="form-control" id="exacerbations" name="exacerbations" required>
-                    <option value="0">Alevlenme yok</option>
-                    <option value="1">1-2 alevlenme</option>
-                    <option value="2">3 veya daha fazla alevlenme</option>
+                    <option value="0">0-1 alevlenme</option>
+                    <option value="1">2-3 alevlenme</option>
+                    <option value="2">3' den fazla alevlenme</option>
                 </select>
             </div>
             <div class="button-container">
@@ -69,6 +67,56 @@
         <div class="result mt-4" id="result">
         </div>
      </div>
+     <section class="info-section">
+        <div class="container">
+            <p>DOSE indeksi, 2017 yılında Dr. Giovanni Battista Carlucci ve ekibi tarafından geliştirilmiştir. Dr. Carlucci, İtalya'daki Verona Üniversitesi Tıp Fakültesi'nde Pulmonoloji Profesörü ve Torax Bölümü Direktörüdür.</p>
+            <p>KOAH hastalarının prognozunu daha iyi tahmin edebilecek ve hastalara daha kişiselleştirilmiş tedavi planları sunabilecek bir araç geliştirmek amacıyla geliştirilmiştir.</p>
+            <p>Geliştirilmesinden bu yana birçok klinik çalışmada kullanılmış ve KOAH hastalarının prognozunu tahmin etmede BODE skorundan daha iyi olduğu gösterilmiştir.</p>
+            <p>BODE skorundan farklı olarak DOSE indeksi, hastaların günlük yaşam aktivitelerini ne kadar etkilediğini de göz önünde bulundurarak daha kapsamlı bir değerlendirme sunmayı amaçlamaktadır.</p>
+            <p></p>
+            <p>DOSE İndeksi Bileşenleri</p>
+            <p>1. Dyspnea (Nefes Darlığı - mMRC)</p>
+            <p></p>
+                <p>O: Derece 0 - Nefes darlığı yalnızca çok yoğun efor sırasında.</p>
+                <p>1: Derece 1 - Hızlı yürürken veya hafif bir yokuş çıkarken nefes darlığı.</p>
+                <p>2: Derece 2 - Kendi hızında düz yolda yürürken, yaşıtlarına göre daha yavaş yürümek zorunda kalmak veya nefes darlığı nedeniyle duraklamak zorunda kalmak.</p>
+                <p>3: Derece 3 - Düz yolda 100 metre yürüdükten sonra veya birkaç dakika yürüdükten sonra duraklamak zorunda kalmak.</p>
+                <p>4: Derece 4 - Evde giysilerini değiştirirken dahi nefes darlığı veya evden çıkamayacak kadar nefes darlığı.</p>
+            <p></p>
+            <p>2. Obstruction (Hava Akımı Kısıtlaması - FEV1)</p>
+                <p>0: FEV1 ≥ %50</p>
+                <p>1: FEV1 %30-49</p>
+                <p>2: FEV1 < %30</p>
+            <p></p>
+            <p>3. Smoking Status (Sigara İçme Durumu)</p>
+            <p></p>    
+                <p>0: Sigara içmiyor</p>
+                <p>1: Sigara içiyor</p>
+            <p></p>
+            <P>4. Exacerbations (Alevlenmeler)</P>                
+            <p></p>    
+                <p>0: 0-1 alevlenme</p>
+                <p>1: 2-3 alevlenme</p>
+                <p>2: 3' den fazla alevlenme</p>
+            <p></p>  
+            <p>DOSE Skorlarının Yorumlanması (burayı tammala)</p>
+            <p></p>
+            <p>Daha yüksek DOSE skoru:</p>
+                <p>Daha şiddetli KOAH</p>
+                <p>Hastanede yatma riskinin artması</p>
+                <p>Alevlenmelerin daha sık ve şiddetli olması</p>
+                <p>Yaşam kalitesinin düşmesi</p>
+                <p>Ölüm riskinin artması ile ilişkilidir</p>
+            <p></p>
+            <p>DOSE skorunun bazı sınırlamaları da vardır:</p>
+            <p></p>
+                <p>Skoru etkileyen diğer faktörler (örneğin, kalp hastalığı veya depresyon) hesaba katılmaz.</p>
+                <p>Skoru alan hastaların hepsi aynı klinik ortamda değerlendirilmeyebilir.</p>
+                <p>Skoru hesaplamak için kullanılan ölçümler öznel olabilir.</p>
+            <p></p>
+            <p>Kaynak: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6442782/</p>
+        </div>
+    </section>
     <footer class="footer">
         <p>&copy; 2024 Designed by MuMSuZ</p>
     </footer>
