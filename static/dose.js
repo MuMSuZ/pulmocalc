@@ -12,13 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let comment = '';
         if (doseScore <= 3) {
-            comment = 'Durum iyi, belirtiler hafif.';
-        } else if (doseScore <= 6) {
-            comment = 'Durum orta, belirtiler orta derecede.';
-        } else if (doseScore <= 8) {
-            comment = 'Durum kötü, belirtiler ciddi.';
-        } else {
-            comment = 'Durum çok kötü, belirtiler çok ciddi.';
+            comment = 'Düşük alevlenme riski';
+        } else if (doseScore > 3) {
+            comment= "Yüksek alevlenme riski"
         }
 
         const resultContainer = document.querySelector('.result');
