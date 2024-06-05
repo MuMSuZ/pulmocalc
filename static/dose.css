@@ -23,6 +23,10 @@ header p {
     font-size: 1.2em;
 }
 
+a {
+    text-decoration: none;
+}
+
 footer {
     text-align: center;
     font-size: 0.9em;
@@ -199,6 +203,9 @@ header .container {
 
 /*Yazı tipi*/
 
+.info-section {
+    text-decoration: none;
+}
 .indented-text {
     margin-left: 20px; /* Sayfanın solundan 20px boşluk bırakır */
 }
