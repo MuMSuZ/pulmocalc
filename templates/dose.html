@@ -30,7 +30,13 @@
         <form id="doseForm">
             <div class="form-group">
                 <label for="dyspnea">mMRC:</label>
-                <input type="number" class="form-control" id="dyspnea" name="dyspnea" min="0" max="4" required>
+                <select class="form-control" id="dyspnea" name="dyspnea" required>
+                    <option value="0">Derece 0</option>
+                    <option value="1">Derece 1</option>
+                    <option value="2">Derece 2</option>
+                    <option value="3">Derece 3</option>
+                    <option value="4">Derece 4</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="obstruction">FEV1 (% pred):</label>
