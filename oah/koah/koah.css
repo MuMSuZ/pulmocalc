@@ -119,15 +119,20 @@ li a:hover {
 
 /* Bilgi Kısmı*/
 
-    .indented-text {
-        text-align: center;
-        font-size: 1.5em;
-        font-weight: bold;
-    }
+.baslik {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
-    .spaced-text {
-        margin-bottom: 20px;
-    }
+.indented-text {
+    text-align: center;
+    text-indent: 20px;
+}
+
+.spaced-text {
+    margin-bottom: 20px;
+}
 
     /* Girintili paragraflar için stil */
 .indented {
