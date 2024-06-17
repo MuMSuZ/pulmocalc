@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: white; /* Beyaz arka plan */
+    background-color: white;
     padding: 20px 0;
     text-align: center;
 }
@@ -42,19 +42,19 @@ footer {
 }
 
 header .container {
-    background-color: #6a0dad; /* Mor arka plan */
+    background-color: #6a0dad;
     color: white;
     padding: 20px;
     border-radius: 8px;
 }
 
 ul {
-    list-style-type: none; /* Noktaları kaldır */
+    list-style-type: none;
     padding: 0;
 }
 
 li {
-    background-color: #f9f9f9; /* Hafif gri arka plan */
+    background-color: #f9f9f9;
     margin: 10px 0;
     padding: 10px;
     border-radius: 4px;
@@ -63,15 +63,14 @@ li {
 
 li a {
     text-decoration: none;
-    color: #6a0dad; /* Mor yazı */
+    color: #6a0dad;
     font-weight: bold;
 }
 
 li a:hover {
-    color: #4b0082; /* Koyu mor yazı */
+    color: #4b0082;
 }
 
-/* Butonların stilini ayarlar */
 .btn {
     display: inline-block;
     font-weight: 400;
@@ -102,19 +101,6 @@ li a:hover {
     background-color: #4b0082;
 }
 
-.btn-secondary {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
-}
-
-.btn-secondary:hover {
-    color: #fff;
-    background-color: #5a6268;
-    border-color: #545b62;
-}
-
-/* Geri düğmesi stili */
 .back-button {
     background-color: #6c757d;
     color: white;
