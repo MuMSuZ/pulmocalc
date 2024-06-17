@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT Skoru</title>
+    <link rel="stylesheet" href="/static/cat.css">
+    <style>
+    .back-button {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000; /* Üstte kalmasını sağlamak için z-index ayarlanmıştır */
+    }
+    </style>
+</head>
+<body>
+    <a href="https://mumsuz.github.io/pulmocalc/koah/koah.html" class="back-button">Geri</a>
+    <header>
+        <div class="container">
+            <h1>CAT Skoru</h1>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <p>KOAH hastalarının semptomlarını değerlendirmede kullanılan bir ankettir. Bu anket ile hastalığın ciddiyetini ve tedaviye olan yanıtı değerlendirebilirsiniz.</p>
+        </div>
+    </section>
+    <main>
+        <div class="container mt-5">
+            <form id="catForm">
+                <div class="form-group">
+                    <label for="q1">Öksürüğüm</label>
+                    <div class="rating-container">
+                        <span>Hiç yok</span>
+                        <div class="rating">
+                            <input type="radio" id="q1_1" name="q1" value="1" required>
+                            <label for="q1_1">1</label>
+                            <input type="radio" id="q1_2" name="q1" value="2" required>
+                            <label for="q1_2">2</label>
+                            <input type="radio" id="q1_3" name="q1" value="3" required>
+                            <label for="q1_3">3</label>
+                            <input type="radio" id="q1_4" name="q1" value="4" required>
+                            <label for="q1_4">4</label>
+                            <input type="radio" id="q1_5" name="q1" value="5" required>
+                            <label for="q1_5">5</label>
+                        </div>
+                        <span>Sürekli var</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="q2">Akciğerlerimde balgam</label>
+                    <div class="rating-container">
+                        <span>Hiç yok</span>
+                        <div class="rating">
+                            <input type="radio" id="q2_1" name="q2" value="1" required>
+                            <label for="q2_1">1</label>
+                            <input type="radio" id="q2_2" name="q2" value="2" required>
+                            <label for="q2_2">2</label>
+                            <input type="radio" id="q2_3" name="q2" value="3" required>
+                            <label for="q2_3">3</label>
+                            <input type="radio" id="q2_4" name="q2" value="4" required>
+                            <label for="q2_4">4</label>
+                            <input type="radio" id="q2_5" name="q2" value="5" required>
+                            <label for="q2_5">5</label>
+                        </div>
+                        <span>Sürekli var</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="q3">Göğüsümde tıkanma/daralma</label>
+                    <div class="rating-container">
+                        <span>Hissetmiyorum</span>
+                        <div class="rating">
+                            <input type="radio" id="q3_1" name="q3" value="1" required>
+                            <label for="q3_1">1</label>
+                            <input type="radio" id="q3_2" name="q3" value="2" required>
+                            <label for="q3_2">2</label>
+                            <input type="radio" id="q3_3" name="q3" value="3" required>
+                            <label for="q3_3">3</label>
+                            <input type="radio" id="q3_4" name="q3" value="4" required>
+                            <label for="q3_4">4</label>
+                            <input type="radio" id="q3_5" name="q3" value="5" required>
+                            <label for="q3_5">5</label>
+                        </div>
+                        <span>Hissediyorum</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="q4">Yokuş veya bir kat merdiven çıkarken nefesim</label>
+                    <div class="rating-container">
+                        <span>Daralmıyor</span>
+                        <div class="rating">
+                            <input type="radio" id="q4_1" name="q4" value="1" required>
+                            <label for="q4_1">1</label>
+                            <input type="radio" id="q4_2" name="q4" value="2" required>
+                            <label for="q4_2">2</label>
+                            <input type="radio" id="q4_3" name="q4" value="3" required>
+                            <label for="q4_3">3</label>
+                            <input type="radio" id="q4_4" name="q4" value="4" required>
+                            <label for="q4_4">4</label>
+                            <input type="radio" id="q4_5" name="q4" value="5" required>
+                            <label for="q4_5">5</label>
+                        </div>
+                        <span>Daralıyor</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="q5">Evdeki hareketlerimde</label>
+                    <div class="rating-container">
+                        <span>Zorlanmıyorum</span>
+                        <div class="rating">
+                            <input type="radio" id="q5_1" name="q5" value="1" required>
+                            <label for="q5_1">1</label>
+                            <input type="radio" id="q5_2" name="q5" value="2" required>
+                            <label for="q5_2">2</label>
+                            <input type="radio" id="q5_3" name="q5" value="3" required>
+                            <label for="q5_3">3</label>
+                            <input type="radio" id="q5_4" name="q5" value="4" required>
+                            <label for="q5_4">4</label>
+                            <input type="radio" id="q5_5" name="q5" value="5" required>
+                            <label for="q5_5">5</label>
+                        </div>
+                        <span>Zorlanıyorum</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="q6">Akciğerlerimin durumuna rağmen dışarı çıkmaktan</label>
+                    <div class="rating-container">
+                        <span>Çekinmiyorum</span>
+                        <div class="rating">
+                            <input type="radio" id="q6_1" name="q6" value="1" required>
+                            <label for="q6_1">1</label>
+                            <input type="radio" id="q6_2" name="q6" value="2" required>
+                            <label for="q6_2">2</label>
+                            <input type="radio" id="q6_3" name="q6" value="3" required>
+                            <label for="q6_3">3</label>
+                            <input type="radio" id="q6_4" name="q6" value="4" required>
+                            <label for="q6_4">4</label>
+                            <input type="radio" id="q6_5" name="q6" value="5" required>
+                            <label for="q6_5">5</label>
+                        </div>
+                        <span>Çekiniyorum</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="q7">Uyku</label>
+                    <div class="rating-container">
+                        <span>Rahat uyuyorum</span>
+                        <div class="rating">
+                            <input type="radio" id="q7_1" name="q7" value="1" required>
+                            <label for="q7_1">1</label>
+                            <input type="radio" id="q7_2" name="q7" value="2" required>
+                            <label for="q7_2">2</label>
+                            <input type="radio" id="q7_3" name="q7" value="3" required>
+                            <label for="q7_3">3</label>
+                            <input type="radio" id="q7_4" name="q7" value="4" required>
+                            <label for="q7_4">4</label>
+                            <input type="radio" id="q7_5" name="q7" value="5" required>
+                            <label for="q7_5">5</label>
+                        </div>
+                        <span>Rahat uyuyamıyorum</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="q8">Kendimi güçlü/enerjik</label>
+                    <div class="rating-container">
+                        <span>Hissediyorum</span>
+                        <div class="rating">
+                            <input type="radio" id="q8_1" name="q8" value="1" required>
+                            <label for="q8_1">1</label>
+                            <input type="radio" id="q8_2" name="q8" value="2" required>
+                            <label for="q8_2">2</label>
+                            <input type="radio" id="q8_3" name="q8" value="3" required>
+                            <label for="q8_3">3</label>
+                            <input type="radio" id="q8_4" name="q8" value="4" required>
+                            <label for="q8_4">4</label>
+                            <input type="radio" id="q8_5" name="q8" value="5" required>
+                            <label for="q8_5">5</label>
+                        </div>
+                        <span>Hissetmiyorum</span>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="btn btn-primary">Hesapla</button>
+                </div>
+            </form>
+            <div class="result mt-4" id="result"></div>
+        </div>
+    <section>
+        <div class="container">
+            <p> CAT (COPD Assessment Test) skoru, kliniklerde hastaların genel sağlık durumunu ve semptomlarının şiddetini hızlı bir şekilde değerlendirmek için rutin olarak kullanılmaktadır. Ayrıca, tedaviye yanıtı izlemek ve tedavi planlarını düzenlemek için de kullanılmaktadır.</p>
+            <p>Peter W. Jones ve arkadaşları tarafından 2009 yılında geliştirilmiştir.</p>     
+            <p>KOAH hastalarının semptomlarını ve genel sağlık durumlarını değerlendirmek için sekiz sorudan oluşur. Her soru, hastaların nefes darlığı, öksürük, balgam, göğüste sıkışma, günlük aktiviteler, uyku ve enerji durumu gibi çeşitli semptomlarını kapsar. Sorular, 0-5 arasında puanlanır ve toplam puan 0-40 arasında değişir. Yüksek puanlar, hastalığın daha şiddetli olduğunu gösterir.</p>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Designed by MuMSuZ</p>
+    </footer>
+    <script src="/static/cat.js"></script>
+</body>
+</html>
