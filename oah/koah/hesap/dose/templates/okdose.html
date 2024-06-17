@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOSE İndeksi Hesaplama</title>
+    <link rel="stylesheet" href="/static/dose.css">
+</head>
+<body>
+    <header>
+        <h1>DOSE İndeksi Hesaplama</h1>
+    </header>
+    <main>
+        <form id="doseForm" onsubmit="calculateDose(event)">
+            <label for="dyspnea">mMRC:</label>
+            <input type="number" name="dyspnea" min="0" max="3" required><br>
+            <label for="obstruction">fev1_percent:</label>
+            <input type="number" name="obstruction" min="0" max="3" required><br>
+            <label for="smoking_status">Sigara:</label>
+            <input type="number" name="smoking_status" min="0" max="1" required><br>
+            <label for="exacerbations">Alevlenme:</label>
+            <input type="number" name="exacerbations" min="0" max="2" required><br>
+            <button type="submit">Hesapla</button>
+        </form>
+        <div id="result">
+            {% if score is not none %}
+                <p>Hesaplanan DOSE İndeksi: {{ score }}</p>
+            {% endif %}
+        </div>
+    </main>
+    <script src="/static/dose.js"></script>
+</body>
+</html>
