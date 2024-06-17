@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: white;
     color: #333;
 }
 
@@ -12,16 +12,20 @@ body {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Başlık stili */
 header {
     background-color: white;
-    padding: 20px 0;
+    padding: 10px 0 20px 0;
     text-align: center;
 }
 
@@ -36,85 +40,6 @@ header .container {
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
-}
-
-/* Ana içerik stili */
-main {
-    margin-top: 20px;
-}
-
-.assessment-grid {
-    display: grid;
-    grid-template-columns: 60px 60px 120px;
-    gap: 10px;
-}
-
-.grid-item {
-    background: white;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-size: 1em;
-}
-
-.confirm {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.assess-degree {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.assess-symptoms {
-    grid-column: span 3;
-    grid-row: span 1;
-}
-
-.post-bd {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.grade, .fev1, .gold1, .gold2, .gold3, .gold4 {
-    grid-column: span 1;
-}
-
-.exacerbations {
-    grid-column: span 2;
-}
-
-.exacerbations-high, .exacerbations-low {
-    grid-column: span 2;
-}
-
-.group-e {
-    grid-column: span 3;
-    background-color: #ffcccb;
-    font-size: 2em;
-}
-
-.group-a, .group-b {
-    grid-column: span 3;
-    background-color: #f0e68c;
-    font-size: 2em;
-}
-
-.symptom-severity, .symptom-severity-high {
-    grid-column: span 2;
-}
-
-/* Footer stili */
-.footer {
-    text-align: center;
-    font-size: 0.9em;
-    color: #777;
-    padding-top: 20px;
-    background-color: #f4f4f4;
-    border-top: 1px solid #ddd;
 }
 
 /* Geri düğmesi stili */
@@ -132,4 +57,150 @@ main {
 
 .back-button:hover {
     background-color: #5a6268;
+}
+
+/* Ana içerik stili */
+main {
+    margin-top: 20px;
+}
+
+/* Ana konteyner */
+.container-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Grid konteynerleri */
+.grid-container {
+    display: grid;
+    gap: 30px;
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 50px repeat(6);
+    gap: 10px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 200px 300px;
+    grid-template-rows: 100px repeat(4);
+    gap: 10px
+}
+
+.grid-item {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1em;
+}
+
+.large-item {
+    grid-column: 6;
+    margin-right: 20px;
+}
+
+.grade-baslik {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.semptom-baslik {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.grade {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.fev1 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.gold1 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.fev11 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.gold2 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.fev12 {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.gold3 {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.fev13 {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.gold4 {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.fev14 {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.alevlenme-dusuk {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.alevlenme-yuksek {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.grupe {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.grupa .grupb {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.semptom-dusuk .semptom-yuksek {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+/* Footer stili */
+.footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    padding-top: 20px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
 }
