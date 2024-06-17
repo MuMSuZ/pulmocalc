@@ -29,8 +29,6 @@ header p {
 
 /* Containerler */
 
-
-
 .container {
     background-color: white;
     border-radius: 8px;
@@ -120,12 +118,29 @@ nav ul li a:hover {
     border-color: #545b62;
 }
 
-.back-button {
+.back-button {       /* Sade buton */
     position: fixed;
     top: 10px;
     left: 10px;
     z-index: 1000; /* Üstte kalmasını sağlamak için z-index ayarlanmıştır */
 }
+
+.back-button {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
 
 
 /* Footer stili */
