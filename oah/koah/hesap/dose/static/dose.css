@@ -195,10 +195,19 @@ header .container {
 }
 
 .back-button {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
     position: fixed;
     top: 10px;
     left: 10px;
-    z-index: 1000; /* Üstte kalmasını sağlamak için z-index ayarlanmıştır */
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
 }
 
 /*Yazı tipi*/
