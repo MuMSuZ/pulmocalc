@@ -44,3 +44,36 @@
 <p>
     Bu metnin <u>altı çizili</u> kısmı örnektir. Başka bir <u>altı çizili</u> kısmı daha.
 </p>
+
+
+# sayfanın aşağısına kaydırma
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayrıntılı Bilgi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .info {
+            margin: 20px;
+        }
+        .details {
+            margin: 20px;
+            margin-top: 500px; /* Sayfa kaydırma etkisini göstermek için boşluk */
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <p>Bu sayfada kısa bilgi metni yer alıyor. <a href="#detailed-info">Ayrıntılı Bilgi</a></p>
+    </div>
+
+    <div id="detailed-info" class="details">
+        <h2>Ayrıntılı Bilgi</h2>
+        <p>Burada ayrıntılı bilgi metni bulunmaktadır. Bu kısımda kullanıcıya daha detaylı bilgiler sunulmaktadır.</p>
+    </div>
+</body>
+</html>
