@@ -186,3 +186,11 @@ a {
 .amber {color: #ffbf00}
 .bluegreen {color: #0d98ba}
 .chamois {color: #F7AE62}
+
+.info {
+    margin: 20px;
+}
+.details {
+    margin: 20px;
+    margin-top: 500px; /* Sayfa kaydırma etkisini göstermek için boşluk */
+}
