@@ -122,6 +122,8 @@ li a:hover {
 
 a {
     text-decoration: none;
+    color: #5277f1;
+    font-weight: italic;
 }
 
 .indented-text {
