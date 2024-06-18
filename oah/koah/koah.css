@@ -120,6 +120,10 @@ li a:hover {
 
 /* Bilgi Kısmı*/
 
+a {
+    text-decoration: none;
+}
+
 .indented-text {
     text-indent: 20px;
     text-align: left;
