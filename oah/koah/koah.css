@@ -124,6 +124,11 @@ a {
     text-decoration: none;
 }
 
+.bilgi-link {
+    font-style: italic;
+    color: #5277f1
+}
+
 .indented-text {
     text-indent: 20px;
     text-align: left;
@@ -178,6 +183,17 @@ a {
     transform: rotate(90deg);
 }
 
+/* Kaydırma Stilleri*/
+
+.bilgi {
+    margin: 20px;
+}
+
+.detay {
+    margin: 20px;
+    margin-top: 20px;
+}
+
 /* Metin renkleri*/
 
 .red { color: red; }
@@ -186,3 +202,4 @@ a {
 .amber {color: #ffbf00}
 .bluegreen {color: #0d98ba}
 .chamois {color: #F7AE62}
+.coralblue { color: #5277f1}
