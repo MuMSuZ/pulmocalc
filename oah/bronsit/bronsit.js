@@ -1,10 +1,16 @@
-    // akordiyon 
+      // akordiyon 
     function togglePanel(panelId) {
         const panel = document.getElementById(panelId);
         if (panel.style.display === 'block') {
             panel.style.display = 'none';
         } else {
             panel.style.display = 'block';
+        }
+        var arrow = this.querySelector(".arrow");
+        if (arrow.style.transform === "rotate(90deg)") {
+            arrow.style.transform = "rotate(0deg)";
+        } else {
+            arrow.style.transform = "rotate(90deg)";
         }
     }
 
@@ -16,12 +22,7 @@
         });
     };
 
-    var arrow = this.querySelector(".arrow");
-        if (arrow.style.transform === "rotate(90deg)") {
-            arrow.style.transform = "rotate(0deg)";
-        } else {
-            arrow.style.transform = "rotate(90deg)";
-        }
+    
 
     // .txt dosya tanımlama
     const dosyaListesi = [
