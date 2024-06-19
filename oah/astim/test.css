@@ -11,9 +11,9 @@
     transition: 0.4s;
 }
 
-display: flex;
+/* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 
 .accordion .arrow {
     float: right;
