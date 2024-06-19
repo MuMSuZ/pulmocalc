@@ -11,6 +11,10 @@
     transition: 0.4s;
 }
 
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 .accordion .arrow {
     float: right;
     transition: transform 0.4s;
