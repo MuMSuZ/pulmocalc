@@ -139,6 +139,11 @@ a {
     margin-top: 20px;
 }
 
+.space {
+    text-align: left;
+    text-decoration: none;
+}
+
 .accordion {
     background-color: #f9f9f9;
     color: #444;
@@ -184,10 +189,6 @@ a {
 }
 
 /* Kaydırma Stilleri*/
-
-.bilgi {
-    margin: 20px;
-}
 
 .detay {
     margin: 20px;
