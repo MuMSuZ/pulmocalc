@@ -124,12 +124,9 @@ a {
     text-decoration: none;
 }
 
-.italic {
+.bilgi-link {
     font-style: italic;
-}
-
-.font-color {
-    color: #5277f1;
+    color: #5277f1
 }
 
 .indented-text {
