@@ -206,7 +206,8 @@ a {
 .red { color: red; }
 .blue { color: blue; }
 .green { color: green; }
-.amber {color: #ffbf00}
-.bluegreen {color: #0d98ba}
-.chamois {color: #F7AE62}
-.coralblue { color: #5277f1}
+.amber { color: #ffbf00; }
+.bluegreen { color: #0d98ba; }
+.chamois { color: #F7AE62; }
+.coralblue { color: #5277f1; }
+.redorange { color: #FF3F34; }
