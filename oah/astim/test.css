@@ -1,0 +1,40 @@
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.accordion .arrow {
+    float: right;
+    transition: transform 0.4s;
+}
+
+.accordion.active .arrow {
+    transform: rotate(90deg);
+}
+
+.panel, .alt-panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.panel.show, .alt-panel.show {
+    display: block;
+}
+
+.indented-text {
+    text-indent: 2em;
+}
+
+.chamois {
+    color: #d2b48c;
+}
