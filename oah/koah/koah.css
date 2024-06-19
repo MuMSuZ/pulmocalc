@@ -143,8 +143,6 @@ a {
     display: block;
     text-align: right;
     text-decoration: none;
-    position: absolute;
-    right: 0;
 }
 
 .accordion {
