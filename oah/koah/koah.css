@@ -139,6 +139,10 @@ a {
     margin-top: 20px;
 }
 
+.indented-bolum {
+    text-indent: 40px;
+}
+
 .space {
     display: block;
     text-align: right;
