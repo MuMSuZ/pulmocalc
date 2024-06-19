@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akordeon Yapısı</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="accordion-container">
+            <button class="accordion baslik" onclick="togglePanel('panel-1')">TANIM VE GENEL BAKIŞ<span class="arrow">❯</span></button>
+            <div class="panel" id="panel-1">
+                <button class="accordion alt-baslik" onclick="togglePanel('koahnedir')">KOAH Nedir?<span class="arrow">❯</span></button>
+                <div class="alt-panel" id="koahnedir"></div>
+                <button class="accordion alt-baslik" onclick="togglePanel('koahyuku')">KOAH Yükü<span class="arrow">❯</span></button>
+                <div class="alt-panel" id="koahyuku"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

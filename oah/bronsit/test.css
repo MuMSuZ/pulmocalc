@@ -1,0 +1,51 @@
+.container {
+    margin-top: 5em;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.accordion .arrow {
+    float: right;
+    transition: transform 0.4s;
+}
+
+.accordion.active .arrow {
+    transform: rotate(90deg);
+}
+
+.panel, .alt-panel {
+    padding: 0 18px;
+    display: none; /* Varsayılan olarak gizlenir */
+    background-color: white;
+    overflow: hidden;
+}
+
+.panel.show, .alt-panel.show {
+    display: block;
+}
+
+.alt-panel {
+    padding: 0 10px;
+    background-color: #f9f9f9; /* Alt paneller için farklı arka plan rengi */
+    border-left: 2px solid #ccc;
+    margin-left: 20px; /* Ana panelden içeri girintili */
+}
+
+.indented-text {
+    text-indent: 2em;
+}
+
+.chamois {
+    color: #d2b48c;
+}
