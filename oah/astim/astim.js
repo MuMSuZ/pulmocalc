@@ -1,3 +1,4 @@
+    // Normal Panel
 var acc = document.getElementsByClassName("accordion");
         var i;
         for (i = 0; i < acc.length; i++) {
@@ -20,6 +21,25 @@ var acc = document.getElementsByClassName("accordion");
             });
         }
 
+            // Ana ve Alt Panel
+            document.addEventListener('DOMContentLoaded', function () {
+                const buttons = document.querySelectorAll('.toggle-button');
+                
+                buttons.forEach(button => {
+                    button.addEventListener('click', function () {
+                        const targetId = this.getAttribute('data-target');
+                        const targetPanel = document.getElementById(targetId);
+            
+                        if (targetPanel.style.display === 'none' || targetPanel.style.display === '') {
+                            targetPanel.style.display = 'block';
+                        } else {
+                            targetPanel.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Açılır Pencere 
         var modal = document.getElementById("myModal");
         var btn = document.getElementById("openModal");
         var span = document.getElementsByClassName("close")[0];
