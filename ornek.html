@@ -341,3 +341,83 @@ window.onload = txtDosyasiniYukle;
 <green>Bu metin yeşil olacak.</green>
 <yellow>Bu metin sarı olacak.</yellow>
 <purple>Bu metin mor olacak.</purple>
+
+
+# Ana ve alt panel oluşumu
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Panel ve Alt Paneller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="panel" id="ana-panel">
+        <h1>Ana Panel</h1>
+        <button class="toggle-button" data-target="alt-panel-1">Alt Panel 1</button>
+        <button class="toggle-button" data-target="alt-panel-2">Alt Panel 2</button>
+        <button class="toggle-button" data-target="alt-panel-3">Alt Panel 3</button>
+
+        <div class="alt-panel" id="alt-panel-1">
+            <h2>Alt Panel 1</h2>
+            <p>Bu Alt Panel 1'in içeriğidir.</p>
+        </div>
+        <div class="alt-panel" id="alt-panel-2">
+            <h2>Alt Panel 2</h2>
+            <p>Bu Alt Panel 2'nin içeriğidir.</p>
+        </div>
+        <div class="alt-panel" id="alt-panel-3">
+            <h2>Alt Panel 3</h2>
+            <p>Bu Alt Panel 3'ün içeriğidir.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+.panel {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+
+.alt-panel {
+    display: none; /* Varsayılan olarak gizlenir */
+    padding: 10px;
+    border: 1px solid #aaa;
+    margin-top: 10px;
+}
+
+.toggle-button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.toggle-button');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function () {
+            const targetId = this.getAttribute('data-target');
+            const targetPanel = document.getElementById(targetId);
+
+            if (targetPanel.style.display === 'none' || targetPanel.style.display === '') {
+                targetPanel.style.display = 'block';
+            } else {
+                targetPanel.style.display = 'none';
+            }
+        });
+    });
+});
