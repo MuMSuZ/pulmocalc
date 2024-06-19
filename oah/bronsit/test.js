@@ -6,6 +6,7 @@ function togglePanel(panelId) {
         panel.style.display = 'block';
     }
 }
+            
 
 window.onload = function() {
     // Tüm panellerin gizli olmasını sağla
@@ -14,3 +15,4 @@ window.onload = function() {
         panel.style.display = 'none';
     });
 };
+

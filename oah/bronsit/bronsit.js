@@ -1,24 +1,32 @@
     // akordiyon 
-document.addEventListener('DOMContentLoaded', function() {
-    const acc = document.getElementsByClassName('accordion');
-    
-    for (let i = 0; i < acc.length; i++) {
-        acc[i].addEventListener('click', function() {
-            this.classList.toggle('active');
-            const panel = this.nextElementSibling;
-            if (panel.style.display === 'block') {
-                panel.style.display = 'none';
-            } else {
-                panel.style.display = 'block';
-            }
-        });
+    function togglePanel(panelId) {
+        const panel = document.getElementById(panelId);
+        if (panel.style.display === 'block') {
+            panel.style.display = 'none';
+        } else {
+            panel.style.display = 'block';
+        }
     }
-});
+
+    window.onload = function() {
+        // Tüm panellerin gizli olmasını sağla
+        const panels = document.querySelectorAll('.panel, .alt-panel');
+        panels.forEach(panel => {
+            panel.style.display = 'none';
+        });
+    };
+
+    var arrow = this.querySelector(".arrow");
+        if (arrow.style.transform === "rotate(90deg)") {
+            arrow.style.transform = "rotate(0deg)";
+        } else {
+            arrow.style.transform = "rotate(90deg)";
+        }
 
     // .txt dosya tanımlama
     const dosyaListesi = [
         { dosyaYolu: 'koahnedir.txt', hedefId: 'koahnedir' },
-        { dosyaYolu: 'data/dosya2.txt', hedefId: 'metin-alani-2' },
+        { dosyaYolu: 'koahyuku.txt', hedefId: 'koahyuku' },
         { dosyaYolu: 'data/dosya3.txt', hedefId: 'metin-alani-3' }
     ];
     
