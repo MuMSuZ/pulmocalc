@@ -28,7 +28,7 @@
     const dosyaListesi = [
         { dosyaYolu: 'koahnedir.txt', hedefId: 'koahnedir' },
         { dosyaYolu: 'koahyuku.txt', hedefId: 'koahyuku' },
-        { dosyaYolu: 'data/dosya3.txt', hedefId: 'metin-alani-3' }
+        { dosyaYolu: 'patogenez.txt', hedefId: 'patogenez' }
     ];
     
     function txtDosyasiniYukle(dosyaYolu, hedefId) {
