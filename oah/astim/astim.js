@@ -22,22 +22,22 @@ var acc = document.getElementsByClassName("accordion");
         }
 
             // Ana ve Alt Panel
-            document.addEventListener('DOMContentLoaded', function () {
-                const buttons = document.querySelectorAll('.toggle-button');
+    document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.toggle-button');
                 
-                buttons.forEach(button => {
-                    button.addEventListener('click', function () {
-                        const targetId = this.getAttribute('data-target');
-                        const targetPanel = document.getElementById(targetId);
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                const targetId = this.getAttribute('data-target');
+                const targetPanel = document.getElementById(targetId);
             
-                        if (targetPanel.style.display === 'none' || targetPanel.style.display === '') {
-                            targetPanel.style.display = 'block';
-                        } else {
-                            targetPanel.style.display = 'none';
-                        }
-                    });
-                });
+                if (targetPanel.style.display === 'none' || targetPanel.style.display === '') {
+                    targetPanel.style.display = 'block';
+                } else {
+                    targetPanel.style.display = 'none';
+                }
             });
+        });
+    });
 
             // Açılır Pencere 
         var modal = document.getElementById("myModal");
