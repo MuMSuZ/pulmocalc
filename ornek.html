@@ -249,3 +249,95 @@
     </script>
 </body>
 </html>
+
+# txt dosyasının html de tanımlanması
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metin Dosyası Gösterimi</title>
+</head>
+<body>
+    <div id="metin-alani"></div>
+
+    <script>
+        function txtDosyasiniYukle() {
+            fetch('dosya.txt')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('metin-alani').innerText = data;
+                })
+                .catch(error => console.error('Hata:', error));
+        }
+
+        window.onload = txtDosyasiniYukle;
+    </script>
+</body>
+</html>
+
+# metin ayarları
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metin Dosyası Gösterimi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="metin-alani"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.indent { text-indent: 2em; }
+.margin-top { margin-top: 20px; }
+.margin-bottom { margin-bottom: 20px; }
+.color-red { color: red; }
+.color-blue { color: blue; }
+.color-green { color: green; }
+.color-yellow { color: yellow; }
+.color-purple { color: purple; }
+
+
+function txtDosyasiniYukle() {
+    fetch('dosya.txt')  // Farklı dizinde olduğunda fetch('metin/dosya.txt') gibi tanımla
+        .then(response => response.text())
+        .then(data => {
+            const metinAlani = document.getElementById('metin-alani');
+            const lines = data.split('\n');
+            lines.forEach(line => {
+                let formattedLine = line
+                    .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
+                    .replace(/<italic>(.*?)<\/italic>/g, '<span class="italic">$1</span>')
+                    .replace(/<indent>(.*?)<\/indent>/g, '<span class="indent">$1</span>')
+                    .replace(/<margin-top>(.*?)<\/margin-top>/g, '<div class="margin-top">$1</div>')
+                    .replace(/<margin-bottom>(.*?)<\/margin-bottom>/g, '<div class="margin-bottom">$1</div>')
+                    .replace(/<red>(.*?)<\/red>/g, '<span class="color-red">$1</span>')
+                    .replace(/<blue>(.*?)<\/blue>/g, '<span class="color-blue">$1</span>')
+                    .replace(/<green>(.*?)<\/green>/g, '<span class="color-green">$1</span>')
+                    .replace(/<yellow>(.*?)<\/yellow>/g, '<span class="color-yellow">$1</span>')
+                    .replace(/<purple>(.*?)<\/purple>/g, '<span class="color-purple">$1</span>');
+                metinAlani.innerHTML += formattedLine + '<br>';
+            });
+        })
+        .catch(error => console.error('Hata:', error));
+}
+
+window.onload = txtDosyasiniYukle;
+
+<bold>Bu metin kalın olacak.</bold>
+<italic>Bu metin italik olacak.</italic>
+<indent>Bu metin girintili olacak.</indent>
+<margin-top>Bu metin üstten boşluklu olacak.</margin-top>
+<margin-bottom>Bu metin alttan boşluklu olacak.</margin-bottom>
+<red>Bu metin kırmızı olacak.</red>
+<blue>Bu metin mavi olacak.</blue>
+<green>Bu metin yeşil olacak.</green>
+<yellow>Bu metin sarı olacak.</yellow>
+<purple>Bu metin mor olacak.</purple>
