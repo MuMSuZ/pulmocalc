@@ -120,6 +120,12 @@ li a:hover {
 
 /* Bilgi Kısmı*/
 
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.indent { text-indent: 2em; }
+.margin-top { margin-top: 20px; }
+.margin-bottom { margin-bottom: 20px; }
+
 a {
     text-decoration: none;
 }

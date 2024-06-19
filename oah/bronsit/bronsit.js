@@ -35,11 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
                         .replace(/<indent>(.*?)<\/indent>/g, '<span class="indent">$1</span>')
                         .replace(/<margin-top>(.*?)<\/margin-top>/g, '<div class="margin-top">$1</div>')
                         .replace(/<margin-bottom>(.*?)<\/margin-bottom>/g, '<div class="margin-bottom">$1</div>')
-                        .replace(/<red>(.*?)<\/red>/g, '<span class="color-red">$1</span>')
-                        .replace(/<blue>(.*?)<\/blue>/g, '<span class="color-blue">$1</span>')
-                        .replace(/<green>(.*?)<\/green>/g, '<span class="color-green">$1</span>')
-                        .replace(/<yellow>(.*?)<\/yellow>/g, '<span class="color-yellow">$1</span>')
-                        .replace(/<purple>(.*?)<\/purple>/g, '<span class="color-purple">$1</span>');
+                        .replace(/<red>(.*?)<\/red>/g, '<span class="red">$1</span>')
+                        .replace(/<blue>(.*?)<\/blue>/g, '<span class="blue">$1</span>')
+                        .replace(/<green>(.*?)<\/green>/g, '<span class="green">$1</span>')
+                        .replace(/<yellow>(.*?)<\/yellow>/g, '<span class="yellow">$1</span>')
+                        .replace(/<purple>(.*?)<\/purple>/g, '<span class="purple">$1</span>')
+                        .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>');
                     metinAlani.innerHTML += formattedLine + '<br>';
                 });
             })
