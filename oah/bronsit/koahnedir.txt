@@ -1,6 +1,6 @@
 <margin-top><bold><chamois>Tanım</chamois></bold></margin-top>
 
-<indent>Kronik</indent> Obstrüktif Akciğer Hastalığı (KOAH), hava yolları (bronşit, bronşiyolit) ve/veya alveollerdeki (amfizem) anormalliklere bağlı olarak kronik solunum semptomları (nefes darlığı, öksürük, balgam üretimi ve/veya alevlenmeler) ile karakterize edilen heterojen bir akciğer hastalığıdır. Bu durum kalıcı, genellikle ilerleyici hava akımı obstrüksiyonuna neden olur.
+<indent>Kronik Obstrüktif Akciğer Hastalığı (KOAH), hava yolları (bronşit, bronşiyolit) ve/veya alveollerdeki (amfizem) anormalliklere bağlı olarak kronik solunum semptomları (nefes darlığı, öksürük, balgam üretimi ve/veya alevlenmeler) ile karakterize edilen heterojen bir akciğer hastalığıdır. Bu durum kalıcı, genellikle ilerleyici hava akımı obstrüksiyonuna neden olur.</indent>
 
 <bold><chamois>Nedenler ve Risk Faktörleri</chamois></bold>
 
