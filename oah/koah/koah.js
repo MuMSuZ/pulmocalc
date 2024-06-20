@@ -1,21 +1,60 @@
-var acc = document.getElementsByClassName("accordion");
-        var i;
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
+      // akordiyon 
+      document.addEventListener('DOMContentLoaded', function() {
+        const acc = document.getElementsByClassName('accordion');
+        
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if (panel.style.display === 'block') {
+                    panel.style.display = 'none';
                 } else {
-                    panel.style.display = "block";
+                    panel.style.display = 'block';
                 }
-                
-                var arrow = this.querySelector(".arrow");
-                if (arrow.style.transform === "rotate(90deg)") {
-                    arrow.style.transform = "rotate(0deg)";
-                } else {
-                    arrow.style.transform = "rotate(90deg)";
-                }
-            
             });
         }
+    });
+
+    
+
+    // .txt dosya tanımlama
+    const dosyaListesi = [
+        { dosyaYolu: 'metin/koahnedir.txt', hedefId: 'koahnedir' },
+        { dosyaYolu: 'metin/koahyuku.txt', hedefId: 'koahyuku' },
+        { dosyaYolu: 'metin/patogenez.txt', hedefId: 'patogenez' }
+    ];
+    
+    function txtDosyasiniYukle(dosyaYolu, hedefId) {
+        fetch(dosyaYolu)
+            .then(response => response.text())
+            .then(data => {
+                const metinAlani = document.getElementById(hedefId);
+                const lines = data.split('\n');
+                lines.forEach(line => {
+                    let formattedLine = line
+                        .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
+                        .replace(/<italic>(.*?)<\/italic>/g, '<span class="italic">$1</span>')
+                        .replace(/<indent>(.*?)<\/indent>/g, '<span class="indent">$1</span>')
+                        .replace(/<margin-top>(.*?)<\/margin-top>/g, '<div class="margin-top">$1</div>')
+                        .replace(/<margin-bottom>(.*?)<\/margin-bottom>/g, '<div class="margin-bottom">$1</div>')
+                        .replace(/<red>(.*?)<\/red>/g, '<span class="red">$1</span>')
+                        .replace(/<blue>(.*?)<\/blue>/g, '<span class="blue">$1</span>')
+                        .replace(/<green>(.*?)<\/green>/g, '<span class="green">$1</span>')
+                        .replace(/<yellow>(.*?)<\/yellow>/g, '<span class="yellow">$1</span>')
+                        .replace(/<purple>(.*?)<\/purple>/g, '<span class="purple">$1</span>')
+                        .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>')
+                        .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>');
+                    metinAlani.innerHTML += formattedLine + '<br>';
+                });
+            })
+            .catch(error => console.error('Hata:', error));
+    }
+    
+    function tumDosyalariYukle() {
+        dosyaListesi.forEach(dosya => {
+            txtDosyasiniYukle(dosya.dosyaYolu, dosya.hedefId);
+        });
+    }
+    
+    window.onload = tumDosyalariYukle;
+    
