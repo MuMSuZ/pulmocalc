@@ -212,3 +212,14 @@ a {
 .chamois { color: #F7AE62; }
 .coralblue { color: #5277f1; }
 .redorange { color: #FF3F34; }
+
+/* Metin Özellikleri */
+
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.indent {
+    display: block; 
+    text-indent: 2em; 
+}
+.margin-top { margin-top: 20px; }
+.margin-bottom { margin-bottom: 20px; }
