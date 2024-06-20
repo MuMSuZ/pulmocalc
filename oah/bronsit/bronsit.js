@@ -1,33 +1,19 @@
       // akordiyon 
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-      for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              var panel = this.nextElementSibling;
-              if (panel.style.display === "block") {
-                  panel.style.display = "none";
-              } else {
-                  panel.style.display = "block";
-              }
-              
-              var arrow = this.querySelector(".arrow");
-              if (arrow.style.transform === "rotate(90deg)") {
-                  arrow.style.transform = "rotate(0deg)";
-              } else {
-                  arrow.style.transform = "rotate(90deg)";
-              }
-          
-          });
-      }
-
-    window.onload = function() {
-        // Tüm panellerin gizli olmasını sağla
-        const panels = document.querySelectorAll('.panel, .alt-panel');
-        panels.forEach(panel => {
-            panel.style.display = 'none';
-        });
-    };
+      document.addEventListener('DOMContentLoaded', function() {
+        const acc = document.getElementsByClassName('accordion');
+        
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if (panel.style.display === 'block') {
+                    panel.style.display = 'none';
+                } else {
+                    panel.style.display = 'block';
+                }
+            });
+        }
+    });
 
     
 
