@@ -43,7 +43,8 @@
                         .replace(/<yellow>(.*?)<\/yellow>/g, '<span class="yellow">$1</span>')
                         .replace(/<purple>(.*?)<\/purple>/g, '<span class="purple">$1</span>')
                         .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>')
-                        .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>');
+                        .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>')
+                        .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>');
                     metinAlani.innerHTML += formattedLine + '<br>';
                 });
             })
