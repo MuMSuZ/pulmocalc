@@ -140,6 +140,7 @@ a {
 }
 
 .indented-bolum {
+    display: block;
     text-indent: 40px;
 }
 

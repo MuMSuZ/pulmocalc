@@ -35,6 +35,7 @@
                         .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
                         .replace(/<italic>(.*?)<\/italic>/g, '<span class="italic">$1</span>')
                         .replace(/<indent>(.*?)<\/indent>/g, '<span class="indent">$1</span>')
+                        .replace(/<intended-bolum>(.*?)<\/indented-bolum>/g, '<span class="indented-bolum">$1</span>')
                         .replace(/<margin-top>(.*?)<\/margin-top>/g, '<div class="margin-top">$1</div>')
                         .replace(/<margin-bottom>(.*?)<\/margin-bottom>/g, '<div class="margin-bottom">$1</div>')
                         .replace(/<red>(.*?)<\/red>/g, '<span class="red">$1</span>')
