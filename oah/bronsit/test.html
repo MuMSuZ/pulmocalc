@@ -55,13 +55,13 @@
 
     <script>
         // .txt dosyasını okuma
-        fetch('test.txt')
+        fetch('metin/test.txt')
             .then(response => response.text())
             .then(data => {
                 // Değiştirmek istediğiniz kelimeleri ve ilgili resimleri burada belirtiyorsunuz
                 const wordImageMap = {
-                    "Şekil": "sekil.png",
-                    "armut": "sekil11.png",
+                    "Şekil": "resim/sekil11.png",
+                    "armut": "resim/sekil11.png",
                     "muz": "muz.jpeg"
                 };
                 
@@ -83,7 +83,7 @@
                     link.addEventListener('click', function(event) {
                         event.preventDefault();
                         const word = event.target.getAttribute('data-word');
-                        document.getElementById('modalText').innerText = `${word} kelimesine tıkladınız.`;
+                        document.getElementById('modalText').innerText = `${word} Şekil 1.1`;
                         document.getElementById('modalImage').src = wordImageMap[word];
                         document.getElementById('myModal').style.display = 'block';
                     });
