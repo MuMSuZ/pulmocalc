@@ -80,7 +80,7 @@
                 // Her kelimeyi <a> etiketi ile değiştir
                 let updatedData = data;
                 Object.keys(wordInfoMap).forEach(word => {
-                    const regex = new RegExp(`\\b${word}\\b`, 'g');
+                    const regex = new RegExp(`\\b${word}\\b`, 'gu');
                     updatedData = updatedData.replace(regex, linkTemplate(word));
                 });
 
