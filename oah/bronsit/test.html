@@ -48,15 +48,8 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p id="modalarmut"></p>
-            <img id="modalImage" id="modalarmut" src="" alt="" style="max-width: 100%; height: auto;">
-        </div>
-    </div>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p id="modalmuz"></p>
-            <img id="modalImage" id="modalmuz" src="" alt="" style="max-width: 100%; height: auto;">
+            <p id="modalText"></p>
+            <img id="modalImage" src="" alt="" style="max-width: 100%; height: auto;">
         </div>
     </div>
 
@@ -65,11 +58,20 @@
         fetch('metin/test.txt')
             .then(response => response.text())
             .then(data => {
-                // Değiştirmek istediğiniz kelimeleri ve ilgili resimleri burada belirtiyorsunuz
-                const wordImageMap = {
-                    "Sekil": "resim/sekil11.png",
-                    "armut": "resim/sekil11.png",
-                    "muz": "muz.jpeg"
+                // Değiştirmek istediğiniz kelimeleri ve ilgili metin ve resimleri burada belirtiyorsunuz
+                const wordInfoMap = {
+                    "Sekil": {
+                        text: "Şekil 1.1",
+                        image: "resim/sekil11.png"
+                    },
+                    "armut": {
+                        text: "Armut yumuşak ve tatlı bir meyvedir.",
+                        image: "resim/sekil11.png"
+                    },
+                    "muz": {
+                        text: "Muz enerji verici ve besleyicidir.",
+                        image: "muz.jpeg"
+                    }
                 };
                 
                 // Link şablonu, kelimeye tıklandığında modal açmak için
@@ -77,7 +79,7 @@
 
                 // Her kelimeyi <a> etiketi ile değiştir
                 let updatedData = data;
-                Object.keys(wordImageMap).forEach(word => {
+                Object.keys(wordInfoMap).forEach(word => {
                     const regex = new RegExp(`\\b${word}\\b`, 'g');
                     updatedData = updatedData.replace(regex, linkTemplate(word));
                 });
@@ -90,9 +92,9 @@
                     link.addEventListener('click', function(event) {
                         event.preventDefault();
                         const word = event.target.getAttribute('data-word');
-                        document.getElementById('modalarmut').innerText = `Şekil 1.1`;
-                        document.getElementById('modalmuz').innerHTML = 'muz burada yenir';
-                        document.getElementById('modalImage').src = wordImageMap[word];
+                        const info = wordInfoMap[word];
+                        document.getElementById('modalText').innerText = info.text;
+                        document.getElementById('modalImage').src = info.image;
                         document.getElementById('myModal').style.display = 'block';
                     });
                 });
