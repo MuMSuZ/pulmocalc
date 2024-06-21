@@ -82,3 +82,19 @@
                 modal.style.display = "none";
             }
         }
+
+    // .txt dosyasını okuma
+    fetch('metin/patogenez.txt')
+    .then(response => response.text())
+    .then(data => {
+        // Burada .txt dosyasındaki veriyi alıyoruz
+        const wordToFind = "Şekil 1.1"; // Değiştirmek istediğiniz kelime
+        const newLink = `<a href="#" id="openModal" class="bilgi-link">${wordToFind}</a>`;
+
+        // Kelimeyi <a> etiketiyle değiştiriyoruz
+        const updatedData = data.replace(wordToFind, newLink);
+
+        // Sonucu HTML'e ekliyoruz
+        document.getElementById('content').innerHTML = updatedData;
+    })
+    .catch(error => console.error('Error:', error));
