@@ -25,6 +25,7 @@
             padding: 20px;
             border: 1px solid #888;
             width: 80%;
+            text-align: center;
         }
         .close {
             color: #aaa;
@@ -48,23 +49,28 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <p id="modalText"></p>
+            <img id="modalImage" src="" alt="" style="max-width: 100%; height: auto;">
         </div>
     </div>
 
     <script>
         // .txt dosyasını okuma
-        fetch('test.txt')
+        fetch('dosya.txt')
             .then(response => response.text())
             .then(data => {
-                // Değiştirmek istediğiniz kelimeleri burada belirtiyorsunuz
-                const wordsToFind = ["elma", "armut", "muz"];
+                // Değiştirmek istediğiniz kelimeleri ve ilgili resimleri burada belirtiyorsunuz
+                const wordImageMap = {
+                    "elma": "elma.png",
+                    "armut": "armut.png",
+                    "muz": "muz.jpeg"
+                };
                 
                 // Link şablonu, kelimeye tıklandığında modal açmak için
                 const linkTemplate = word => `<a href="#" class="word-link" data-word="${word}">${word}</a>`;
 
                 // Her kelimeyi <a> etiketi ile değiştir
                 let updatedData = data;
-                wordsToFind.forEach(word => {
+                Object.keys(wordImageMap).forEach(word => {
                     const regex = new RegExp(`\\b${word}\\b`, 'g');
                     updatedData = updatedData.replace(regex, linkTemplate(word));
                 });
@@ -78,6 +84,7 @@
                         event.preventDefault();
                         const word = event.target.getAttribute('data-word');
                         document.getElementById('modalText').innerText = `${word} kelimesine tıkladınız.`;
+                        document.getElementById('modalImage').src = wordImageMap[word];
                         document.getElementById('myModal').style.display = 'block';
                     });
                 });
@@ -96,4 +103,3 @@
     </script>
 </body>
 </html>
-
