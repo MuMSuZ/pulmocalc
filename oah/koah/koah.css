@@ -134,16 +134,6 @@ a {
     text-align: left;
 }
 
-.spaced-text {
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.indented-bolum {
-    display: block;
-    text-indent: 40px;
-}
-
 .space {
     display: block;
     text-align: right;
@@ -217,10 +207,24 @@ a {
 /* Metin Özellikleri */
 
 .bold { font-weight: bold; }
+
 .italic { font-style: italic; }
+
 .indent {
     display: block; 
     text-indent: 2em; 
 }
+
+.spaced-text {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.indented-bolum {
+    display: block;
+    text-indent: 4em;
+}
+
 .margin-top { margin-top: 20px; }
+
 .margin-bottom { margin-bottom: 20px; }
