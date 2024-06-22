@@ -122,3 +122,70 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// BAşka açılır pencere
+
+document.addEventListener('DOMContentLoaded', () => {
+    const wordInfoMap = {
+        "Şekil 1.1": {
+            text: "Şekil 1.1 önemli bir şekildir.",
+            image: "resim/sekil11.png"
+        },
+        "Peto": {
+            text: "Peto modeli nedir"
+        }
+    };
+
+    const filesToFetch = [
+        {id: 'patogenez', file: 'metin/patogenez.txt'}
+    ];
+
+    // Modal açma ve kapama işlemleri
+    const modal = document.getElementById('myModal');
+    const modalText = document.getElementById('modalText');
+    const modalImage = document.getElementById('modalImage');
+    const closeModal = document.querySelector('.close');
+
+    closeModal.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    // Dosyaları yükleme ve işleme
+    Promise.all(filesToFetch.map(fileInfo => fetch(fileInfo.file).then(response => response.text())))
+        .then(filesContents => {
+            filesContents.forEach((content, index) => {
+                const fileInfo = filesToFetch[index];
+                Object.keys(wordInfoMap).forEach(word => {
+                    const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                    const regex = new RegExp(escapedWord, 'gu');
+                    content = content.replace(regex, `<a href="#" class="word-link" data-word="${word}">${word}</a>`);
+                });
+
+                const contentElement = document.getElementById(fileInfo.id);
+                contentElement.innerHTML = `<p>${content}</p>`;
+            });
+
+            document.querySelectorAll('.word-link').forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const word = event.target.getAttribute('data-word');
+                    const info = wordInfoMap[word];
+                    modalText.innerText = info.text;
+                    if (info.image) {
+                        modalImage.src = info.image;
+                        modalImage.style.display = 'block';
+                    } else {
+                        modalImage.style.display = 'none';
+                    }
+                    modal.style.display = 'block';
+                });
+            });
+        })
+        .catch(error => console.error('Error:', error));
+});
