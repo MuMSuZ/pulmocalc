@@ -55,44 +55,16 @@
 
     <script>
         // .txt dosyasını okuma
-        fetch('metin/test.txt', 'metin/konu2.txt', 'metin/konu3.txt')
+        fetch('metin/test.txt')
             .then(response => response.text())
             .then(data => {
                 // Değiştirmek istediğiniz kelimeleri ve ilgili metin ve resimleri burada belirtiyorsunuz
                 const wordInfoMap = {
-                    "elma": {
-                        text: "Elma çok lezzetli ve sağlıklıdır.",
-                        image: "elma.png"
-                    },
-                    "armut": {
-                        text: "Armut yumuşak ve tatlı bir meyvedir.",
-                        image: "armut.png"
-                    },
-                    "muz": {
-                        text: "Muz enerji verici ve besleyicidir.",
-                        image: "muz.jpeg"
-                    },
-                    "çilek": {
-                        text: "Çilek kırmızı ve tatlı bir meyvedir.",
-                        image: "çilek.png"
-                    },
-                    "üzüm": {
-                        text: "Üzüm taze ve sulu bir meyvedir.",
-                        image: "uzum.png"
-                    },
                     "Şekil 1.1": {
                         text: "Şekil 1.1 önemli bir şekildir.",
                         image: "resim/sekil11.png"
-                    },
-                    "Şekil 1.2": {
-                        text: "Şekil 1.2",
-                        image: "resim/sekil11.png" 
-                    },
-                    "Şekil 1.3": {
-                        text: "Şekil 1.3",
-                        image: "resim/sekil11.png"
-                    }
-                };
+                    };
+                }
                 
                 // Link şablonu, kelimeye tıklandığında modal açmak için
                 const linkTemplate = word => `<a href="#" class="word-link" data-word="${word}">${word}</a>`;
