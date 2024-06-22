@@ -55,7 +55,7 @@
 
     <script>
         // .txt dosyasını okuma
-        fetch('metin/test.txt')
+        fetch('metin/test.txt', 'metin/konu2.txt', 'metin/konu3.txt')
             .then(response => response.text())
             .then(data => {
                 // Değiştirmek istediğiniz kelimeleri ve ilgili metin ve resimleri burada belirtiyorsunuz
@@ -82,6 +82,14 @@
                     },
                     "Şekil 1.1": {
                         text: "Şekil 1.1 önemli bir şekildir.",
+                        image: "resim/sekil11.png"
+                    },
+                    "Şekil 1.2": {
+                        text: "Şekil 1.2",
+                        image: "resim/sekil11.png" 
+                    },
+                    "Şekil 1.3": {
+                        text: "Şekil 1.3",
                         image: "resim/sekil11.png"
                     }
                 };
