@@ -70,3 +70,55 @@ window.onclick = function(event) {
         document.getElementById('myModal').style.display = 'none';
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const wordInfoMap = {
+        "Şekil 1.1": {
+            text: "Şekil 1.1 önemli bir şekildir.",
+            image: "sekil1.1.png"
+        },
+        "Peto": {
+            text: "Peto modeli nedir"
+        }
+    };
+
+    // Modal açma ve kapama işlemleri
+    const modal = document.getElementById('myModal');
+    const modalText = document.getElementById('modalText');
+    const modalImage = document.getElementById('modalImage');
+    const closeModal = document.querySelector('.close');
+
+    closeModal.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    // Kelimeleri işaretleme ve modal açma işlemi
+    const contentElement = document.getElementById('content');
+    let contentHTML = contentElement.innerHTML;
+
+    Object.keys(wordInfoMap).forEach(word => {
+        const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(escapedWord, 'gu');
+        contentHTML = contentHTML.replace(regex, `<a href="#" class="word-link" data-word="${word}">${word}</a>`);
+    });
+
+    contentElement.innerHTML = contentHTML;
+
+    document.querySelectorAll('.word-link').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const word = event.target.getAttribute('data-word');
+            const info = wordInfoMap[word];
+            modalText.innerText = info.text;
+            modalImage.src = info.image;
+            modal.style.display = 'block';
+        });
+    });
+});

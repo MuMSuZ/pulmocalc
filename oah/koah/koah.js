@@ -72,6 +72,12 @@
             }
         };
     
+        const filesToFetch = [
+            'metin/koahnedir.txt',
+            'metin/koahyuku.txt',
+            'metin/patogenez.txt'
+        ];
+    
         // Modal açma ve kapama işlemleri
         const modal = document.getElementById('myModal');
         const modalText = document.getElementById('modalText');
@@ -88,27 +94,39 @@
             }
         }
     
-        // Kelimeleri işaretleme ve modal açma işlemi
-        const contentElement = document.getElementById('content');
-        let contentHTML = contentElement.innerHTML;
+        Promise.all(filesToFetch.map(file => fetch(file).then(response => response.text())))
+            .then(filesContents => {
+                let updatedData = '';
+                filesContents.forEach((content, index) => {
+                    const fileName = filesToFetch[index].split('/').pop();
+                    Object.keys(wordInfoMap).forEach(word => {
+                        const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                        const regex = new RegExp(escapedWord, 'gu');
+                        content = content.replace(regex, `<a href="#" class="word-link" data-word="${word}">${word}</a>`);
+                    });
+                    updatedData += `<h2>${fileName}</h2><p>${content}</p>`;
+                });
     
-        Object.keys(wordInfoMap).forEach(word => {
-            const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            const regex = new RegExp(escapedWord, 'gu');
-            contentHTML = contentHTML.replace(regex, `<a href="#" class="word-link" data-word="${word}">${word}</a>`);
-        });
+                const contentElement = document.getElementById('content');
+                contentElement.innerHTML = updatedData;
     
-        contentElement.innerHTML = contentHTML;
-    
-        document.querySelectorAll('.word-link').forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                const word = event.target.getAttribute('data-word');
-                const info = wordInfoMap[word];
-                modalText.innerText = info.text;
-                modalImage.src = info.image;
-                modal.style.display = 'block';
-            });
-        });
+                document.querySelectorAll('.word-link').forEach(link => {
+                    link.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        const word = event.target.getAttribute('data-word');
+                        const info = wordInfoMap[word];
+                        modalText.innerText = info.text;
+                        if (info.image) {
+                            modalImage.src = info.image;
+                            modalImage.style.display = 'block';
+                        } else {
+                            modalImage.style.display = 'none';
+                        }
+                        modal.style.display = 'block';
+                    });
+                });
+            })
+            .catch(error => console.error('Error:', error));
     });
+    
     
