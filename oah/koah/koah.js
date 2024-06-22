@@ -28,6 +28,14 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => {
                 const metinAlani = document.getElementById(hedefId);
                 const lines = data.split('\n');
+
+                    // Etiketlenecek kelimeleri ve ilgili etiketleri tanımla
+                const keywordTags = {
+                    'Şekil': '<a href="https://www.openai.com">Şekil</a>',
+                    'Peto': '<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>',
+                    'Python': '<a href="https://www.python.org">Python</a>',
+                    // Diğer kelimeleri buraya ekleyebilirsiniz
+                };
                 lines.forEach(line => {
                     let formattedLine = line
                         .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
@@ -43,9 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         .replace(/<purple>(.*?)<\/purple>/g, '<span class="purple">$1</span>')
                         .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>')
                         .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>')
-                        .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>')
-                        .replace(/\bŞekil\b/g, '<a href="mumsuz.github.oi/pulmocalc">Şekil 1.1</a>')
-                        .replace(/\bPeto\b/g, '<a href="mumsuz.github.oi/pulmocalc">Peto</a>');
+                        .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>');
                     metinAlani.innerHTML += formattedLine + '<br>';
                 });
             })
