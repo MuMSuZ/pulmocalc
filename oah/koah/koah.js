@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>')
                         .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>')
                         .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>')
-                        .replace(/\bŞekil\b/g, '<a href="mumsuz.github.oi/pulmocalc">Şekil 1.1</a>');
+                        .replace(/\bŞekil\b/g, '<a href="mumsuz.github.oi/pulmocalc">Şekil 1.1</a>')
+                        .replace(/\bPeto\b/g, '<a href="mumsuz.github.oi/pulmocalc">Peto</a>');
                     metinAlani.innerHTML += formattedLine + '<br>';
                 });
             })
