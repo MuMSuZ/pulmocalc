@@ -73,9 +73,7 @@
         };
     
         const filesToFetch = [
-            'metin/koahnedir.txt',
-            'metin/koahyuku.txt',
-            'metin/patogenez.txt'
+            {id='patogenez', file: 'metin/koahnedir.txt'}
         ];
     
         // Modal açma ve kapama işlemleri
