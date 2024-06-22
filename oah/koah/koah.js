@@ -52,7 +52,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>')
                         .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>')
                         .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>');
-                    metinAlani.innerHTML += formattedLine + '<br>';
+                    
+                        // Her anahtar kelime için metni kontrol et ve etiketi ekle
+                    for (let [keyword, tag] of Object.entries(keywordTags)) {
+                        let regex = new RegExp(`\\b${keyword}\\b`, 'g');
+                        formattedLine = formattedLine.replace(regex, tag);
+                    }
+
+                        metinAlani.innerHTML += formattedLine + '<br>';
                 });
             })
             .catch(error => console.error('Hata:', error));
