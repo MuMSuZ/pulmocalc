@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         }
-    });
 
     // .txt dosya tanımlama
     const dosyaListesi = [
