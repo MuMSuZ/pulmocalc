@@ -93,7 +93,7 @@
                 let updatedData = data;
                 Object.keys(wordInfoMap).forEach(word => {
                     const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // Özel karakterleri kaçırma
-                    const regex = new RegExp(`\\b${escapedWord}\\b`, 'gu');
+                    const regex = new RegExp(`${escapedWord}`, 'gu');
                     updatedData = updatedData.replace(regex, linkTemplate(word));
                 });
 
