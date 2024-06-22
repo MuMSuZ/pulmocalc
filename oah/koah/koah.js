@@ -66,6 +66,9 @@
             "Şekil 1.1": {
                 text: "Şekil 1.1 önemli bir şekildir.",
                 image: "sekil1.1.png"
+            },
+            "Peto": {
+                text: "Peto modeli nedir"
             }
         };
     
