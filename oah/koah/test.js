@@ -1,3 +1,20 @@
+// akordiyon 
+document.addEventListener('DOMContentLoaded', function() {
+    const acc = document.getElementsByClassName('accordion');
+    
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener('click', function() {
+            this.classList.toggle('active');
+            const panel = this.nextElementSibling;
+            if (panel.style.display === 'block') {
+                panel.style.display = 'none';
+            } else {
+                panel.style.display = 'block';
+            }
+        });
+    }
+});
+
 // .txt dosya tanımlama
 const dosyaListesi = [
     { dosyaYolu: 'metin/koahnedir.txt', hedefId: 'koahnedir' },
@@ -72,19 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.style.display = 'none';
         }
     }
-
-    // Akordeon işlevselliği
-    document.querySelectorAll('.accordion').forEach(accordion => {
-        accordion.addEventListener('click', function() {
-            this.classList.toggle('active');
-            const panel = this.nextElementSibling;
-            if (panel.style.display === 'block') {
-                panel.style.display = 'none';
-            } else {
-                panel.style.display = 'block';
-            }
-        });
-    });
 
     // Dosyaları yükleme ve işleme
     Promise.all(filesToFetch.map(fileInfo => fetch(fileInfo.file).then(response => response.text())))
