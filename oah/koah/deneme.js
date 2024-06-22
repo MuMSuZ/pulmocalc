@@ -56,7 +56,7 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
                     .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>');
                 
                     // Her anahtar kelime için metni kontrol et ve etiket ekle
-                for (let [keyword, description] of Object.entries(keywordDescriptions)) {
+                for (let [keyword, data] of Object.entries(keywordData)) {
                     let regex = new RegExp(`${keyword}`, 'gu');
                     formattedLine = formattedLine.replace(regex, `<a href="#" class="keyword" data-description="${description}" data-image="${data.image}">${keyword}</a>`);
                 }
