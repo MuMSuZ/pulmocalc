@@ -1,6 +1,6 @@
-      // akordiyon 
-    document.addEventListener('DOMContentLoaded', function() {
-        const acc = document.getElementsByClassName('accordion');
+document.addEventListener('DOMContentLoaded', function() {
+        // akordiyon
+    const acc = document.getElementsByClassName('accordion');
         
         for (let i = 0; i < acc.length; i++) {
             acc[i].addEventListener('click', function() {
@@ -14,8 +14,6 @@
             });
         }
     });
-
-    
 
     // .txt dosya tanımlama
     const dosyaListesi = [
