@@ -244,8 +244,11 @@ a {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+/* Saydam modal içeriği  (background-color: rgba(255, 255, 255, 0.8)) */
+
 .modal-content {
-    background-color: rgba(255, 255, 255, 0.8); /* Saydam modal içeriği */
+    background-color: #fefefe; 
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
