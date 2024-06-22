@@ -30,7 +30,7 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
             const lines = data.split('\n');
 
                 // Anahtar kelimeler ve ilgili açıklamalar
-            const keywordDescriptions = {
+            const keywordData = {
                 'Şekil 1.1': {
                     description: 'Şekil 1.1',
                     image: 'resim/sekil11.png'
