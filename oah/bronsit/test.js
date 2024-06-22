@@ -85,9 +85,9 @@ if (event.target == document.getElementById('myModal')) {
 
 // .txt dosya tanımlama
 const dosyaListesi = [
-    { dosyaYolu: 'koahnedir.txt', hedefId: 'koahnedir' },
-    { dosyaYolu: 'koahyuku.txt', hedefId: 'koahyuku' },
-    { dosyaYolu: 'patogenez.txt', hedefId: 'patogenez' }
+    { dosyaYolu: 'konu.txt', hedefId: 'konu' },
+    { dosyaYolu: 'konu2.txt', hedefId: 'konu2' },
+    { dosyaYolu: 'konu3.txt', hedefId: 'konu3' }
 ];
 
 function txtDosyasiniYukle(dosyaYolu, hedefId) {
