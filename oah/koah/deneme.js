@@ -54,7 +54,7 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
                 
                     // Her anahtar kelime için metni kontrol et ve etiket ekle
                 for (let [keyword, description] of Object.entries(keywordDescriptions)) {
-                    let regex = new RegExp(`\\b${keyword}\\b`, 'g');
+                    let regex = new RegExp(`${keyword}`, 'gu');
                     formattedLine = formattedLine.replace(regex, `<a href="#" class="keyword" data-description="${description}">${keyword}</a>`);
                 }
 
