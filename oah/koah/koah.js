@@ -1,5 +1,5 @@
       // akordiyon 
-      document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
         const acc = document.getElementsByClassName('accordion');
         
         for (let i = 0; i < acc.length; i++) {
