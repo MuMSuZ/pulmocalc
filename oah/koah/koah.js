@@ -62,7 +62,7 @@
     
 
     // .txt dosyasını okuma
-    fetch('metin/test.txt')
+    fetch('metin/patogenez.txt')
     .then(response => response.text())
     .then(data => {
         // Değiştirmek istediğiniz kelimeleri ve ilgili metin ve resimleri burada belirtiyorsunuz
