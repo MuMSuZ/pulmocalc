@@ -4,42 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Read and Embed .txt File</title>
-    <style>
-        /* Modal stil tanımları */
-        .modal {
-            display: none; 
-            position: fixed; 
-            z-index: 1; 
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0,0.4);
-            padding-top: 60px;
-        }
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            text-align: center;
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
     <div id="content"></div>
@@ -50,6 +14,17 @@
             <span class="close">&times;</span>
             <p id="modalText"></p>
             <img id="modalImage" src="" alt="" style="max-width: 100%; height: auto;">
+        </div>
+    </div>
+    <div class="container mt-5">
+        <button class="accordion baslik">Tanım ve Genel Bakış<span class="arrow">❯</span></button>
+        <div class="panel">
+            <button class="accordion alt-baslik">KOAH Nedir ?<span class="arrow">❯</span></button>
+            <div class="alt-panel" id="konu"></div>
+            <button class="accordion alt-baslik">KOAH Yükü<span class="arrow">❯</span></button>
+            <div class="alt-panel" id="konu2"></div>
+            <button class="accordion alt-baslik">Patogenez<span class="arrow">❯</span></button>
+            <div class="alt-panel" id="konu3"></div>
         </div>
     </div>
 
