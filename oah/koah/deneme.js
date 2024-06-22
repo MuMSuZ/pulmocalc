@@ -31,8 +31,16 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
 
                 // Anahtar kelimeler ve ilgili açıklamalar
             const keywordDescriptions = {
-                'Şekil 1.1': 'OpenAI, yapay zeka araştırma ve dağıtım şirketidir.',
-                'Peto': 'JavaScript, web geliştirmede kullanılan bir programlama dilidir.',
+                'Şekil 1.1': {
+                    description: 'Şekil 1.1',
+                    image: 'resim/sekil11.png'
+                },
+                'Fletcher': {
+                    description: 'ne olduğunu yaz'
+                },
+                'Peto': {
+                    description: 'ne olduğunu yaz'
+                }
                 // Diğer kelimeler ve açıklamaları buraya ekleyebilirsiniz
             };
             lines.forEach(line => {
@@ -55,7 +63,7 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
                     // Her anahtar kelime için metni kontrol et ve etiket ekle
                 for (let [keyword, description] of Object.entries(keywordDescriptions)) {
                     let regex = new RegExp(`${keyword}`, 'gu');
-                    formattedLine = formattedLine.replace(regex, `<a href="#" class="keyword" data-description="${description}">${keyword}</a>`);
+                    formattedLine = formattedLine.replace(regex, `<a href="#" class="keyword" data-description="${description}" data-image="${data.image}">${keyword}</a>`);
                 }
 
                     metinAlani.innerHTML += formattedLine + '<br>';
@@ -66,7 +74,9 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
                 element.addEventListener('click', function(event) {
                     event.preventDefault();
                     const description = this.getAttribute('data-description');
+                    const image = this.getAttribute('data-image');
                     document.getElementById('modal-text').textContent = description;
+                    document.getElementById('modal-image').src = image;
                     document.getElementById('myModal').style.display = "block";
                 });
             });
