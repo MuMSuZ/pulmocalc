@@ -55,5 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
             txtDosyasiniYukle(dosya.dosyaYolu, dosya.hedefId);
         });
     }
+});
     
     window.onload = tumDosyalariYukle;
