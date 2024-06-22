@@ -61,40 +61,52 @@
     window.onload = tumDosyalariYukle;
     
 
-    // Açılır Pencere Modülü
-
-    var modal = document.getElementById("myModal");
-        var btns = document.getElementsByClassName("openModal");
-        var span = document.getElementsByClassName("close")[0];
-
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].onclick = function() {
-                modal.style.display = "block";
-            }
-        }
-
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
     // .txt dosyasını okuma
-    fetch('metin/patogenez.txt')
+    fetch('metin/test.txt')
     .then(response => response.text())
     .then(data => {
-        // Burada .txt dosyasındaki veriyi alıyoruz
-        const wordToFind = "Şekil 1.1"; // Değiştirmek istediğiniz kelime
-        const newLink = `<a href="#" id="openModal" class="bilgi-link">${wordToFind}</a>`;
+        // Değiştirmek istediğiniz kelimeleri ve ilgili metin ve resimleri burada belirtiyorsunuz
+        const wordInfoMap = {
+            "Şekil 1.1": {
+                text: "Şekil 1.1",
+                image: "resim/sekil11.png"
+            }
+        };
+        
+        // Link şablonu, kelimeye tıklandığında modal açmak için
+        const linkTemplate = word => `<a href="#" class="word-link" data-word="${word}">${word}</a>`;
 
-        // Kelimeyi <a> etiketiyle değiştiriyoruz
-        const updatedData = data.replace(wordToFind, newLink);
+        // Her kelimeyi <a> etiketi ile değiştir
+        let updatedData = data;
+        Object.keys(wordInfoMap).forEach(word => {
+            const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // Özel karakterleri kaçırma
+            const regex = new RegExp(`${escapedWord}`, 'gu');
+            updatedData = updatedData.replace(regex, linkTemplate(word));
+        });
 
-        // Sonucu HTML'e ekliyoruz
+        // Sonucu HTML'e ekle
         document.getElementById('content').innerHTML = updatedData;
+
+        // Tüm kelime bağlantılarına event listener ekle
+        document.querySelectorAll('.word-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const word = event.target.getAttribute('data-word');
+                const info = wordInfoMap[word];
+                document.getElementById('modalText').innerText = info.text;
+                document.getElementById('modalImage').src = info.image;
+                document.getElementById('myModal').style.display = 'block';
+            });
+        });
     })
     .catch(error => console.error('Error:', error));
+
+// Modal kapatma işlemleri
+document.querySelector('.close').onclick = function() {
+    document.getElementById('myModal').style.display = 'none';
+}
+window.onclick = function(event) {
+    if (event.target == document.getElementById('myModal')) {
+        document.getElementById('myModal').style.display = 'none';
+    }
+}
