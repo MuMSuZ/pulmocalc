@@ -55,22 +55,34 @@
 
     <script>
         // .txt dosyasını okuma
-        fetch('metin/test.txt')
+        fetch('dosya.txt')
             .then(response => response.text())
             .then(data => {
                 // Değiştirmek istediğiniz kelimeleri ve ilgili metin ve resimleri burada belirtiyorsunuz
                 const wordInfoMap = {
-                    "Şekil": {
-                        text: "Şekil 1.1",
-                        image: "resim/sekil11.png"
+                    "elma": {
+                        text: "Elma çok lezzetli ve sağlıklıdır.",
+                        image: "elma.png"
                     },
                     "armut": {
                         text: "Armut yumuşak ve tatlı bir meyvedir.",
-                        image: "resim/sekil11.png"
+                        image: "armut.png"
                     },
                     "muz": {
                         text: "Muz enerji verici ve besleyicidir.",
                         image: "muz.jpeg"
+                    },
+                    "çilek": {
+                        text: "Çilek kırmızı ve tatlı bir meyvedir.",
+                        image: "çilek.png"
+                    },
+                    "üzüm": {
+                        text: "Üzüm taze ve sulu bir meyvedir.",
+                        image: "uzum.png"
+                    },
+                    "Şekil 1.1": {
+                        text: "Şekil 1.1 önemli bir şekildir.",
+                        image: "sekil1.1.png"
                     }
                 };
                 
@@ -80,7 +92,8 @@
                 // Her kelimeyi <a> etiketi ile değiştir
                 let updatedData = data;
                 Object.keys(wordInfoMap).forEach(word => {
-                    const regex = new RegExp(`\\b${word}\\b`, 'gu');
+                    const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // Özel karakterleri kaçırma
+                    const regex = new RegExp(`\\b${escapedWord}\\b`, 'gu');
                     updatedData = updatedData.replace(regex, linkTemplate(word));
                 });
 
