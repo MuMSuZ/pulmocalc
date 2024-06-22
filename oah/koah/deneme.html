@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOAH</title>
+    <link rel="stylesheet" href="koah.css">
+</head>
+<body>
+    <a href="https://mumsuz.github.io/pulmocalc/oah/oah.html" class="back-button">Geri</a>
+    <header>
+        <div class="container">
+            <h1>Skorlar, İndeksler ve Anketler</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <p>Kronik Obstrüktif Akciğer Hastalığı (KOAH)... <a href="#detayli-bilgi" class="space bilgi-link">ˬˬ Ayrıntılı Bilgi ˬˬ</a></p>
+        </div>
+        <div class="container mt-5">
+            <ul>
+                <li><a href="https://mumsuz.github.io/pulmocalc/oah/koah/hesap/mmrc/mmrc.html">mMRC Dispne Ölçeği</a></li>
+                <li><a href="https://scorecat-dd8aae00b869.herokuapp.com/">CAT Skoru</a></li>
+                <li><a href="https://mumsuz.github.io/pulmocalc/oah/koah/hesap/gold/gold.html">GOLD Kriterleri</a></li>
+                <li><a href="https://scorebode-ef1b6c798dfb.herokuapp.com/">BODE İndeksi</a></li>             
+                <li><a href="https://scoredose-7417f6b7ca98.herokuapp.com/">DOSE İndeksi</a></li>
+            </ul>
+        </div>
+        <div id="detayli-bilgi" class="detay">
+            <div class="container mt-5">
+                <button class="accordion baslik">Tanım ve Genel Bakış<span class="arrow">❯</span></button>
+                <div class="panel">
+                    <button class="accordion alt-baslik">KOAH Nedir ?<span class="arrow">❯</span></button>
+                    <div class="alt-panel" id="koahnedir"></div>
+                    <button class="accordion alt-baslik">KOAH Yükü<span class="arrow">❯</span></button>
+                    <div class="alt-panel" id="koahyuku"></div>
+                    <button class="accordion alt-baslik">Patogenez<span class="arrow">❯</span></button>
+                    <div class="alt-panel" id="patogenez"></div>
+                </div>
+                <button class="accordion baslik">Tanı ve Değerlendirme<span class="arrow">❯</span></button>
+                <div class="panel">
+                    <button class="accordion alt-baslik"><span class="arrow">❯</span></button>
+                    <div class="alt-panel" id=""></div>
+                </div>
+                <button class="accordion baslik">Önleme ve Yönetim<span class="arrow">❯</span></button>
+                <div class="panel">
+                    <button class="accordion alt-baslik"><span class="arrow">❯</span></button>
+                    <div class="alt-panel" id=""></div>
+                </div>
+                <button class="accordion baslik">Alevlenmelerin Yönetimi<span class="arrow">❯</span></button>
+                <div class="alt-panel">
+                    <button class="accordion alt-baslik"><span class="arrow">❯</span></button>
+                    <div class="alt-panel" id=""></div>
+                </div>
+                <button class="accordion baslik">KOAH ve Komorbiditeler<span class="arrow">❯</span></button>
+                <div class="panel">
+                    <button class="accordion alt-baslik"><span class="arrow">❯</span></button>
+                    <div class="alt-panel" id=""></div>
+                </div>
+                <button class="accordion baslik">COVID-19 ve KOAH<span class="arrow">❯</span></button>
+                <div class="panel">
+                    <button class="accordion alt-baslik"><span class="arrow">❯</span></button>
+                    <div class="alt-panel" id=""></div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <p>Kaynak: <a href="https://goldcopd.org/2024-gold-report/" class="bilgi-link">GOLD</a></p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Designed by MuMSuZ</p>
+    </footer>
+
+    <!-- Modal HTML -->
+    <div id="dynamicModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="modalClose">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <script src="koah.js"></script>
+</body>
+</html>
