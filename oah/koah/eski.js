@@ -189,3 +189,5 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Error:', error));
 });
+
+.replace(/\bŞekil\b/g, '<a href="mumsuz.github.oi/pulmocalc">Şekil 1.1</a>'); // Örnek bağlantı;
