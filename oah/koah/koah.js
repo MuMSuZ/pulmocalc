@@ -28,14 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => {
                 const metinAlani = document.getElementById(hedefId);
                 const lines = data.split('\n');
-
-                    // Etiketlenecek kelimeleri ve ilgili etiketleri tanımla
-                const keywordTags = {
-                    'Şekil': '<a href="https://www.openai.com">Şekil</a>',
-                    'Peto': '<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>',
-                    'Python': '<a href="https://www.python.org">Python</a>',
-                    // Diğer kelimeleri buraya ekleyebilirsiniz
-                };
                 lines.forEach(line => {
                     let formattedLine = line
                         .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
@@ -52,14 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>')
                         .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>')
                         .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>');
-                    
-                        // Her anahtar kelime için metni kontrol et ve etiketi ekle
-                    for (let [keyword, tag] of Object.entries(keywordTags)) {
-                        let regex = new RegExp(`\\b${keyword}\\b`, 'g');
-                        formattedLine = formattedLine.replace(regex, tag);
-                    }
-
-                        metinAlani.innerHTML += formattedLine + '<br>';
+                    metinAlani.innerHTML += formattedLine + '<br>';
                 });
             })
             .catch(error => console.error('Hata:', error));
