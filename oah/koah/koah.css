@@ -39,7 +39,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 header .container {
@@ -249,7 +249,7 @@ a {
 
 .modal-content {
     background-color: #fefefe; 
-    margin: 5% auto;
+    margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
