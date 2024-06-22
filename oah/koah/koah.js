@@ -61,52 +61,51 @@
     window.onload = tumDosyalariYukle;
     
 
-    // .txt dosyasını okuma
-    fetch('metin/patogenez.txt')
-    .then(response => response.text())
-    .then(data => {
-        // Değiştirmek istediğiniz kelimeleri ve ilgili metin ve resimleri burada belirtiyorsunuz
+    document.addEventListener('DOMContentLoaded', () => {
         const wordInfoMap = {
             "Şekil 1.1": {
-                text: "Şekil 1.1",
-                image: "resim/sekil11.png"
+                text: "Şekil 1.1 önemli bir şekildir.",
+                image: "sekil1.1.png"
             }
         };
-        
-        // Link şablonu, kelimeye tıklandığında modal açmak için
-        const linkTemplate = word => `<a href="#" class="word-link" data-word="${word}">${word}</a>`;
-
-        // Her kelimeyi <a> etiketi ile değiştir
-        let updatedData = data;
+    
+        // Modal açma ve kapama işlemleri
+        const modal = document.getElementById('myModal');
+        const modalText = document.getElementById('modalText');
+        const modalImage = document.getElementById('modalImage');
+        const closeModal = document.querySelector('.close');
+    
+        closeModal.onclick = function() {
+            modal.style.display = 'none';
+        }
+    
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    
+        // Kelimeleri işaretleme ve modal açma işlemi
+        const contentElement = document.getElementById('content');
+        let contentHTML = contentElement.innerHTML;
+    
         Object.keys(wordInfoMap).forEach(word => {
-            const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // Özel karakterleri kaçırma
-            const regex = new RegExp(`${escapedWord}`, 'gu');
-            updatedData = updatedData.replace(regex, linkTemplate(word));
+            const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const regex = new RegExp(escapedWord, 'gu');
+            contentHTML = contentHTML.replace(regex, `<a href="#" class="word-link" data-word="${word}">${word}</a>`);
         });
-
-        // Sonucu HTML'e ekle
-        document.getElementById('content').innerHTML = updatedData;
-
-        // Tüm kelime bağlantılarına event listener ekle
+    
+        contentElement.innerHTML = contentHTML;
+    
         document.querySelectorAll('.word-link').forEach(link => {
             link.addEventListener('click', function(event) {
                 event.preventDefault();
                 const word = event.target.getAttribute('data-word');
                 const info = wordInfoMap[word];
-                document.getElementById('modalText').innerText = info.text;
-                document.getElementById('modalImage').src = info.image;
-                document.getElementById('myModal').style.display = 'block';
+                modalText.innerText = info.text;
+                modalImage.src = info.image;
+                modal.style.display = 'block';
             });
         });
-    })
-    .catch(error => console.error('Error:', error));
-
-// Modal kapatma işlemleri
-document.querySelector('.close').onclick = function() {
-    document.getElementById('myModal').style.display = 'none';
-}
-window.onclick = function(event) {
-    if (event.target == document.getElementById('myModal')) {
-        document.getElementById('myModal').style.display = 'none';
-    }
-}
+    });
+    
