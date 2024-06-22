@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         }
+});
 
     // .txt dosya tanımlama
     const dosyaListesi = [
@@ -55,6 +56,5 @@ document.addEventListener('DOMContentLoaded', function() {
             txtDosyasiniYukle(dosya.dosyaYolu, dosya.hedefId);
         });
     }
-});
     
     window.onload = tumDosyalariYukle;
