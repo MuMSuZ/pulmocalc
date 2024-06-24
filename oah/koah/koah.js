@@ -29,6 +29,17 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
             const metinAlani = document.getElementById(hedefId);
             const lines = data.split('\n');
 
+// Anahtar kelimeler için açıklama dosyalarını yükle
+async function yukleKeywordData() {
+    for (let keyword in keywordData) {
+        if (keywordData[keyword].descriptionFile) {
+            const response = await fetch(keywordData[keyword].descriptionFile);
+            const data = await response.text();
+            keywordData[keyword].description = data;
+        }
+    }
+}
+
                 // Anahtar kelimeler ve ilgili açıklamalar
             const keywordData = {
                 'Şekil 1.1': {
@@ -42,7 +53,7 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
                     description: 'ne olduğunu yaz'
                 },
                 'şüphe indeksinin': {
-                    description: '<p style="text-indent: 20px;"><strong>Şüphe indeksi</strong>, bir hastalık veya durumun teşhis edilme olasılığını değerlendirmek için kullanılan bir kavramdır. Klinik pratikte, belirli bir hastalığın varlığını veya yokluğunu düşündüren belirtiler, bulgular veya risk faktörlerine dayanarak bir hastalık için duyulan klinik şüphe derecesini ifade eder. Yüksek şüphe indeksi, bir hastalığın olasılığının yüksek olduğunu düşündüren durumlar için kullanılır ve genellikle daha ileri testler veya daha yakın takip gerektirir.</p><p style="text-indent: 20px;">*Mukus hipersekresyonu için yüksek bir şüphe indeksinin korunması, KOAH gibi hastalıklarda mukus üretiminin arttığını ve bu durumun potansiyel komplikasyonlara yol açabileceğini sürekli olarak göz önünde bulundurmak anlamına gelir. Bu durum, klinisyenlerin mukus hipersekresyonunu tanımak ve yönetmek için daha dikkatli olmalarını gerektirir.</p> *Dikkatli İzlem: Hastaların solunum yollarında artmış mukus üretimi belirtileri gösterip göstermediğini yakından izlemek. Bu, sık sık öksürük, balgam çıkarma ve nefes darlığı gibi belirtileri değerlendirmek anlamına gelir. *Erken Teşhis: Mukus hipersekresyonunu erken aşamalarda tanımak için gerekli tanısal testleri yapmak. Bu, hastalığın ilerlemesini önleyebilir ve uygun tedaviye erken başlanmasını sağlar. *Önleyici Tedbirler: Mukus hipersekresyonunu azaltmaya yönelik önleyici tedbirler almak. Bu, inhaler tedaviler, mukolitik ilaçlar veya diğer tedavi yöntemlerini içerebilir. *Komplikasyonların Yönetimi: Mukus hipersekresyonunun neden olabileceği komplikasyonları yönetmek. Bunlar arasında hava yolu tıkanıklıkları, enfeksiyonlar ve alevlenmeler yer alabilir. *Kapsamlı Değerlendirme: Hastaların genel durumunu değerlendirerek, mukus hipersekresyonunun varlığını düşündüren tüm faktörleri dikkate almak. Bu, detaylı bir tıbbi öykü, fizik muayene ve gerektiğinde radyolojik ve laboratuvar testlerini içerir. *Özetle, mukus hipersekresyonu için yüksek bir şüphe indeksinin korunması, bu durumun hastalarda oluşturabileceği olumsuz etkilerin erken dönemde tanınması ve uygun şekilde yönetilmesi için sürekli bir farkındalık ve dikkat gerektirir. Bu, hastaların yaşam kalitesini artırabilir ve hastalıkla ilişkili komplikasyonları azaltabilir.'
+                    description: 'metin/supheindeksi.txt'
                 }
                 // Diğer kelimeler ve açıklamaları buraya ekleyebilirsiniz
             };
@@ -73,13 +84,10 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
                     event.preventDefault();
                     const description = this.getAttribute('data-description');
                     const image = this.getAttribute('data-image');
-                    document.getElementById('modal-text').innerHTML = description; // innerHTML kullanarak biçimlendirmeleri uygular
-                    if (image) {
-                        document.getElementById('modal-image').src = image;
-                        document.getElementById('modal-image').style.display = 'block';
-                    } else {
-                        document.getElementById('modal-image').style.display = 'none';
-                    }
+                    document.getElementById('myModal').style.display = "block";
+                    document.getElementById('modal-text').textContent = description;
+                    document.getElementById('modal-image').src = image;
+                    document.getElementById('myModal').style.display = "block";
                 });
             });
 
@@ -109,7 +117,4 @@ window.onload = tumDosyalariYukle;
 
  //document.getElementById('modal-text').innerHTML = description; // innerHTML kullanarak biçimlendirmeleri uygular
 
- // document.getElementById('myModal').style.display = "block";
- // document.getElementById('modal-text').textContent = description;
- // document.getElementById('modal-image').src = image;
- // document.getElementById('myModal').style.display = "block";
+ // 
