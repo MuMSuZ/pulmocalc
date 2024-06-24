@@ -29,16 +29,6 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
             const metinAlani = document.getElementById(hedefId);
             const lines = data.split('\n');
 
-// Anahtar kelimeler için açıklama dosyalarını yükle
-async function yukleKeywordData() {
-    for (let keyword in keywordData) {
-        if (keywordData[keyword].descriptionFile) {
-            const response = await fetch(keywordData[keyword].descriptionFile);
-            const data = await response.text();
-            keywordData[keyword].description = data;
-        }
-    }
-}
 
                 // Anahtar kelimeler ve ilgili açıklamalar
             const keywordData = {
@@ -57,6 +47,18 @@ async function yukleKeywordData() {
                 }
                 // Diğer kelimeler ve açıklamaları buraya ekleyebilirsiniz
             };
+
+            // Anahtar kelimeler için açıklama dosyalarını yükle
+            async function yukleKeywordData() {
+                for (let keyword in keywordData) {
+                    if (keywordData[keyword].descriptionFile) {
+                        const response = await fetch(keywordData[keyword].descriptionFile);
+                        const data = await response.text();
+                        keywordData[keyword].description = data;
+                    }
+                }
+            }
+            
             lines.forEach(line => {
                 let formattedLine = line
                     .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
