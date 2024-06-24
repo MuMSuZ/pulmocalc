@@ -20,7 +20,7 @@ const dosyaListesi = [
     { dosyaYolu: 'metin/koahnedir.txt', hedefId: 'koahnedir' },
     { dosyaYolu: 'metin/koahyuku.txt', hedefId: 'koahyuku' },
     { dosyaYolu: 'metin/patogenez.txt', hedefId: 'patogenez' },
-    {dosyaYolu: 'metin/supheindeksi.txt', description: 'supheindeksi'}
+    { dosyaYolu: 'metin/supheindeksi.txt', description: 'supheindeksi'}
 ];
 
 function txtDosyasiniYukle(dosyaYolu, hedefId) {
@@ -87,12 +87,18 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
                     event.preventDefault();
                     const description = this.getAttribute('data-description');
                     const image = this.getAttribute('data-image');
-                    document.getElementById('myModal').style.display = "block";
-                    document.getElementById('modal-text').textContent = description;
-                    document.getElementById('modal-image').src = image;
+                    document.getElementById('modal-text').innerHTML = description; // innerHTML kullanarak biçimlendirmeleri uygular
+                    if (image) {
+                        document.getElementById('modal-image').src = image;
+                        document.getElementById('modal-image').style.display = 'block';
+                    } else {
+                        document.getElementById('modal-image').style.display = 'none';
+                    }
                     document.getElementById('myModal').style.display = "block";
                 });
             });
+
+            
 
             // Modal kapatma düğmesi
             document.querySelector('.close').addEventListener('click', function() {
@@ -120,4 +126,15 @@ window.onload = tumDosyalariYukle;
 
  //document.getElementById('modal-text').innerHTML = description; // innerHTML kullanarak biçimlendirmeleri uygular
 
- // 
+ // Tıklama olaylarını ayarla
+ //document.querySelectorAll('.keyword').forEach(element => {
+ //   element.addEventListener('click', function(event) {
+ //       event.preventDefault();
+ //       const description = this.getAttribute('data-description');
+ //       const image = this.getAttribute('data-image');
+ //       document.getElementById('myModal').style.display = "block";
+ //       document.getElementById('modal-text').textContent = description;
+ //       document.getElementById('modal-image').src = image;
+ //       document.getElementById('myModal').style.display = "block";
+ //   });
+//});
