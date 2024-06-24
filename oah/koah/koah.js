@@ -43,8 +43,7 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
                 'Peto': {
                     description: 'ne olduğunu yaz'
                 },
-                'şüphe indeksinin': {
-                    description: 'şüphe indeksi',
+                'şüphe indeksi': {
                     descriptionFile: 'metin/supheindeksi.txt'
                 }
                 // Diğer kelimeler ve açıklamaları buraya ekleyebilirsiniz
