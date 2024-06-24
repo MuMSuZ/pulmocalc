@@ -44,6 +44,7 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
                     description: 'ne olduğunu yaz'
                 },
                 'şüphe indeksinin': {
+                    description: 'şüphe indeksi',
                     descriptionFile: 'metin/supheindeksi.txt'
                 }
                 // Diğer kelimeler ve açıklamaları buraya ekleyebilirsiniz
