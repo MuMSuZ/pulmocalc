@@ -40,6 +40,9 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
                 },
                 'Peto': {
                     description: 'ne olduğunu yaz'
+                },
+                'şüphe indeksinin': {
+                    description: '<span style="text-indent: 20px; display: block;"><strong>Şüphe indeksi</strong>, bir hastalık veya durumun teşhis edilme olasılığını değerlendirmek için kullanılan bir kavramdır. Klinik pratikte, belirli bir hastalığın varlığını veya yokluğunu düşündüren belirtiler, bulgular veya risk faktörlerine dayanarak bir hastalık için duyulan klinik şüphe derecesini ifade eder. Yüksek şüphe indeksi, bir hastalığın olasılığının yüksek olduğunu düşündüren durumlar için kullanılır ve genellikle daha ileri testler veya daha yakın takip gerektirir.</span><br><span style="text-indent: 20px; display: block;">Mukus hipersekresyonu için yüksek bir şüphe indeksinin korunması, KOAH gibi hastalıklarda mukus üretiminin arttığını ve bu durumun potansiyel komplikasyonlara yol açabileceğini sürekli olarak göz önünde bulundurmak anlamına gelir. Bu durum, klinisyenlerin mukus hipersekresyonunu tanımak ve yönetmek için daha dikkatli olmalarını gerektirir.</span><br><span style="text-indent: 20px; display: block;">Dikkatli İzlem: Hastaların solunum yollarında artmış mukus üretimi belirtileri gösterip göstermediğini yakından izlemek. Bu, sık sık öksürük, balgam çıkarma ve nefes darlığı gibi belirtileri değerlendirmek anlamına gelir.</span>'
                 }
                 // Diğer kelimeler ve açıklamaları buraya ekleyebilirsiniz
             };
@@ -70,6 +73,7 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
                     event.preventDefault();
                     const description = this.getAttribute('data-description');
                     const image = this.getAttribute('data-image');
+                    document.getElementById('modal-text').innerHTML = description; // innerHTML kullanarak biçimlendirmeleri uygular
                     document.getElementById('modal-text').textContent = description;
                     document.getElementById('modal-image').src = image;
                     document.getElementById('myModal').style.display = "block";
