@@ -19,7 +19,8 @@ const acc = document.getElementsByClassName('accordion');
 const dosyaListesi = [
     { dosyaYolu: 'metin/koahnedir.txt', hedefId: 'koahnedir' },
     { dosyaYolu: 'metin/koahyuku.txt', hedefId: 'koahyuku' },
-    { dosyaYolu: 'metin/patogenez.txt', hedefId: 'patogenez' }
+    { dosyaYolu: 'metin/patogenez.txt', hedefId: 'patogenez' },
+    {dosyaYolu: 'metin/supheindeksi.txt'}
 ];
 
 function txtDosyasiniYukle(dosyaYolu, hedefId) {
@@ -43,7 +44,7 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
                     description: 'ne olduğunu yaz'
                 },
                 'şüphe indeksinin': {
-                    description: 'metin/supheindeksi.txt'
+                    descriptionFile: 'metin/supheindeksi.txt'
                 }
                 // Diğer kelimeler ve açıklamaları buraya ekleyebilirsiniz
             };
@@ -58,7 +59,7 @@ function txtDosyasiniYukle(dosyaYolu, hedefId) {
                     }
                 }
             }
-            
+
             lines.forEach(line => {
                 let formattedLine = line
                     .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
