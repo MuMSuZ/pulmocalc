@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         .replace(/<margin-bottom>(.*?)<\/margin-bottom>/g, '<div class="margin-bottom">$1</div>')
                         .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>')
                         .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>')
-                        .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1/span>');
+                        .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>');
 
                     // Her anahtar kelime için metni kontrol et ve etiket ekle
                     for (let [keyword, data] of Object.entries(keywordData)) {
