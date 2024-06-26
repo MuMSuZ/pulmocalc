@@ -68,6 +68,7 @@
 <indent>Son olarak, muhtemelen hava yolu epitelindeki metilasyon bozulmaları nedeniyle HIV negatif kontrollere kıyasla HIV hastalarında KOAH riski artmaktadır (11 çalışma; 1,14 (%95 CI 1,05,1,25) için birleşik risk oranı). Ayrıca, KOAH' lı hastanede yatan hastalarda IgG alt sınıfı eksikliği gözlemlenmiş ve bu, önemli ölçüde artmış mortalite riski ile ilişkilendirilmiştir.</indent>
 <indent>Bu bulgular, enfeksiyonların KOAH gelişimi ve ilerlemesi üzerindeki etkilerini vurgulamakta ve özellikle çocukluk dönemi enfeksiyonlarının, sigara içiminin ve diğer çevresel faktörlerin akciğer sağlığı üzerindeki uzun vadeli etkilerini anlamanın önemini göstermektedir.</indent>
 
+<bold><chamois></chamois></bold>
 
 
 
