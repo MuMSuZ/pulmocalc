@@ -66,9 +66,23 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             const response = await fetch(dosyaYolu);
             const data = await response.text();
+
             if (modal) {
                 // Modal için olan metinleri keywordData'ya ekle
-                keywordData[dosyaYolu] = { description: data };
+                for (let keyword in keywordData) {
+                    if (keywordData[keyword].descriptionFile === dosyaYolu) {
+                        keywordData[keyword].description = data
+                            .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
+                            .replace(/<italic>(.*?)<\/italic>/g, '<span class="italic">$1</span>')
+                            .replace(/<indent>(.*?)<\/indent>/g, '<span class="indent">$1</span>')
+                            .replace(/<indented-bolum>(.*?)<\/indented-bolum>/g, '<span class="indented-bolum">$1</span>')
+                            .replace(/<margin-top>(.*?)<\/margin-top>/g, '<div class="margin-top">$1</div>')
+                            .replace(/<margin-bottom>(.*?)<\/margin-bottom>/g, '<div class="margin-bottom">$1</div>')
+                            .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>')
+                            .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>')
+                            .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>');
+                    }
+                }
             } else {
                 const metinAlani = document.getElementById(hedefId);
                 const lines = data.split('\n');
