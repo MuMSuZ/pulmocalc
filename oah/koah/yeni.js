@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (keywordData[keyword].descriptionFile) {
                 const response = await fetch(keywordData[keyword].descriptionFile);
                 let data = await response.text();
-                
+
                 // Biçimlendirme işlemleri
                 data = data
                     .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>')
                     .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>')
                     .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>');
-                
+
                 keywordData[keyword].description = data;
             }
         }
@@ -71,16 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Modal için olan metinleri keywordData'ya ekle
                 for (let keyword in keywordData) {
                     if (keywordData[keyword].descriptionFile === dosyaYolu) {
-                        keywordData[keyword].description = data
-                            .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
-                            .replace(/<italic>(.*?)<\/italic>/g, '<span class="italic">$1</span>')
-                            .replace(/<indent>(.*?)<\/indent>/g, '<span class="indent">$1</span>')
-                            .replace(/<indented-bolum>(.*?)<\/indented-bolum>/g, '<span class="indented-bolum">$1</span>')
-                            .replace(/<margin-top>(.*?)<\/margin-top>/g, '<div class="margin-top">$1</div>')
-                            .replace(/<margin-bottom>(.*?)<\/margin-bottom>/g, '<div class="margin-bottom">$1</div>')
-                            .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>')
-                            .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>')
-                            .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>');
+                        keywordData[keyword].description = data;
                     }
                 }
             } else {
@@ -99,8 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         .replace(/<margin-bottom>(.*?)<\/margin-bottom>/g, '<div class="margin-bottom">$1</div>')
                         .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>')
                         .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>')
-                        .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>');
-                    
+                        .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1/span>');
+
                     // Her anahtar kelime için metni kontrol et ve etiket ekle
                     for (let [keyword, data] of Object.entries(keywordData)) {
                         let regex = new RegExp(`${keyword}`, 'gu');
@@ -116,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         event.preventDefault();
                         const description = this.getAttribute('data-description');
                         const image = this.getAttribute('data-image');
-                        document.getElementById('modal-text').innerHTML = descriptionFile; // innerHTML kullanarak biçimlendirmeleri uygular
+                        document.getElementById('modal-text').innerHTML = description; // innerHTML kullanarak biçimlendirmeleri uygular
                         if (image) {
                             document.getElementById('modal-image').src = image;
                             document.getElementById('modal-image').style.display = 'block';
@@ -152,4 +143,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.onload = tumDosyalariYukle;
 });
-
