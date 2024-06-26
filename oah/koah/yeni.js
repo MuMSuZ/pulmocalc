@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const dosyaListesi = [
         { dosyaYolu: 'metin/koahnedir.txt', hedefId: 'koahnedir' },
         { dosyaYolu: 'metin/koahyuku.txt', hedefId: 'koahyuku' },
-        { dosyaYolu: 'metin/patogenez.txt', hedefId: 'patogenez' }
+        { dosyaYolu: 'metin/patogenez.txt', hedefId: 'patogenez' },
+        {dosyaYolu: 'metin/patobiyoloji.txt', hedefId: 'patobiyoloji'}
     ];
 
     function txtDosyasiniYukle(dosyaYolu, hedefId) {
@@ -34,13 +35,15 @@ document.addEventListener('DOMContentLoaded', function() {
                         image: 'resim/sekil11.png'
                     },
                     'Fletcher': {
-                        description: 'ne olduğunu yaz'
+                        description: 'metin/modal/fletcher.txt',
+                        isFile: true
                     },
                     'Peto': {
-                        description: 'ne olduğunu yaz'
+                        description: 'metin/modal/peto.txt',
+                        isFile: true
                     },
-                    'şüphe indeksinin': {
-                        description: 'metin/supheindeksi.txt',
+                    'şüphe indeksi': {
+                        description: 'metin/modal/supheindeksi.txt',
                         isFile: true
                     }
                 };
