@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         event.preventDefault();
                         const description = this.getAttribute('data-description');
                         const image = this.getAttribute('data-image');
-                        document.getElementById('modal-text').innerHTML = description; // innerHTML kullanarak biçimlendirmeleri uygular
+                        document.getElementById('modal-text').innerHTML = descriptionFile; // innerHTML kullanarak biçimlendirmeleri uygular
                         if (image) {
                             document.getElementById('modal-image').src = image;
                             document.getElementById('modal-image').style.display = 'block';
