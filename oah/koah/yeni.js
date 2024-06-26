@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     for (let [keyword, data] of Object.entries(keywordData)) {
                         // Değişiklik yapıldı: Regex tanımı güncellendi
                         let regex = new RegExp(`(${keyword})`, 'g');
-                        formattedLine = formattedLine.replace(regex, `<a href="#" class="keyword" data-description="${data.description}" data-image="${data.image || ''}">${keyword}</a>`);
+                        formattedLine = formattedLine.replace(regex, `<a href="#" class="keyword" data-description="${data.description}" data-image="${data.image}">${keyword}</a>`);
                     }
 
                     // Değişiklik yapıldı: Burada `<br>` etiketi ile satır sonu ekliyoruz
@@ -145,3 +145,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.onload = tumDosyalariYukle;
 });
+
+//  || ''
