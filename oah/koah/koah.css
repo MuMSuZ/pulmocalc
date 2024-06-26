@@ -39,7 +39,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
     margin: 20px auto;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 header .container {
@@ -253,7 +253,7 @@ a {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    text-align: center;
+    text-align: left;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
