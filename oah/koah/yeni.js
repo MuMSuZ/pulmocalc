@@ -70,28 +70,28 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
         // Modal Anahtar kelimeleri için açıklama dosyalarını yükle
-    async function yukleKeywordData() {
-        for (let keyword in keywordData) {
-            if (keywordData[keyword].descriptionFile) {
-                const response = await fetch(keywordData[keyword].descriptionFile);
-                let data = await response.text();
+        async function yukleKeywordData() {
+            for (let keyword in keywordData) {
+                if (keywordData[keyword].descriptionFile) {
+                    const response = await fetch(keywordData[keyword].descriptionFile);
+                    let data = await response.text();
                 
                 // Biçimlendirme işlemleri
-                data = data
-                    .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
-                    .replace(/<italic>(.*?)<\/italic>/g, '<span class="italic">$1</span>')
-                    .replace(/<indent>(.*?)<\/indent>/g, '<span class="indent">$1</span>')
-                    .replace(/<indented-bolum>(.*?)<\/indented-bolum>/g, '<span class="indented-bolum">$1</span>')
-                    .replace(/<margin-top>(.*?)<\/margin-top>/g, '<div class="margin-top">$1</div>')
-                    .replace(/<margin-bottom>(.*?)<\/margin-bottom>/g, '<div class="margin-bottom">$1</div>')
-                    .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>')
-                    .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>')
-                    .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>');
+                    data = data
+                        .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
+                        .replace(/<italic>(.*?)<\/italic>/g, '<span class="italic">$1</span>')
+                        .replace(/<indent>(.*?)<\/indent>/g, '<span class="indent">$1</span>')
+                        .replace(/<indented-bolum>(.*?)<\/indented-bolum>/g, '<span class="indented-bolum">$1</span>')
+                        .replace(/<margin-top>(.*?)<\/margin-top>/g, '<div class="margin-top">$1</div>')
+                        .replace(/<margin-bottom>(.*?)<\/margin-bottom>/g, '<div class="margin-bottom">$1</div>')
+                        .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>')
+                        .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>')
+                        .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>');
                 
-                keywordData[keyword].description = data;
+                    keywordData[keyword].description = data;
+                }
             }
-        }
-    }
+        };
 
             // Tıklama olaylarını ayarla
             document.querySelectorAll('.keyword').forEach(element => {
