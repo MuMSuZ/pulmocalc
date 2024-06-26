@@ -7,3 +7,15 @@ Fletcher ve Peto Modeli'nin Temel Özellikleri:
 <indent><bold>Kohort Çalışmaları:</bold> Model, büyük kohort çalışmalarına dayanır. Özellikle Framingham, Kopenhag ve Lovelace gibi longitudinal çalışmalarda, sigara içme alışkanlıkları ve akciğer fonksiyonları arasındaki ilişki incelenmiştir. Bu çalışmalarda, hastaların yaklaşık %50'sinin hızlanan FEV1 düşüşü nedeniyle KOAH geliştirdiği, diğer %50'sinin ise anormal akciğer büyümesi ve gelişimi nedeniyle KOAH geliştirdiği bulunmuştur.</indent>
 <indent><bold>Erken Dönem Risk Faktörleri:</bold> Fletcher ve Peto, çocukluk dönemindeki dezavantajlı faktörlerin yetişkinlikteki akciğer fonksiyonlarının ana belirleyicileri olduğunu vurgular. Düşük doğum ağırlığı gibi faktörler, ileri yaşlardaki akciğer sağlığını etkileyebilir.</indent>
 <indent>Bu model, KOAH'ın patofizyolojisini ve risk faktörlerini anlamada önemli bir araç olmuştur ve bu hastalığın yönetimi ve önlenmesi konusunda temel bilgileri sağlamaktadır.</indent>
+
+Fletcher ve Peto Modeli, Kronik Obstrüktif Akciğer Hastalığı (KOAH) ve kronik bronşit gibi kronik solunum yolu hastalıklarının doğal seyrini açıklayan bir modeldir. Bu model, KOAH'ın gelişimi ve ilerlemesi ile ilişkili akciğer fonksiyonundaki değişiklikleri tanımlar. Model, Dr. Charles Fletcher ve Richard Peto tarafından 1970'lerde yapılan çalışmalara dayanır ve şu temel noktaları içerir:
+
+Akciğer Fonksiyonu Düşüşü: Fletcher ve Peto Modeli, akciğer fonksiyonunun (özellikle FEV1, yani zorlu ekspiratuar hacim) yaşla birlikte doğal olarak azaldığını öne sürer. Ancak, sigara içenlerde bu düşüş hızı, sigara içmeyenlere göre çok daha fazladır.
+
+Sigara İçiminin Etkisi: Model, sigara içmenin akciğer fonksiyonunu hızla düşürdüğünü ve bu durumun KOAH gibi kronik solunum yolu hastalıklarının gelişimine yol açtığını belirtir. Sigara içmeyenler veya sigarayı bırakanlar, akciğer fonksiyonundaki doğal yaşlanma sürecine benzer bir düşüş hızına sahip olabilirler.
+
+Hastalığın İlerlemesi: Model, KOAH'ın progresif bir hastalık olduğunu ve akciğer fonksiyonundaki düşüşün devam ettiğini, bunun da hastaların yaşam kalitesini ve hayatta kalma süresini etkilediğini vurgular. Sigara içmeye devam eden bireylerde, akciğer fonksiyonundaki azalma daha belirgin ve hızlıdır.
+
+Önleme ve Müdahale: Fletcher ve Peto Modeli, sigara bırakmanın KOAH'ın ilerlemesini yavaşlatabileceğini ve akciğer fonksiyonundaki düşüşü azaltabileceğini gösterir. Erken teşhis ve sigara bırakma müdahaleleri, hastalığın ilerlemesini yavaşlatmada kritik öneme sahiptir.
+
+Bu model, KOAH'ın patofizyolojisini ve hastalığın doğal seyrini anlamada önemli bir çerçeve sağlar. KOAH yönetimi ve önleme stratejilerinin geliştirilmesinde temel bir rehber olarak kullanılır.
