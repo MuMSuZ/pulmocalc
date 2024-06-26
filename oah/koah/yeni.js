@@ -34,11 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         description: 'Şekil 1.1',
                         image: 'resim/sekil11.png'
                     },
-                    'Fletcher': {
-                        description: 'metin/modal/fletcher.txt',
-                        isFile: true
-                    },
-                    'Peto': {
+                    'Fletcher ve Peto modeli': {
                         description: 'metin/modal/peto.txt',
                         isFile: true
                     },
