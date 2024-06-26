@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Peto': {
             description: 'ne olduğunu yaz'
         },
-        'şüphe indeksi': {
+        'şüphe indeksinin korunması': {
             descriptionFile: 'metin/supheindeksi.txt'
         }
         // Diğer kelimeler ve açıklamaları buraya ekleyebilirsiniz
