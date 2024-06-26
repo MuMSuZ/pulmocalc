@@ -1,4 +1,5 @@
 <bold><coralblue>Fletcher ve Peto modeli</coralblue></bold>
+
 <indent>KOAH gelişimini ve hastalığın doğal seyrini inceleyen önemli bir modeldir. Bu model, ilk olarak 1977'de yapılan bir çalışmada tanımlanmıştır ve KOAH hastalarında akciğer fonksiyonlarının zaman içindeki azalmasını açıklamaya çalışır.</indent>
 Fletcher ve Peto Modeli'nin Temel Özellikleri:
 <indent><bold>Akciğer Fonksiyonlarındaki Azalma:</bold> Fletcher ve Peto, sigara içen bireylerin akciğer fonksiyonlarında zamanla bir azalma olduğunu gözlemlemişlerdir. Bu azalma, yaşlanma süreciyle birlikte doğal olarak görülse de, sigara içenlerde bu düşüş çok daha hızlı gerçekleşmektedir.</indent>
