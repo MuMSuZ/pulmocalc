@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Peto': {
                         description: 'ne olduğunu yaz'
                     },
-                    'şüphe indeksi': {
+                    'şüphe indeksinin': {
                         description: 'metin/supheindeksi.txt',
                         isFile: true
                     }
