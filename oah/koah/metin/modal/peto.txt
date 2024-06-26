@@ -1,15 +1,9 @@
-Fletcher ve Peto modeli, kronik obstrüktif akciğer hastalığı (KOAH) gelişimini ve hastalığın doğal seyrini inceleyen önemli bir modeldir. Bu model, ilk olarak 1977'de yapılan bir çalışmada tanımlanmıştır ve KOAH hastalarında akciğer fonksiyonlarının zaman içindeki azalmasını açıklamaya çalışır.
-
+<bold><coralblue>Fletcher ve Peto modeli</coralblue></bold>
+<indent>KOAH gelişimini ve hastalığın doğal seyrini inceleyen önemli bir modeldir. Bu model, ilk olarak 1977'de yapılan bir çalışmada tanımlanmıştır ve KOAH hastalarında akciğer fonksiyonlarının zaman içindeki azalmasını açıklamaya çalışır.</indent>
 Fletcher ve Peto Modeli'nin Temel Özellikleri:
-
-Akciğer Fonksiyonlarındaki Azalma: Fletcher ve Peto, sigara içen bireylerin akciğer fonksiyonlarında zamanla bir azalma olduğunu gözlemlemişlerdir. Bu azalma, yaşlanma süreciyle birlikte doğal olarak görülse de, sigara içenlerde bu düşüş çok daha hızlı gerçekleşmektedir.
-
-FEV1 (Zorlu Ekspirasyon Hacmi): Model, özellikle FEV1 değerinin izlenmesini vurgular. FEV1, birinci saniyede zorlu nefes verme hacmidir ve KOAH hastalığının ciddiyetini belirlemek için kullanılır. Fletcher ve Peto, FEV1'in zaman içinde nasıl azaldığını ve bu azalmanın hızlanmasının KOAH gelişimi için kritik bir faktör olduğunu göstermişlerdir.
-
-Sigara İçme ve Hastalık İlişkisi: Sigara içen bireylerde akciğer fonksiyonlarındaki düşüşün daha hızlı olduğu ve KOAH gelişimi riskinin yüksek olduğu belirlenmiştir. Sigara içmeye devam edenlerde FEV1 düşüşü hızlanırken, sigarayı bırakanlarda bu düşüşün yavaşladığı gözlemlenmiştir.
-
-Kohort Çalışmaları: Model, büyük kohort çalışmalarına dayanır. Özellikle Framingham, Kopenhag ve Lovelace gibi longitudinal çalışmalarda, sigara içme alışkanlıkları ve akciğer fonksiyonları arasındaki ilişki incelenmiştir. Bu çalışmalarda, hastaların yaklaşık %50'sinin hızlanan FEV1 düşüşü nedeniyle KOAH geliştirdiği, diğer %50'sinin ise anormal akciğer büyümesi ve gelişimi nedeniyle KOAH geliştirdiği bulunmuştur.
-
-Erken Dönem Risk Faktörleri: Fletcher ve Peto, çocukluk dönemindeki dezavantajlı faktörlerin yetişkinlikteki akciğer fonksiyonlarının ana belirleyicileri olduğunu vurgular. Düşük doğum ağırlığı gibi faktörler, ileri yaşlardaki akciğer sağlığını etkileyebilir.
-
-Bu model, KOAH'ın patofizyolojisini ve risk faktörlerini anlamada önemli bir araç olmuştur ve bu hastalığın yönetimi ve önlenmesi konusunda temel bilgileri sağlamaktadır .
+<indent><bold>Akciğer Fonksiyonlarındaki Azalma:</bold> Fletcher ve Peto, sigara içen bireylerin akciğer fonksiyonlarında zamanla bir azalma olduğunu gözlemlemişlerdir. Bu azalma, yaşlanma süreciyle birlikte doğal olarak görülse de, sigara içenlerde bu düşüş çok daha hızlı gerçekleşmektedir.</indent>
+<indent><bold>FEV1 (Zorlu Ekspirasyon Hacmi):</bold> Model, özellikle FEV1 değerinin izlenmesini vurgular. FEV1, birinci saniyede zorlu nefes verme hacmidir ve KOAH hastalığının ciddiyetini belirlemek için kullanılır. Fletcher ve Peto, FEV1'in zaman içinde nasıl azaldığını ve bu azalmanın hızlanmasının KOAH gelişimi için kritik bir faktör olduğunu göstermişlerdir.</indent>
+<indent><bold>Sigara İçme ve Hastalık İlişkisi:</bold> Sigara içen bireylerde akciğer fonksiyonlarındaki düşüşün daha hızlı olduğu ve KOAH gelişimi riskinin yüksek olduğu belirlenmiştir. Sigara içmeye devam edenlerde FEV1 düşüşü hızlanırken, sigarayı bırakanlarda bu düşüşün yavaşladığı gözlemlenmiştir.</indent>
+<indent><bold>Kohort Çalışmaları:</bold> Model, büyük kohort çalışmalarına dayanır. Özellikle Framingham, Kopenhag ve Lovelace gibi longitudinal çalışmalarda, sigara içme alışkanlıkları ve akciğer fonksiyonları arasındaki ilişki incelenmiştir. Bu çalışmalarda, hastaların yaklaşık %50'sinin hızlanan FEV1 düşüşü nedeniyle KOAH geliştirdiği, diğer %50'sinin ise anormal akciğer büyümesi ve gelişimi nedeniyle KOAH geliştirdiği bulunmuştur.</indent>
+<indent><bold>Erken Dönem Risk Faktörleri:</bold> Fletcher ve Peto, çocukluk dönemindeki dezavantajlı faktörlerin yetişkinlikteki akciğer fonksiyonlarının ana belirleyicileri olduğunu vurgular. Düşük doğum ağırlığı gibi faktörler, ileri yaşlardaki akciğer sağlığını etkileyebilir.</indent>
+<indent>Bu model, KOAH'ın patofizyolojisini ve risk faktörlerini anlamada önemli bir araç olmuştur ve bu hastalığın yönetimi ve önlenmesi konusunda temel bilgileri sağlamaktadır.</indent>
