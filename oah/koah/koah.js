@@ -138,3 +138,20 @@ window.onload = tumDosyalariYukle;
  //       document.getElementById('myModal').style.display = "block";
  //   });
 //});
+
+
+document.querySelectorAll('.keyword').forEach(element => {
+    element.addEventListener('click', function(event) {
+        event.preventDefault();
+        const description = this.getAttribute('data-description');
+        const image = this.getAttribute('data-image');
+        document.getElementById('modal-text').innerHTML = description; // innerHTML kullanarak biçimlendirmeleri uygular
+        if (image) {
+            document.getElementById('modal-image').src = image;
+            document.getElementById('modal-image').style.display = 'block';
+        } else {
+            document.getElementById('modal-image').style.display = 'none';
+        }
+        document.getElementById('myModal').style.display = "block";
+    });
+});
