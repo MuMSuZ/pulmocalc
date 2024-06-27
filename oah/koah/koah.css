@@ -243,6 +243,7 @@ a {
     padding-top: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 /* Saydam modal içeriği  (background-color: rgba(255, 255, 255, 0.8)) */
@@ -259,6 +260,7 @@ a {
     margin: 50px auto;
     max-width: 800px;
     margin-left: 30px;
+    margin-right: 30px;
 }
 .close {
     color: #aaa;
