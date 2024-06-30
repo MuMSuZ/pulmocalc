@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         .replace(/<indent>(.*?)<\/indent>/g, '<span class="indent">$1</span>')
                         .replace(/<indented-bolum>(.*?)<\/indented-bolum>/g, '<span class="indented-bolum">$1</span>')
                         .replace(/<margin-top>(.*?)<\/margin-top>/g, '<div class="margin-top">$1</div>')
-                        .replace(/<margin-bottom>(.*?)<\/margin-bottom>/g, '<div class="margin-bottom">$1</div>')
+                        .replace(/<margin-alt>(.*?)<\/margin-alt>/g, '<div class="margin-alt">$1</div>')
                         .replace(/<chamois>(.*?)<\/chamois>/g, '<span class="chamois">$1</span>')
                         .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>')
                         .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>');
