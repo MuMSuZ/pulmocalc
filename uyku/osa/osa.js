@@ -38,6 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         description: 'Şekil 2',
                         image: 'resim/sekil2.png'
                     },
+                    'Şekil 3': {
+                        description: 'Şekil 3',
+                        image: 'resim/sekil3.png'
+                    },
                     'şüphe indeksi': {
                         description: 'metin/modal/supheindeksi.txt',
                         isFile: true
@@ -80,6 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
                                     let formattedFileData = fileData
                                         .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
                                         .replace(/<italic>(.*?)<\/italic>/g, '<span class="italic">$1</span>')
+                                        .replace(/<sup>(.*?)<\/sup>/g, '<span class="sup">$1</span>')  // üstte rakam
+                                        .replace(/<sub>(.*?)<\/sub>/g, '<span class="sub">$1</span>')   // altta rakam
                                         .replace(/<indent>(.*?)<\/indent>/g, '<span class="indent">$1</span>')
                                         .replace(/<indented-bolum>(.*?)<\/indented-bolum>/g, '<span class="indented-bolum">$1</span>')
                                         .replace(/<margin-top>(.*?)<\/margin-top>/g, '<div class="margin-top">$1</div>')
