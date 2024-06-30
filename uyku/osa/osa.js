@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const metinAlani = document.getElementById(hedefId);
                 const lines = data.split('\n');
 
-                // Anahtar kelimeler ve ilgili açıklamalar
+                // Anahtar kelimeler ve ilgili açıklamalar  
+                // {description: 'metin/modal/numune.txt', isFile: true} ..> modala .txt dosyası yükleme
                 const keywordData = {
                     'Şekil 1': {
                         description: 'Şekil 1',
@@ -42,9 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         description: 'Şekil 3',
                         image: 'resim/sekil3.png'
                     },
-                    'şüphe indeksi': {
-                        description: 'metin/modal/supheindeksi.txt',
-                        isFile: true
+                    'Şekil 4': {
+                        description: 'Şekil 4',
+                        image: 'resim/sekil4.png'
+                    },
+                    'Tablo 1': {
+                        description: 'Tablo 1',
+                        image: 'resim/tablo1.png'
                     }
                 };
 
