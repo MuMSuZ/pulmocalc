@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Anahtar kelimeler ve ilgili açıklamalar
                 const keywordData = {
-                    'Şekil 1.1': {
-                        description: 'Şekil 1.1',
-                        image: 'resim/sekil11.png'
+                    'Şekil 1': {
+                        description: 'Şekil 1',
+                        image: 'resim/sekil1.png'
                     },
-                    'Fletcher ve Peto modeli': {
-                        description: 'metin/modal/peto.txt',
-                        isFile: true
+                    'Şekil 2': {
+                        description: 'Şekil 2',
+                        image: 'resim/sekil2.png'
                     },
                     'şüphe indeksi': {
                         description: 'metin/modal/supheindeksi.txt',
