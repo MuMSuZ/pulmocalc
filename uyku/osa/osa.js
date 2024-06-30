@@ -48,6 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     let formattedLine = line
                         .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
                         .replace(/<italic>(.*?)<\/italic>/g, '<span class="italic">$1</span>')
+                        .replace(/<sup>(.*?)<\/sup>/g, '<span class="sup">$1</span>')
+                        .replace(/<sub>(.*?)<\/sub>/g, '<span class="sub">$1</span>')
                         .replace(/<indent>(.*?)<\/indent>/g, '<span class="indent">$1</span>')
                         .replace(/<indented-bolum>(.*?)<\/indented-bolum>/g, '<span class="indented-bolum">$1</span>')
                         .replace(/<margin-top>(.*?)<\/margin-top>/g, '<div class="margin-top">$1</div>')
