@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // .txt dosya tanımlama
     const dosyaListesi = [
-        { dosyaYolu: 'metin/koahnedir.txt', hedefId: 'koahnedir' },
+        { dosyaYolu: 'metin/tarih.txt', hedefId: 'tarih' },
         { dosyaYolu: 'metin/koahyuku.txt', hedefId: 'koahyuku' },
         { dosyaYolu: 'metin/patogenez.txt', hedefId: 'patogenez' },
         {dosyaYolu: 'metin/patobiyoloji.txt', hedefId: 'patobiyoloji'}
