@@ -231,12 +231,12 @@ a {
 
 .margin-alt { margin-bottom: 10px; }
 /* Üst Simge */
-sup {
+.sup {
     vertical-align: super;
     font-size: smaller;
 }
 /* Alt Simge */
-sub {
+.sub {
     vertical-align: sub;
     font-size: smaller;
 }
