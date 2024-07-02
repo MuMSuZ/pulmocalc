@@ -230,11 +230,13 @@ a {
 .margin-top { margin-top: 20px; }
 
 .margin-alt { margin-bottom: 5px; }
+
 /* Üst Simge */
 .sup {
     vertical-align: super;
     font-size: smaller;
 }
+
 /* Alt Simge */
 .sub {
     vertical-align: sub;
