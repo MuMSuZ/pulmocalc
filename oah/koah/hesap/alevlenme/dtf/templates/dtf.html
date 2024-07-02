@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahmini NIV Süresi</title>
+    <link rel="stylesheet" href="/static/dtf.css">
+</head>
+<body>
+        <header>
+            <div class="container">
+                <h1>Tahmini NIV Süresi</h1>
+            </div>
+        </header>
+        <div class="container mt-5">
+            <form action="/dtf" method="post">
+                <div class="form-group">
+                    <label for="inspiryum">Inspiryum Sonu Diyafram Kalınlığı (mm):</label> 
+                    <input type="text" class="form-control" id="inspiryum" name="inspiryum">
+                </div>
+                <div class="form-group">
+                    <label for="ekspiryum">Ekspiryum Sonu Diyafram Kalınlığı (mm):</label>
+                    <input type="text" class="form-control" id="ekspiryum" name="ekspiryum">
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="btn btn-primary">Hesapla</button>
+                </div>
+            </form>
+            {% if result %}
+            <div class="result mt-4">
+                <h4>Sonuç:</h4>
+              <p>{{ result|safe }}</p>
+            </div>
+            {% endif %}
+         <div class="button-container mt-4">
+            <a href="https://mumsuz.github.io/pulmocalc/koah/koah.html" class="btn btn-secondary">Geri Dön</a> <!-- Geri Dön butonu -->
+        </div>
+        </div>
+    <footer class="footer">
+        <p>&copy; 2024 Designed by MuMSuZ</p>
+    </footer>
+</body>
+</html>
