@@ -43,7 +43,7 @@ footer {
 }
 
 header .container {
-    background-color: #6a0dad;
+    background-color: #326872;
     color: white;
     padding: 20px;
     border-radius: 8px;
@@ -64,12 +64,12 @@ li {
 
 li a {
     text-decoration: none;
-    color: #6a0dad;
+    color: #326872;
     font-weight: bold;
 }
 
 li a:hover {
-    color: #4b0082;
+    color: #326c72;
 }
 
 .btn {
@@ -89,7 +89,7 @@ li a:hover {
 }
 
 .btn-primary {
-    background-color: #6a0dad; /* Mor arka plan */
+    background-color: #326872; /* Mor arka plan */
     color: white; /* Beyaz yazı */
     border: none;
     padding: 10px 20px;
@@ -99,7 +99,7 @@ li a:hover {
 }
 
 .btn-primary:hover {
-    background-color: #4b0082;
+    background-color: #326c72;
 }
 
 .back-button {
@@ -175,7 +175,7 @@ a {
     display: inline-block;
     margin-left: auto;
     transition: transform 0.4s;
-    color: #6a0dad;
+    color: #326872;
     font-weight: bold;
 }
 

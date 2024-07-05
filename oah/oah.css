@@ -33,7 +33,7 @@ header p {
 }
 
 header .container {
-    background-color: #6a0dad;
+    background-color: #326872;
     color: white;
     padding: 20px;
     border-radius: 8px;
@@ -58,12 +58,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #6a0dad;
+    color: #326872;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #4b0082;
+    color: #326c72;
 }
 
 .back-button {
