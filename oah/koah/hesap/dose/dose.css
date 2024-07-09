@@ -248,9 +248,6 @@ a {
 .info-section {
     text-decoration: none;
 }
-.indented-text {
-    margin-left: 20px; /* Sayfanın solundan 20px boşluk bırakır */
-}
 
 .spaced-text {
     margin-top: 40px; /* Üst kısımda 20px boşluk bırakır */
