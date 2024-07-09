@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (doseScore <= 3) {
             comment = 'Düşük alevlenme riski';
         } else {
-            comment = 'Yüksek alevlenme riski';
+            comment = 'Yüksek alevlenme riski (hastane yatışı, solunum yetmezliği ve ölüm riskinin artmasıyla ilişkili) ';
         }
 
         resultContainer.innerHTML = `Sonuç: ${doseScore} <br><br> Yorum: ${comment}`;
