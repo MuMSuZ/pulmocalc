@@ -212,6 +212,11 @@ header .container {
 
 /*Yazı tipi*/
 
+.bilgi-link {
+    font-style: italic;
+    color: #5277f1
+}
+
 .info-section {
     text-decoration: none;
 }
