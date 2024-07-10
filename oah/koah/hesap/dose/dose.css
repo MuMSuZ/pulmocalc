@@ -218,6 +218,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-left: 10px;
+}
+
 .bilgi-link {
     font-style: italic;
     color: #5277f1
