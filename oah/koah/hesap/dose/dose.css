@@ -249,6 +249,18 @@ p {
 
 /*Yazı tipi*/
 
+/* Üst Simge */
+.sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+/* Alt Simge */
+.sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
 .info-section {
     text-decoration: none;
 }
