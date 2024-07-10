@@ -218,17 +218,13 @@ a {
     text-decoration: none;
 }
 
-p {
-    margin-left: 30px;
-}
-
 .bilgi-link {
     font-style: italic;
     color: #5277f1
 }
 
 .indented-text {
-    text-indent: 20px;
+    text-indent: 40px;
     text-align: left;
     margin: 2px;
 }
