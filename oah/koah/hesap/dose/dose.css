@@ -339,3 +339,9 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Renkler */
+
+.chamois { color: #F7AE62; }
+.coralblue { color: #5277f1; }
+.redorange { color: #FF3F34; }
