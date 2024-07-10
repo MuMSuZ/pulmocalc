@@ -131,11 +131,11 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 header .container {
-    background-color: #6a0dad; /* Mor arka plan */
+    background-color: #487D49; /* Mint Green arka plan */
     color: white;
     padding: 20px;
     border-radius: 8px;
