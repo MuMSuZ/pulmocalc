@@ -69,9 +69,6 @@ header .container {
     z-index: 1000;
 }
 
-.back-button:hover {
-    background-color: #f4f4f4;
-}
 
 /*Form-group*/
 
