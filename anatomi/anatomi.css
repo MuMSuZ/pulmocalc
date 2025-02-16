@@ -270,13 +270,15 @@ a {
     margin-top: 50px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 1200px;
+    max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     position: absolute; /* Sayfanın ortasında açılması için */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-height: 90vh; /* Maksimum ekran yüksekliğinin %90’ını kaplasın */
+    overflow-y: auto; /* Taşan içeriği kaydırılabilir hale getir */
 }
 
 
