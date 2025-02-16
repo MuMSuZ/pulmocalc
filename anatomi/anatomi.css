@@ -249,7 +249,7 @@ a {
 
 /* Saydam modal içeriği  (background-color: rgba(255, 255, 255, 0.8)) */
 
-.modal-contentt {
+/* .modal-contentt {
     background-color: #fefefe; 
     margin: 10% auto;
     padding: 20px;
@@ -262,11 +262,12 @@ a {
     max-width: 800px;
     margin-left: 30px;
     margin-right: 30px;
-}
+} */
 
 .modal-content {
     background-color: #fefefe;
     padding: 20px;
+    margin-top: 50px;
     border: 1px solid #888;
     width: 80%;
     max-width: 800px;
