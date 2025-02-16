@@ -117,18 +117,19 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Hata:', error));
     }
 
-    function txtDosyasiniYukle(dosyaYolu, hedefId) {
-        fetch(dosyaYolu)
-            .then(response => response.text())
-            .then(data => {
-                const metinAlani = document.getElementById(hedefId);
+    // Resmi txt dosyasına ekleme. txt dosya yolu [image]resim/costa1.jpg[/image]
+    // function txtDosyasiniYukle(dosyaYolu, hedefId) {
+       // fetch(dosyaYolu)
+         //   .then(response => response.text())
+           // .then(data => {
+             //   const metinAlani = document.getElementById(hedefId);
     
                 // Resim etiketlerini algılamak için düzenleme yap
-                let contentHTML = data.replace(/\[image\](.*?)\[\/image\]/g, '<img src="$1" class="txt-image">');
+               // let contentHTML = data.replace(/\[image\](.*?)\[\/image\]/g, '<img src="$1" class="txt-image">');
     
-                metinAlani.innerHTML = contentHTML;
-            });
-    }    
+                //metinAlani.innerHTML = contentHTML;
+           // });
+    //}    
 
     function tumDosyalariYukle() {
         dosyaListesi.forEach(dosya => {
