@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Anahtar kelimeler ve ilgili açıklamalar
                 const keywordData = {
-                    'Toraksın ön görünümü. Gerçek, yalancı ve yüzer kaburgalar.': {
-                        description: 'Şekil 1',
+                    'Şekil 1': {
+                        description: 'Toraksın ön görünümü. Gerçek, yalancı ve yüzen kaburgalar.',
                         image: 'resim/costa1.jpg'
                     },
                     'Fletcher ve Peto modeli': {
