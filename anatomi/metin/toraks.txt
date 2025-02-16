@@ -3,7 +3,6 @@
 <bold><coralblue>Kaburgalar (Costae)</coralblue></bold>
 
 <indent>Kaburgalar (costae), göğüs kafesini oluşturan temel kemiklerdir ve torakal omurlar, göğüs kemiği (sternum) ve kostal kıkırdaklarla birlikte toraks iskeletini meydana getirirler. İnsan vücudunda 12 çift kaburga bulunur <italic>(Şekil 1)</italic>. Her biri kıvrımlı ve yassı bir kemik yapısına sahiptir. Kaburgaların genel yapısı şu şekilde tanımlanabilir:</indent>
-[image]resim/costa1.jpg[/image]
 <indent><bold>Vertebral uç (caput costae):</bold> Kaburganın omurgaya bağlandığı bölümdür. Omurdaki eklem yüzleriyle (fovea costalis) bağlantı kurar. Baş kısmı, ortada bulunan bir çıkıntı (crista capitis costae) ile iki ayrı eklem yüzüne ayrılmıştır.</indent>
 <indent><bold>Boyun kısmı (collum costae)</bold> Kaburganın başını (caput costae) gövdeye bağlayan dar bölgedir. Üst kenarında belirgin bir çıkıntı olan crista colli costae bulunur.</indent>
 <indent><bold>Tüberkül (tuberculum costae):</bold> Kaburganın arka kısmında, boyundan sonra gelen hafif kabarıklık şeklindeki bölümdür. Üst kaburgalarda daha belirgindir. İç yüzeyinde facies articularis tuberculi costae adlı küçük bir eklem yüzü bulunur ve bu yüz, omurların transvers çıkıntılarıyla eklem yapar.</indent>
@@ -21,9 +20,11 @@ Kaburgalar göğüs kemiğiyle olan bağlantılarına göre üç gruba ayrılır
 <indent>Bu yapı sayesinde göğüs kafesi, hem akciğerleri ve kalbi koruyan sağlam bir iskelet oluşturur hem de nefes alıp verme sırasında esneklik sağlayarak solunuma yardımcı olur.</indent>
 
 <bold><coralblue>Kostal Kıkırdaklar (Cartilago Costales)</coralblue></bold>
+
 <indent>Kostal kıkırdaklar, 1.–10. kaburgalar arasında yer alan ve kaburgaların sternal uçları ile göğüs kemiği (sternum) arasında bağlantıyı sağlayan hiyalin kıkırdak yapılarıdır. 1.–7. kaburgaların kıkırdakları, doğrudan sternuma bağlanarak göğüs kafesine sağlamlık kazandırır.</indent>
 
 <bold><coralblue>Sternum (Göğüs Kemiği)</coralblue></bold>
+
 Sternum, göğüs kafesinin ön kısmında yer alan yassı bir kemiktir ve üç ana bölümden oluşur:
 <indent><bold>Manubrium Sterni (Üst Parça):</bold> Göğüs kemiğinin en üst kısmıdır. Orta kısmında incisura jugularis adı verilen çentik bulunur. Yan taraflarında köprücük kemiği (klavikula) ile eklem yapan incisura clavicularis yer alır. 1. kaburganın kıkırdağı, sternumun bu kısmına bağlanır. 2. kaburganın kıkırdağı, manubrium ile gövde (corpus sterni) arasında eklemleşir. Manubrium ile corpus sterni arasında angulus sterni (Ludovici açısı) adı verilen belirgin bir açı bulunur. Bu açı, T4 seviyesinde yer alır ve 2. kaburganın kıkırdağının hizasını gösteren önemli bir anatomik belirteçtir.</indent>
 <indent><bold>Corpus Sterni (Orta Parça):</bold> Sternumun en uzun bölümüdür ve aşağıya doğru hafif genişler. Yan kısımlarında 3.–7. kaburgaların kıkırdakları için çentikler bulunur.</indent>
