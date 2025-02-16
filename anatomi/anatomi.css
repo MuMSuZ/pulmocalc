@@ -249,7 +249,7 @@ a {
 
 /* Saydam modal içeriği  (background-color: rgba(255, 255, 255, 0.8)) */
 
-.modal-content {
+.modal-contentt {
     background-color: #fefefe; 
     margin: 10% auto;
     padding: 20px;
@@ -263,6 +263,24 @@ a {
     margin-left: 30px;
     margin-right: 30px;
 }
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+    /* Sayfanın ortasında açılması için */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 .close {
     color: #aaa;
     float: right;
