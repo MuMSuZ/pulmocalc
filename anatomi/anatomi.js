@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Anahtar kelimeler ve ilgili açıklamalar
                 const keywordData = {
-                    'Şekil 1': {
+                    'Toraksın ön görünümü. Gerçek, yalancı ve yüzer kaburgalar.': {
                         description: 'Şekil 1',
                         image: 'resim/costa1.jpg'
                     },
