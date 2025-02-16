@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // .txt dosya tanımlama
     const dosyaListesi = [
-        { dosyaYolu: 'metin/toraks.txt', hedefId: 'toraks' },
-        { dosyaYolu: 'metin/koahyuku.txt', hedefId: 'koahyuku' },
-        { dosyaYolu: 'metin/patogenez.txt', hedefId: 'patogenez' },
+        { dosyaYolu: 'metin/kemikler.txt', hedefId: 'kemikler' },
+        { dosyaYolu: 'metin/kaslar.txt', hedefId: 'kaslar' },
+        { dosyaYolu: 'metin/haraket.txt', hedefId: 'haraket' },
         {dosyaYolu: 'metin/patobiyoloji.txt', hedefId: 'patobiyoloji'}
     ];
 
