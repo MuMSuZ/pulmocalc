@@ -31,9 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Anahtar kelimeler ve ilgili açıklamalar
                 const keywordData = {
                     'Şekil 1': {
-                        description: 'Toraksın ön görünümü. Gerçek, yalancı ve yüzen kaburgalar.',
-                        description: 'Üstteki yedi kaburga, kıkırdaklarının doğrudan sternuma bağlı olması nedeniyle "gerçek kaburgalar" olarak adlandırılır. Diğerleri (8. ile 12. kaburgalar) ise, kıkırdaklarının diğer kaburgaların kıkırdakları aracılığıyla sternuma bağlanması nedeniyle "yalancı kaburgalar" olarak bilinir. Son iki kaburga (11. ve 12.) ise sternuma hiç bağlanmadığından "yüzen kaburgalar" adını alır.',
-                        description: 'Diğer sınıflandırmalarda kaburgalar, tipik ve atipik olarak alt gruplara ayrılır. Tipik kaburgalar (3. ila 9. kaburgalar) ortak özellikler taşır ve bu durum, pozisyonlarının belirlenmesini zorlaştırır (örneğin, 6. ve 7. kaburgaların ayırt edilmesi gibi). Buna karşılık, atipik kaburgalar nispeten kolaylıkla tanımlanabilir.',
+                        description: 'Toraksın ön görünümü. Gerçek, yalancı ve yüzen kaburgalar. Üstteki yedi kaburga, kıkırdaklarının doğrudan sternuma bağlı olması nedeniyle "gerçek kaburgalar" olarak adlandırılır. Diğerleri (8. ile 12. kaburgalar) ise, kıkırdaklarının diğer kaburgaların kıkırdakları aracılığıyla sternuma bağlanması nedeniyle "yalancı kaburgalar" olarak bilinir. Son iki kaburga (11. ve 12.) ise sternuma hiç bağlanmadığından "yüzen kaburgalar" adını alır. Diğer sınıflandırmalarda kaburgalar, tipik ve atipik olarak alt gruplara ayrılır. Tipik kaburgalar (3. ila 9. kaburgalar) ortak özellikler taşır ve bu durum, pozisyonlarının belirlenmesini zorlaştırır (örneğin, 6. ve 7. kaburgaların ayırt edilmesi gibi). Buna karşılık, atipik kaburgalar nispeten kolaylıkla tanımlanabilir.',
                         image: 'resim/costa1.jpg'
                     },
                     'Fletcher ve Peto modeli': {
