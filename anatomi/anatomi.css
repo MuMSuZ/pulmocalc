@@ -272,9 +272,7 @@ a {
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    
-    /* Sayfanın ortasında açılması için */
-    position: absolute;
+    position: absolute; /* Sayfanın ortasında açılması için */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
