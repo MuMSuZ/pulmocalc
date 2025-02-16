@@ -213,6 +213,7 @@ a {
 .indent {
     display: block; 
     text-indent: 2em;
+    margin: 0px
 }
 
 .spaced-text {
