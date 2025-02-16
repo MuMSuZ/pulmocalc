@@ -35,14 +35,16 @@ document.addEventListener('DOMContentLoaded', function() {
                         detay: 'Üstteki yedi kaburga, kıkırdaklarının doğrudan sternuma bağlı olması nedeniyle gerçek kaburgalar olarak adlandırılır. Diğerleri (I-XII kaburgalar) ise, kıkırdaklarının diğer kaburgaların kıkırdakları aracılığıyla sternuma bağlanması nedeniyle yalancı kaburgalar olarak bilinir. Son iki kaburga (XI ve XII) ise sternuma hiç bağlanmadığından yüzen kaburgalar adını alır. Diğer sınıflandırmalarda kaburgalar, tipik ve atipik olarak alt gruplara ayrılır. Tipik kaburgalar (III-IX kaburgalar) ortak özellikler taşır ve bu durum, pozisyonlarının belirlenmesini zorlaştırır (örneğin, VI ve VII kaburgaların ayırt edilmesi gibi). Buna karşılık, atipik kaburgalar nispeten kolaylıkla tanımlanabilir.',
                         image: 'resim/costa1.jpg'
                     },
-                    'Fletcher ve Peto modeli': {
+                    'Şekil 2': {
                         description: 'metin/modal/peto.txt',
-                        isFile: true
+                        detay: '',
+                        image: 'resim/costa2.jpg'
                     },
-                    'şüphe indeksi': {
-                        description: 'metin/modal/supheindeksi.txt',
-                        isFile: true
-                    }
+                    'Şekil 3': {
+                        description: 'metin/modal/peto.txt',
+                        detay: '',
+                        image: 'resim/costa3.jpg'
+                    },
                 };
 
                 lines.forEach(line => {
