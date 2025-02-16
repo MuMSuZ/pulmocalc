@@ -31,7 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Anahtar kelimeler ve ilgili açıklamalar
                 const keywordData = {
                     'Şekil 1': {
-                        description: 'Toraksın ön görünümü. Gerçek, yalancı ve yüzen kaburgalar. Üstteki yedi kaburga, kıkırdaklarının doğrudan sternuma bağlı olması nedeniyle "gerçek kaburgalar" olarak adlandırılır. Diğerleri (8. ile 12. kaburgalar) ise, kıkırdaklarının diğer kaburgaların kıkırdakları aracılığıyla sternuma bağlanması nedeniyle "yalancı kaburgalar" olarak bilinir. Son iki kaburga (11. ve 12.) ise sternuma hiç bağlanmadığından "yüzen kaburgalar" adını alır. Diğer sınıflandırmalarda kaburgalar, tipik ve atipik olarak alt gruplara ayrılır. Tipik kaburgalar (3. ila 9. kaburgalar) ortak özellikler taşır ve bu durum, pozisyonlarının belirlenmesini zorlaştırır (örneğin, 6. ve 7. kaburgaların ayırt edilmesi gibi). Buna karşılık, atipik kaburgalar nispeten kolaylıkla tanımlanabilir.',
+                        description: 'Toraksın ön görünümü. Gerçek, yalancı ve yüzen kaburgalar.',
+                        detay: 'Üstteki yedi kaburga, kıkırdaklarının doğrudan sternuma bağlı olması nedeniyle "gerçek kaburgalar" olarak adlandırılır. Diğerleri (8. ile 12. kaburgalar) ise, kıkırdaklarının diğer kaburgaların kıkırdakları aracılığıyla sternuma bağlanması nedeniyle "yalancı kaburgalar" olarak bilinir. Son iki kaburga (11. ve 12.) ise sternuma hiç bağlanmadığından "yüzen kaburgalar" adını alır. Diğer sınıflandırmalarda kaburgalar, tipik ve atipik olarak alt gruplara ayrılır. Tipik kaburgalar (3. ila 9. kaburgalar) ortak özellikler taşır ve bu durum, pozisyonlarının belirlenmesini zorlaştırır (örneğin, 6. ve 7. kaburgaların ayırt edilmesi gibi). Buna karşılık, atipik kaburgalar nispeten kolaylıkla tanımlanabilir.',
                         image: 'resim/costa1.jpg'
                     },
                     'Fletcher ve Peto modeli': {
@@ -59,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     // Her anahtar kelime için metni kontrol et ve etiket ekle
                     for (let [keyword, data] of Object.entries(keywordData)) {
                         let regex = new RegExp(`${keyword}`, 'gu');
-                        formattedLine = formattedLine.replace(regex, `<a href="#" class="keyword" data-description="${data.description}" data-image="${data.image || ''}" data-isFile="${data.isFile || false}">${keyword}</a>`);
+                        formattedLine = formattedLine.replace(regex, `<a href="#" class="keyword" data-description="${data.description}" data-detay="${data.detay}"  data-image="${data.image || ''}" data-isFile="${data.isFile || false}">${keyword}</a>`);
                     }
 
                     metinAlani.innerHTML += formattedLine + '<br>';
@@ -86,14 +87,17 @@ document.addEventListener('DOMContentLoaded', function() {
                                         .replace(/<redorange>(.*?)<\/redorange>/g, '<span class="redorange">$1</span>')
                                         .replace(/<coralblue>(.*?)<\/coralblue>/g, '<span class="coralblue">$1</span>');
                                     document.getElementById('modal-text').innerHTML = formattedFileData;
+                                    document.getElementById('modal-detay').innerHTML = formattedFileData;
                                     document.getElementById('modal-image').src = '';
                                     document.getElementById('myModal').style.display = "block";
                                 })
                                 .catch(error => console.error('Hata:', error));
                         } else {
                             const description = this.getAttribute('data-description');
+                            const detay = this.getAttribute('data-detay');
                             const image = this.getAttribute('data-image');
                             document.getElementById('modal-text').textContent = description;
+                            document.getElementById('modal-detay').textContent = detay;
                             document.getElementById('modal-image').src = image;
                             document.getElementById('myModal').style.display = "block";
                         }
