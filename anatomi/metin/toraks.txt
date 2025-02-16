@@ -2,7 +2,7 @@
 
 <bold><coralblue>Kaburgalar (Costae)</coralblue></bold>
 
-<indent>Kaburgalar (costae), göğüs kafesini oluşturan temel kemiklerdir ve torakal omurlar, göğüs kemiği (sternum) ve kostal kıkırdaklarla birlikte toraks iskeletini meydana getirirler. İnsan vücudunda 12 çift kaburga bulunur. Her biri kıvrımlı ve yassı bir kemik yapısına sahiptir. Kaburgaların genel yapısı şu şekilde tanımlanabilir:</indent>
+<indent>Kaburgalar (costae), göğüs kafesini oluşturan temel kemiklerdir ve torakal omurlar, göğüs kemiği (sternum) ve kostal kıkırdaklarla birlikte toraks iskeletini meydana getirirler. İnsan vücudunda 12 çift kaburga bulunur <italic>(Şekil 1)</italic>. Her biri kıvrımlı ve yassı bir kemik yapısına sahiptir. Kaburgaların genel yapısı şu şekilde tanımlanabilir:</indent>
 <indent><bold>Vertebral uç (caput costae):</bold> Kaburganın omurgaya bağlandığı bölümdür. Omurdaki eklem yüzleriyle (fovea costalis) bağlantı kurar. Baş kısmı, ortada bulunan bir çıkıntı (crista capitis costae) ile iki ayrı eklem yüzüne ayrılmıştır.</indent>
 <indent><bold>Boyun kısmı (collum costae)</bold> Kaburganın başını (caput costae) gövdeye bağlayan dar bölgedir. Üst kenarında belirgin bir çıkıntı olan crista colli costae bulunur.</indent>
 <indent><bold>Tüberkül (tuberculum costae):</bold> Kaburganın arka kısmında, boyundan sonra gelen hafif kabarıklık şeklindeki bölümdür. Üst kaburgalarda daha belirgindir. İç yüzeyinde facies articularis tuberculi costae adlı küçük bir eklem yüzü bulunur ve bu yüz, omurların transvers çıkıntılarıyla eklem yapar.</indent>
