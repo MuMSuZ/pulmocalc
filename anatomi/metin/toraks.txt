@@ -19,3 +19,11 @@ Kaburgalar göğüs kemiğiyle olan bağlantılarına göre üç gruba ayrılır
 <indent><italic>Yüzücü kaburgalar (Costae fluctuantes):</italic> 11. ve 12. kaburgalar, herhangi bir kıkırdak yapıya sahip değildir ve sternuma bağlanmaz. Bu nedenle "serbest kaburgalar" olarak da adlandırılırlar.</indent>
 <indent>Bu yapı sayesinde göğüs kafesi, hem akciğerleri ve kalbi koruyan sağlam bir iskelet oluşturur hem de nefes alıp verme sırasında esneklik sağlayarak solunuma yardımcı olur.</indent>
 
+<bold><coralblue>Kostal Kıkırdaklar (Cartilago Costales)</coralblue></bold>
+<indent>Kostal kıkırdaklar, 1.–10. kaburgalar arasında yer alan ve kaburgaların sternal uçları ile göğüs kemiği (sternum) arasında bağlantıyı sağlayan hiyalin kıkırdak yapılarıdır. 1.–7. kaburgaların kıkırdakları, doğrudan sternuma bağlanarak göğüs kafesine sağlamlık kazandırır.</indent>
+
+<bold><coralblue>Sternum (Göğüs Kemiği)</coralblue></bold>
+Sternum, göğüs kafesinin ön kısmında yer alan yassı bir kemiktir ve üç ana bölümden oluşur:
+<indent><bold>Manubrium Sterni (Üst Parça):</bold> Göğüs kemiğinin en üst kısmıdır. Orta kısmında incisura jugularis adı verilen çentik bulunur. Yan taraflarında köprücük kemiği (klavikula) ile eklem yapan incisura clavicularis yer alır. 1. kaburganın kıkırdağı, sternumun bu kısmına bağlanır. 2. kaburganın kıkırdağı, manubrium ile gövde (corpus sterni) arasında eklemleşir. Manubrium ile corpus sterni arasında angulus sterni (Ludovici açısı) adı verilen belirgin bir açı bulunur. Bu açı, T4 seviyesinde yer alır ve 2. kaburganın kıkırdağının hizasını gösteren önemli bir anatomik belirteçtir.</indent>
+<indent><bold>Corpus Sterni (Orta Parça):</bold> Sternumun en uzun bölümüdür ve aşağıya doğru hafif genişler. Yan kısımlarında 3.–7. kaburgaların kıkırdakları için çentikler bulunur.</indent>
+<indent><bold>Processus Xiphoideus (Alt Parça):</bold> Sternumun en alt kısmıdır. Kıkırdak yapıda doğar, ancak yaş ilerledikçe kemikleşir (yaklaşık 40 yaş civarında tamamen kemikleşir). T10-T11 omur seviyesinde bulunur. Göğüs kaslarından bazıları buraya tutunur.</indent>
