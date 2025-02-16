@@ -299,4 +299,5 @@ a {
     display: block;
     margin: 10px auto;
     border-radius: 8px;
+    max-width: 1000px;
 }
