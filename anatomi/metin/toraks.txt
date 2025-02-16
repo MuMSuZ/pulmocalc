@@ -1,6 +1,6 @@
 <bold><chamois>Toraks Kemikleri</chamois></bold>
 
-<bold>Kaburgalar (Costae)</bold>
+<bold><coralblue>Kaburgalar (Costae)</coralblue></bold>
 
 <indent>Kaburgalar (costae), göğüs kafesini oluşturan temel kemiklerdir ve torakal omurlar, göğüs kemiği (sternum) ve kostal kıkırdaklarla birlikte toraks iskeletini meydana getirirler. İnsan vücudunda 12 çift kaburga bulunur. Her biri kıvrımlı ve yassı bir kemik yapısına sahiptir. Kaburgaların genel yapısı şu şekilde tanımlanabilir:</indent>
 
