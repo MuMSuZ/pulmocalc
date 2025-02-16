@@ -1,2 +1,26 @@
-Toraks
+<bold><chamois>Toraks Kemikleri</chamois></bold>
+
+<bold>Kaburgalar (Costae)</bold>
+
+<indent>Kaburgalar (costae), göğüs kafesini oluşturan temel kemiklerdir ve torakal omurlar, göğüs kemiği (sternum) ve kostal kıkırdaklarla birlikte toraks iskeletini meydana getirirler. İnsan vücudunda 12 çift kaburga bulunur. Her biri kıvrımlı ve yassı bir kemik yapısına sahiptir. Kaburgaların genel yapısı şu şekilde tanımlanabilir:</indent>
+
+<indent>Vertebral uç (caput costae): Kaburganın omurgaya bağlandığı bölümdür. Omurdaki eklem yüzleriyle (fovea costalis) bağlantı kurar. Baş kısmı, ortada bulunan bir çıkıntı (crista capitis costae) ile iki ayrı eklem yüzüne ayrılmıştır.</indent>
+<indent>Boyun kısmı (collum costae): Kaburganın başını (caput costae) gövdeye bağlayan dar bölgedir. Üst kenarında belirgin bir çıkıntı olan crista colli costae bulunur.</indent>
+<indent>Tüberkül (tuberculum costae): Kaburganın arka kısmında, boyundan sonra gelen hafif kabarıklık şeklindeki bölümdür. Üst kaburgalarda daha belirgindir. İç yüzeyinde facies articularis tuberculi costae adlı küçük bir eklem yüzü bulunur ve bu yüz, omurların transvers çıkıntılarıyla eklem yapar.</indent>
+<indent>Kaburga açısı (angulus costae): Kaburganın ön tarafa doğru kıvrıldığı bölgedir.</indent>
+<indent>Gövde (corpus costae): Kaburganın en uzun kısmıdır. Dış ve iç yüzeyleri ile üst ve alt kenarları bulunur. İç yüzeyde, alt kenara yakın bir oluk (sulcus costae) görülür. Bu oluk, kaburgalar arasında seyreden damar ve sinirlerin (interkostal damar ve sinirler) geçtiği yerdir.</indent>
+<indent>Ön uç (extremitas sternalis): Kaburganın göğüs kemiğine (sternum) bağlandığı bölümdür. Bağlantı, kostal kıkırdaklar aracılığıyla gerçekleşir.</indent>
+
+Bazı kaburgalar diğerlerinden farklı anatomik özelliklere sahiptir:
+
+<indent>1. kaburga (Costa I): Tek bir eklem yüzü bulunur. Üzerinde kas ve damar yapılarının geçtiği belirgin çıkıntılar ve oluklar vardır. Tuberculum m. scaleni anterior ve tuberositas m. scaleni medii adlı yapılar, burada yer alan kasların yapışma noktalarıdır. Ayrıca sulcus a. subclaviae ve sulcus v. subclaviae adlı oluklar, subklavyan arter ve ven için geçiş yollarıdır.</indent>
+<indent>2. kaburga (Costa II): Dış yüzeyinde tuberositas m. serrati anterior adlı kabarıklık bulunur.</indent>
+<indent>11. ve 12. kaburgalar (Costa XI ve XII): Tek eklem yüzüne sahiptirler ve diğer kaburgalara göre daha kısa olup uçları serbesttir.</indent>
+
+Kaburgalar göğüs kemiğiyle olan bağlantılarına göre üç gruba ayrılır:
+
+<indent>Gerçek kaburgalar (Costae verae): İlk yedi çift kaburga, doğrudan kostal kıkırdaklar aracılığıyla sternuma bağlanır.</indent>
+<indent>Yalancı kaburgalar (Costae spuriae): 8., 9. ve 10. kaburgalar, doğrudan sternuma bağlanmaz. Bunun yerine, üstteki kaburganın kıkırdağına tutunarak dolaylı bir bağlantı kurar.</indent>
+<indent>Yüzücü kaburgalar (Costae fluctuantes): 11. ve 12. kaburgalar, herhangi bir kıkırdak yapıya sahip değildir ve sternuma bağlanmaz. Bu nedenle "serbest kaburgalar" olarak da adlandırılırlar.</indent>
+<indent>Bu yapı sayesinde göğüs kafesi, hem akciğerleri ve kalbi koruyan sağlam bir iskelet oluşturur hem de nefes alıp verme sırasında esneklik sağlayarak solunuma yardımcı olur.</indent>
 
