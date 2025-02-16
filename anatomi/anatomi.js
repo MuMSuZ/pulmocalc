@@ -115,6 +115,19 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Hata:', error));
     }
 
+    function txtDosyasiniYukle(dosyaYolu, hedefId) {
+        fetch(dosyaYolu)
+            .then(response => response.text())
+            .then(data => {
+                const metinAlani = document.getElementById(hedefId);
+    
+                // Resim etiketlerini algılamak için düzenleme yap
+                let contentHTML = data.replace(/\[image\](.*?)\[\/image\]/g, '<img src="$1" class="txt-image">');
+    
+                metinAlani.innerHTML = contentHTML;
+            });
+    }    
+
     function tumDosyalariYukle() {
         dosyaListesi.forEach(dosya => {
             txtDosyasiniYukle(dosya.dosyaYolu, dosya.hedefId);
