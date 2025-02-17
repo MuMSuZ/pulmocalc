@@ -441,11 +441,17 @@ a {
   }
   
   /* Button animations */
-  @keyframes btn-content {
+@-webkit-keyframes btn-content {
     0% {
       outline: 0.2em solid var(--color-background);
       outline-offset: 0;
     }
   }
   
+  @keyframes btn-content {
+    0% {
+      outline: 0.2em solid var(--color-background);
+      outline-offset: 0;
+    }
+  }
   
