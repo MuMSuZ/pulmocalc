@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         detay: 'İki komşu vertebra ile eklemleşen kosta başındaki iki eklem yüzeyine ve vertebra diskine bakan eklemler arası tepeye dikkat edin.',
                         image: 'resim/costa5.jpg'
                     },
-                    'Şekil 6': {
+                    'Şekil 7': {
                         description: 'I ve II kostanın üstten görünümü',
                         detay: 'Her iki kosta da atipiktir: birinci kosta kısa ve düzdür ve sadece bir torasik vertebra ile eklemlendiği için başında interartiküler krest yoktur. Ancak ikinci kosta, serratus anterior kasının tutunması için belirgin yuvarlak tüberositeye sahiptir',
                         image: 'resim/costa6.jpg'
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         detay: 'Her ikisi de boyun, kostal tüberkül ve kostal tüberkülün artiküler fasetinden yoksun oldukları için atipiktir. Ayrıca, XI ve XII kostanın başı, karşılık gelen tek vertebra ile eklemleşmesi nedeniyle eklemler arası tepeye sahip değildir',
                         image: 'resim/costa7.jpg'
                     },
-                    "Şekil 7": {
+                    "Şekil 6": {
                         description: "I kostanın oluşturduğu eklemler",
                         detay: "Kosta başı eklemi, kosta başı ile bir veya iki vertebra gövdesinin kostal faseti arasında yer alır. Öte yandan, kostotransvers eklem, kostal tüberkülün eklem yüzeyi ile transvers prosesin kostal faseti arasındadır",
                         image: "resim/eklem1.png"
