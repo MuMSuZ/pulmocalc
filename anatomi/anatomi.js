@@ -64,8 +64,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         description: '',
                         detay: '',
                         image: 'resim/costa7.jpg'
-                    };
-
+                    }
+                };
+                
                 lines.forEach(line => {
                     let formattedLine = line
                         .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
