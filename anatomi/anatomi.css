@@ -379,8 +379,8 @@ a {
   .btn-content:hover, .btn-content:focus {
     transition: 0.5s;
     animation: btn-content 1s;
-    outline: 0.1em solid transparent;
-    outline-offset: 0.2em;
+    outline: 0.2em solid transparent;
+    outline-offset: 0.1em;
     box-shadow: 0 0 0.4em 0 var(--color-background);
   }
   
