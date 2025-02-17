@@ -47,26 +47,26 @@ document.addEventListener('DOMContentLoaded', function() {
                     },
                     'Şekil 4': {
                         description: 'Tipik bir kosta ile torasik vertebra arasındaki ilişkiler',
-                        detay: '',
+                        detay: 'Her tipik kostanın başı iki torasik vertebra ile eklemleşir ve kostal tüberkülün eklem yüzü alt vertebranın transvers prosesi ile eklemleşir.',
                         image: 'resim/costa4.jpg'
                     },
                     'Şekil 5': {
-                        description: '',
-                        detay: '',
+                        description: 'Tipik kostanın arkadan görünümü',
+                        detay: 'İki komşu vertebra ile eklemleşen kosta başındaki iki eklem yüzeyine ve vertebra diskine bakan eklemler arası tepeye dikkat edin.',
                         image: 'resim/costa5.jpg'
                     },
                     'Şekil 6': {
-                        description: '',
-                        detay: '',
+                        description: 'I ve II kostanın üstten görünümü',
+                        detay: 'Her iki kosta da atipiktir: birinci kosta kısa ve düzdür ve sadece bir torasik vertebra ile eklemlendiği için başında interartiküler krest yoktur. Ancak ikinci kosta, serratus anterior kasının tutunması için belirgin yuvarlak tüberositeye sahiptir',
                         image: 'resim/costa6.jpg'
                     },
                     'Şekil 7': {
-                        description: '',
-                        detay: '',
+                        description: 'En alttaki iki kostanın dorsal görünümü',
+                        detay: 'Her ikisi de boyun, kostal tüberkül ve kostal tüberkülün artiküler fasetinden yoksun oldukları için atipiktir. Ayrıca, XI ve XII kostanın başı, karşılık gelen tek vertebra ile eklemleşmesi nedeniyle eklemler arası tepeye sahip değildir',
                         image: 'resim/costa7.jpg'
                     }
                 };
-                
+
                 lines.forEach(line => {
                     let formattedLine = line
                         .replace(/<bold>(.*?)<\/bold>/g, '<span class="bold">$1</span>')
