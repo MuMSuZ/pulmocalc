@@ -31,14 +31,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Anahtar kelimeler ve ilgili açıklamalar
                 const keywordData = {
                     'Şekil 1': {
-                        description: 'Toraksın ön görünümü. Gerçek, yalancı ve yüzen kaburgalar.',
-                        detay: 'Üstteki yedi kaburga, kıkırdaklarının doğrudan sternuma bağlı olması nedeniyle gerçek kaburgalar olarak adlandırılır. Diğerleri (I-XII kaburgalar) ise, kıkırdaklarının diğer kaburgaların kıkırdakları aracılığıyla sternuma bağlanması nedeniyle yalancı kaburgalar olarak bilinir. Son iki kaburga (XI ve XII) ise sternuma hiç bağlanmadığından yüzen kaburgalar adını alır. Diğer sınıflandırmalarda kaburgalar, tipik ve atipik olarak alt gruplara ayrılır. Tipik kaburgalar (III-IX kaburgalar) ortak özellikler taşır ve bu durum, pozisyonlarının belirlenmesini zorlaştırır (örneğin, VI ve VII kaburgaların ayırt edilmesi gibi). Buna karşılık, atipik kaburgalar nispeten kolaylıkla tanımlanabilir.',
+                        description: 'Toraksın ön görünümü. Gerçek, yalancı ve yüzen kostalar',
+                        detay: 'Üstteki yedi kosta, kıkırdaklarının doğrudan sternuma bağlı olması nedeniyle gerçek kostalar olarak adlandırılır. Diğerleri (I-XII kostalar) ise, kıkırdaklarının diğer kostaların kıkırdakları aracılığıyla sternuma bağlanması nedeniyle yalancı kosta olarak bilinir. Son iki kosta (XI ve XII) ise sternuma hiç bağlanmadığından yüzen kostalar adını alır. Diğer sınıflandırmalarda kostalar, tipik ve atipik olarak alt gruplara ayrılır. Tipik kostalar (III-IX kostalar) ortak özellikler taşır ve bu durum, pozisyonlarının belirlenmesini zorlaştırır (örneğin, VI ve VII kostaların ayırt edilmesi gibi). Buna karşılık, atipik kostalar nispeten kolaylıkla tanımlanabilir.',
                         image: 'resim/costa1.jpg'
                     },
                     'Şekil 2': {
-                        description: 'metin/modal/peto.txt',
+                        description: 'Sağ ve sol tipik kostanın VII torasik vertebra ile birlikte üstten görünümü',
                         detay: '',
-                        image: 'resim/costa2.jpg'
+                        image: 'resim/costa2.jpg',
+                        description1: 'Tipik (7.) kostanın oblik görünümü.',
+                        detay1: '',
+                        image1: 'resim/costa3.jpg',
+                        description2: 'Tipik bir kosta ile torasik vertebra arasındaki ilişkiler.',
+                        detay2: '',
+                        image2: 'resim/costa4.jpg'
                     },
                     'Şekil 3': {
                         description: 'metin/modal/peto.txt',
@@ -62,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     // Her anahtar kelime için metni kontrol et ve etiket ekle
                     for (let [keyword, data] of Object.entries(keywordData)) {
                         let regex = new RegExp(`${keyword}`, 'gu');
-                        formattedLine = formattedLine.replace(regex, `<a href="#" class="keyword" data-description="${data.description}" data-detay="${data.detay}"  data-image="${data.image || ''}" data-isFile="${data.isFile || false}">${keyword}</a>`);
+                        formattedLine = formattedLine.replace(regex, `<a href="#" class="keyword" data-description="${data.description}" data-description1="${data.description1}" data-description2="${data.description2}" data-detay="${data.detay}" data-detay1="${data.detay1}" data-detay2="${data.detay2}" data-image="${data.image || ''}" data-image1="${data.image1 || ''}" data-image2="${data.image2 || ''}" data-isFile="${data.isFile || false}">${keyword}</a>`);
                     }
 
                     metinAlani.innerHTML += formattedLine + '<br>';
@@ -91,6 +97,12 @@ document.addEventListener('DOMContentLoaded', function() {
                                     document.getElementById('modal-text').innerHTML = formattedFileData;
                                     document.getElementById('modal-detay').innerHTML = formattedFileData;
                                     document.getElementById('modal-image').src = '';
+                                    document.getElementById('modal-text1').innerHTML = formattedFileData;
+                                    document.getElementById('modal-detay1').innerHTML = formattedFileData;
+                                    document.getElementById('modal-image1').src = '';
+                                    document.getElementById('modal-text2').innerHTML = formattedFileData;
+                                    document.getElementById('modal-detay2').innerHTML = formattedFileData;
+                                    document.getElementById('modal-image2').src = '';
                                     document.getElementById('myModal').style.display = "block";
                                 })
                                 .catch(error => console.error('Hata:', error));
@@ -101,6 +113,18 @@ document.addEventListener('DOMContentLoaded', function() {
                             document.getElementById('modal-text').textContent = description;
                             document.getElementById('modal-detay').textContent = detay;
                             document.getElementById('modal-image').src = image;
+                            const description = this.getAttribute('data-description1');
+                            const detay = this.getAttribute('data-detay1');
+                            const image = this.getAttribute('data-image1');
+                            document.getElementById('modal-text1').textContent = description1;
+                            document.getElementById('modal-detay1').textContent = detay1;
+                            document.getElementById('modal-image1').src = image1;
+                            const description = this.getAttribute('data-description2');
+                            const detay = this.getAttribute('data-detay2');
+                            const image = this.getAttribute('data-image2');
+                            document.getElementById('modal-text2').textContent = description2;
+                            document.getElementById('modal-detay2').textContent = detay2;
+                            document.getElementById('modal-image2').src = image2;
                             document.getElementById('myModal').style.display = "block";
                         }
                     });
