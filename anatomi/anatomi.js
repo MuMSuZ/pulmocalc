@@ -69,6 +69,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         description: "I kostanın oluşturduğu eklemler",
                         detay: "Kosta başı eklemi, kosta başı ile bir veya iki vertebra gövdesinin kostal faseti arasında yer alır. Öte yandan, kostotransvers eklem, kostal tüberkülün eklem yüzeyi ile transvers prosesin kostal faseti arasındadır",
                         image: "resim/eklem1.png"
+                    },
+                    "Şekil 9": {
+                        description: "Sternumun frontal ve anterior oblik görünümü",
+                        detay: "",
+                        image: "resim/sternum.jpg"
                     }
                 };
 
