@@ -60,10 +60,15 @@ document.addEventListener('DOMContentLoaded', function() {
                         detay: 'Her iki kosta da atipiktir: birinci kosta kısa ve düzdür ve sadece bir torasik vertebra ile eklemlendiği için başında interartiküler krest yoktur. Ancak ikinci kosta, serratus anterior kasının tutunması için belirgin yuvarlak tüberositeye sahiptir',
                         image: 'resim/costa6.jpg'
                     },
-                    'Şekil 7': {
+                    'Şekil 8': {
                         description: 'En alttaki iki kostanın dorsal görünümü',
                         detay: 'Her ikisi de boyun, kostal tüberkül ve kostal tüberkülün artiküler fasetinden yoksun oldukları için atipiktir. Ayrıca, XI ve XII kostanın başı, karşılık gelen tek vertebra ile eklemleşmesi nedeniyle eklemler arası tepeye sahip değildir',
                         image: 'resim/costa7.jpg'
+                    },
+                    "Şekil 7": {
+                        description: "I kostanın oluşturduğu eklemler",
+                        detay: "Kosta başı eklemi, kosta başı ile bir veya iki vertebra gövdesinin kostal faseti arasında yer alır. Öte yandan, kostotransvers eklem, kostal tüberkülün eklem yüzeyi ile transvers prosesin kostal faseti arasındadır",
+                        image: "resim/eklem1.png"
                     }
                 };
 
