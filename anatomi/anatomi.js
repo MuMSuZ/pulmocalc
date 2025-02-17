@@ -163,3 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.onload = tumDosyalariYukle;
 });
+
+function goBack() {
+    window.history.back();
+}
